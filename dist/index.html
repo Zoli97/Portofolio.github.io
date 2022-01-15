@@ -420,18 +420,19 @@
     </div>
    
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   
    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js" integrity="sha512-cdV6j5t5o24hkSciVrb8Ki6FveC2SgwGfLE31+ZQRHAeSRxYhAQskLkq3dLm8ZcWe1N3vBOEYmmbhzf7NTtFFQ==" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js" integrity="sha512-Q+G390ZU2qKo+e4q+kVcJknwfGjKJOdyu5mVMcR95NqL6XaF4lY4nsSvIVB3NDP54ACsS9rqhE1DVqgpApl//Q==" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.8/lottie.min.js" integrity="sha512-w58XJ/0dVbEfZVJoJyBUOTMGBWmIW4jEYJSA0898d2L0Ghpum0FvwK7qTuHhkTctApzrchv3Neli+28ajI4+fg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-   
-   
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="/app.c3f9f951.js"></script>
     <script src="/wiggle.6d497473.js"></script>
     <script src="/hamburger.36b634ef.js"></script>
     <script src="/js.00a46daa.js"></script>
     <script src="/vanilla-tilt.min.e53017b8.js"></script>
+
     <script>VanillaTilt.init(document.querySelectorAll(".tilt, .tilt2, .tilt3"), {
   max: 25,
   speed: 350,
@@ -445,6 +446,27 @@
   gyroscopeMaxAngleY: 75
 });</script>
 
+<script>window.onload = function () {
+  var balls = document.querySelectorAll("._section_ ._circle_");
+
+  function randomValues() {
+    anime({
+      targets: balls,
+      translateX: function translateX() {
+        return anime.random(0, 400);
+      },
+      translateY: function translateY() {
+        return anime.random(50, 50);
+      },
+      easing: "spring(1, 90, 50, 20)",
+      delay: anime.stagger(150),
+      duration: 400,
+      complete: randomValues
+    });
+  }
+
+  randomValues();
+};</script>
    
   </body>
 </html>

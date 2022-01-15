@@ -528,7 +528,7 @@
     </div>
    
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   
    
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"
@@ -546,13 +546,14 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
-   
-   
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="./js/app.js"></script>
     <script   src="./js/wiggle.js"></script>
     <script src="./js/hamburger.js"></script>
     <script src="./js/index.js"></script>
     <script src="./js/vanilla-tilt.min.js"></script>
+
     <script type="text/javascript">
 
 
@@ -572,6 +573,32 @@
 });
     </script>
 
+<script>
+
+  window.onload = ()=>{
+
+    var balls = document.querySelectorAll("._section_ ._circle_");
+
+function randomValues() {
+    anime({
+        targets: balls,
+        translateX: () => {
+            return anime.random(0, 400);
+        },
+        translateY: () => {
+            return anime.random(50, 50);
+        },
+
+        easing: "spring(1, 90, 50, 20)",
+        delay: anime.stagger(150),
+        duration: 400,
+        complete: randomValues,
+    });
+}
+
+randomValues();
+  }
+</script>
    
   </body>
 </html>
