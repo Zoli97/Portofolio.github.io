@@ -1,0 +1,14 @@
+.social-header {
+  display: block;
+  ul {
+    display: flex;
+    justify-content: space-between;
+    width: 10em;
+    float: right;
+
+    img {
+      width: 33px;
+      height: 33px;
+    }
+  }
+}

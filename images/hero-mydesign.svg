@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="618" height="672" viewBox="0 0 618 672">
+  <g id="hero-mydesign" transform="translate(-1025 -261)">
+    <rect id="Rectangle_52" data-name="Rectangle 52" width="156" height="171" rx="30" transform="translate(1025 591)" fill="#A49EB8"/>
+    <rect id="Rectangle_56" data-name="Rectangle 56" width="156" height="171" rx="30" transform="translate(1181 762)" fill="#fff"/>
+    <rect id="Rectangle_58" data-name="Rectangle 58" width="156" height="171" rx="30" transform="translate(1181 428)" fill="#fff"/>
+    <rect id="Rectangle_53" data-name="Rectangle 53" width="156" height="171" rx="30" transform="translate(1334 261)" fill="#4b3f72"/>
+    <rect id="Rectangle_54" data-name="Rectangle 54" width="156" height="171" rx="30" transform="translate(1487 428)" fill="#4b3f72" opacity="0.5"/>
+    <rect id="Rectangle_55" data-name="Rectangle 55" width="156" height="171" rx="30" transform="translate(1331 599)" fill="#4b3f72"/>
+    <g id="Ellipse_8" data-name="Ellipse 8" transform="translate(1181 599)" fill="#ffc857" stroke="#707070" stroke-width="1">
+      <ellipse cx="76.5" cy="81.5" rx="76.5" ry="81.5" stroke="none"/>
+      <ellipse cx="76.5" cy="81.5" rx="76" ry="81" fill="none"/>
+    </g>
+    <g id="Ellipse_7" data-name="Ellipse 7" transform="translate(1337 432)" fill="#119da4" stroke="#707070" stroke-width="1">
+      <ellipse cx="75" cy="83.5" rx="75" ry="83.5" stroke="none"/>
+      <ellipse cx="75" cy="83.5" rx="74.5" ry="83" fill="none"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,46 @@
+.my-skills {
+    background: $yellow_color_;
+}
+
+.skills-container ul li {
+    background: $white_color;
+    padding: 2em;
+    border-radius: 1em;
+    margin-bottom: 1em;
+    // box-shadow: 12px 14px 14px hsl(48deg 100% 25% / 14%);
+    box-shadow: 12px 14px 14px rgba(128, 102, 0, 0.14);
+    .icon-container {
+        height: 100px;
+        display: grid;
+        place-content: center;
+        margin: 0 auto;
+        &.one {
+            width: 50px;
+        }
+        &.two {
+            width: 50px;
+        }
+        &.three {
+            width: 50px;
+        }
+    }
+    .skills-title {
+        font-weight: bold;
+        color: $gray_color_dark;
+    }
+    .skills-desc {
+        margin-bottom: 2em;
+    }
+}
+
+.tilt3,
+.til2,
+.tilt {
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
+}
+
+.colorcont {
+    background-color: #fdfffc;
+    transform: translateZ(40px);
+}
