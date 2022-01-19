@@ -1,6 +1,6 @@
 body,
 html {
-  max-width: 100%;
+  width: 100%;
   height: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -8,7 +8,6 @@ html {
   padding: 1em;
   background: #4b3f72;
   font-family: "Poppins", arial;
-  overflow-x: hidden;
 }
 
 .box {
