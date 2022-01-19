@@ -1,0 +1,65 @@
+@import "../abstracts/variables";
+body,
+html {
+    max-width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 1em;
+    background: #4b3f72;
+    font-family: "Poppins", arial;
+    overflow-x: hidden;
+}
+
+.box {
+    width: 400px;
+    .my-btn {
+        width: 100px;
+        margin-top: 15px;
+        border: none;
+        border-radius: 2px;
+        padding: 1em;
+        cursor: pointer;
+        background: $smoke;
+    }
+    h1,
+    p {
+        color: white;
+    }
+}
+
+.box1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.box2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-gap: 10px;
+}
+
+.box1 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.gif-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 3em;
+}
+
+.gif {
+    width: 100%;
+    max-width: 600px;
+}

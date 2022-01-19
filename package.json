@@ -17,6 +17,7 @@
         "gsap": "^3.9.1",
         "gsap-trial": "^3.9.0",
         "jquery": "^3.6.0",
+        "lax.js": "^2.0.3",
         "sass-cache": "0.0.3",
         "smooth-scrollbar": "^8.6.2",
         "vanilla-tilt": "^1.7.2"

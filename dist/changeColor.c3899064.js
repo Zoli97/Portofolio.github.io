@@ -16646,61 +16646,16 @@ TweenMaxWithCSS = gsapWithCSS.core.Tween; //BONUS EXPORTS
 
 exports.TweenMax = TweenMaxWithCSS;
 exports.default = exports.gsap = gsapWithCSS;
-},{"./gsap-core.js":"node_modules/gsap/gsap-core.js","./CSSPlugin.js":"node_modules/gsap/CSSPlugin.js","./CustomEase.js":"node_modules/gsap/CustomEase.js","./CSSRulePlugin.js":"node_modules/gsap/CSSRulePlugin.js","./Draggable.js":"node_modules/gsap/Draggable.js","./EaselPlugin.js":"node_modules/gsap/EaselPlugin.js","./EasePack.js":"node_modules/gsap/EasePack.js","./Flip.js":"node_modules/gsap/Flip.js","./MotionPathPlugin.js":"node_modules/gsap/MotionPathPlugin.js","./PixiPlugin.js":"node_modules/gsap/PixiPlugin.js","./ScrollToPlugin.js":"node_modules/gsap/ScrollToPlugin.js","./ScrollTrigger.js":"node_modules/gsap/ScrollTrigger.js","./TextPlugin.js":"node_modules/gsap/TextPlugin.js"}],"js/app.js":[function(require,module,exports) {
-//1. the content come down and fade in when the browser loads
-//come from -30%, opacity: 0(fade in) so its going to come from zero, come from -30
+},{"./gsap-core.js":"node_modules/gsap/gsap-core.js","./CSSPlugin.js":"node_modules/gsap/CSSPlugin.js","./CustomEase.js":"node_modules/gsap/CustomEase.js","./CSSRulePlugin.js":"node_modules/gsap/CSSRulePlugin.js","./Draggable.js":"node_modules/gsap/Draggable.js","./EaselPlugin.js":"node_modules/gsap/EaselPlugin.js","./EasePack.js":"node_modules/gsap/EasePack.js","./Flip.js":"node_modules/gsap/Flip.js","./MotionPathPlugin.js":"node_modules/gsap/MotionPathPlugin.js","./PixiPlugin.js":"node_modules/gsap/PixiPlugin.js","./ScrollToPlugin.js":"node_modules/gsap/ScrollToPlugin.js","./ScrollTrigger.js":"node_modules/gsap/ScrollTrigger.js","./TextPlugin.js":"node_modules/gsap/TextPlugin.js"}],"js/changeColor.js":[function(require,module,exports) {
 var _require = require("gsap/all"),
     gsap = _require.default;
 
-gsap.registerPlugin(ScrollTrigger); //create timeline
-
-var timeline = gsap.timeline();
-timeline.from(".content", {
-  y: "-30%",
-  opacity: 0,
+gsap.registerPlugin(CSSRulePlugin);
+gsap.to("html", {
+  "--my-color": "red",
   duration: 2,
-  ease: Power4.easeOut
-}); //secvential vor veni pe baza clasei stagger unde am definit pe 3 elemente bazat pe distanta .3s
-
-timeline.from(".stagger1 ", {
-  opacity: 0,
-  y: -50,
-  stagger: 0.3,
-  ease: Power3.easeOut,
-  duration: 2
-}, "-=1.5"); //offset delay
-//going to come up fromb ottom up
-
-timeline.from(".hero-design", {
-  opacity: 0,
-  y: 50,
-  ease: Power3.easeOut,
-  duration: 1
-}, "-=2");
-timeline.from(".about", {
-  opacity: 1,
-  y: 100,
-  ease: Power2.ease,
-  duration: 1
-}, "-=1.5"); //or 10% of the current value
-
-gsap.from(".square-anim", {
-  stagger: 0.2,
-  scale: 0.1,
-  duration: 1,
-  ease: Back.easeOut.config(1.7)
-}); //any element that has the transition2 class applied to it
-//when the top of the transition2 reaches the bottom of the scroll bar its gonna animate
-
-gsap.from(".transition2", {
-  scrollTrigger: {
-    trigger: ".transition2",
-    start: "top bottom"
-  },
-  y: 50,
-  opacity: 0,
-  duration: 1.2,
-  stagger: 0.3
+  yoyo: true,
+  repeat: 30
 });
 },{"gsap/all":"node_modules/gsap/all.js"}],"../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
@@ -16730,7 +16685,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "43199" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "32973" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
@@ -16906,5 +16861,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","js/app.js"], null)
-//# sourceMappingURL=/app.c3f9f951.js.map
+},{}]},{},["../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","js/changeColor.js"], null)
+//# sourceMappingURL=/changeColor.c3899064.js.map

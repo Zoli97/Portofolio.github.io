@@ -1,5 +1,6 @@
 header {
     @include displayFlex(flex);
+    align-items: center;
     padding: 2em;
     nav {
         float: right;

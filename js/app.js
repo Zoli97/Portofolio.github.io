@@ -1,6 +1,8 @@
 //1. the content come down and fade in when the browser loads
 //come from -30%, opacity: 0(fade in) so its going to come from zero, come from -30
 
+const { default: gsap } = require("gsap/all");
+
 gsap.registerPlugin(ScrollTrigger);
 
 //create timeline

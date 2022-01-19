@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/mywork.c1800317.css">
+
+    <title>My Work</title>
+<script src="/mywork.c1800317.js"></script></head>
+
+<body>
+    <div class="parent">
+        <main class="box1" id="sect1">
+            <div class="box">
+                <h1>Boom Boom</h1>
+                <p>Just scroll down</p>
+                <button type="button" class="my-btn">Press me</button>
+            </div>
+        </main>
+
+        <main class="box2">
+            <svg id="svg_anim" width="420" height="400" viewBox="0 0 500 500" preserveAspectRatio="none">
+          <polygon stroke="none" points="100 100, 150 300 , 350 350 , 400 100 , 350 0 , 200 50 , 100 100 " fill="#1f2041" id="polygon"></polygon>
+        </svg>
+        </main>
+    </div>
+
+    <div class="gif-container lax lax_preset_fadeIn:237:0.6 lax_preset_seesaw:140:20">
+        <img class="gif" src="https://media.giphy.com/media/DMNqE0oBP2BEY/giphy.gif" alt="gif1">
+    </div>
+
+    <div id="gif-container2 " class="gif-container lax lax_preset_zigzag:135:200 lax_preset_fadeIn:237:0.2">
+        <img class="gif" src="https://media.giphy.com/media/PzY2K7SaqIEyA/giphy.gif" alt="gif2">
+    </div>
+    <div id="gif-container3" class="gif-container lax lax_preset_jiggle:89:20 lax_preset_fadeIn:237:0.2">
+        <img class="gif" src="https://media.giphy.com/media/3ohjULxZhn1cwjLTVu/giphy.gif" alt="gif3">
+    </div>
+    <div id="gif-container4" class="gif-container">
+        <img class="gif" src="https://media.giphy.com/media/ltMLWLHyjuHkY/giphy.gif" alt="gif4">
+    </div>
+    <div id="gif-container5" class="gif-container lax lax_preset_spin:1028:360 lax_preset_fadeIn:237:0.2">
+        <img class="gif" src="https://media.giphy.com/media/lhdgGZHCmhApa/giphy.gif" alt="gif5">
+    </div>
+    <div id="gif-container6" class="gif-container">
+        <img class="gif" src="https://media.giphy.com/media/fMB0JDo2OhCVzn8X3T/giphy.gif" alt="gif6">
+    </div>
+    <div id="gif-container7" class="gif-container lax lax_preset_hueRotate:1498:360">
+        <img class="gif" src="https://media.giphy.com/media/3o6ZtorWFFcQYie8rC/giphy.gif" alt="gif7">
+    </div>
+    <div id="gif-container8" class="gif-container lax lax lax_preset_slideY:842:55">
+        <img class="gif" src="https://media.giphy.com/media/u3P8ktWNkjwOUTDnhi/giphy.gif" alt="gif8">
+    </div>
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha512-z4OUqw38qN,pn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<!-- <script src="https://cdn.jsdelivr.net/npm/lax@0.0.40/lax.min.js"></script> -->
+<script src="https://cdn.jsdelivr.net/npm/lax.js"></script>
+<script>var elements = document.querySelectorAll("#svg_anim polygon");
+var morphing = anime({
+  targets: [elements],
+  points: [{
+    value: ["100 100, 150 300 , 350 350 , 400 100 , 350 0 , 200 50 , 100 100", " 100 100 , 150 300 , 300 200 , 450 300 , 500 100 , 300 150 , 100 100 "]
+  }],
+  easing: "easeOutSine",
+  duration: 2200,
+  loop: true,
+  direction: "alternate"
+});</script>
+
+<script>window.onload = function () {
+  lax.init(); //adding the driver that i use to control my animations;
+
+  lax.addDriver("scrollY", function () {
+    return window.scrollY;
+  }); //add animation bindings to elements
+};</script>
+
+</html>

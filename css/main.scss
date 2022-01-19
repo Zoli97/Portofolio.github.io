@@ -924,7 +924,7 @@ Now we will have to add the javascript which will add this active class on the n
 @media only screen and (min-width: 1250px) {
     .above-footer {
         width: 100%;
-        height: 75vh;
+        height: 50vh;
         display: flex;
         flex-direction: row;
         justify-content: space-around;
@@ -1130,7 +1130,6 @@ Now we will have to add the javascript which will add this active class on the n
     width: 100%;
     height: 40vh;
     margin: 1em;
-    background-color: #f7f7f7;
 }
 
 @import "./components/circle_animation";

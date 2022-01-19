@@ -53,6 +53,9 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 2em;
 }
 
@@ -1206,7 +1209,7 @@ Now we will have to add the javascript which will add this active class on the n
 @media only screen and (min-width: 1250px) {
   .above-footer {
     width: 100%;
-    height: 75vh;
+    height: 50vh;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1534,7 +1537,6 @@ Now we will have to add the javascript which will add this active class on the n
   width: 100%;
   height: 40vh;
   margin: 1em;
-  background-color: #f7f7f7;
 }
 
 .circle {
