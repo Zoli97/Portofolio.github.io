@@ -11,12 +11,14 @@
 <script src="/mywork.c1800317.js"></script></head>
 
 <body>
+    <section id="wrapper" class="wrapper"></section>
+
     <div class="parent">
         <main class="box1" id="sect1">
             <div class="box">
                 <h1>Boom Boom</h1>
                 <p>Just scroll down</p>
-                <button type="button" class="my-btn">Press me</button>
+                <button type="button" class="my-btn" id="my-btn">Press me</button>
             </div>
         </main>
 
@@ -46,18 +48,20 @@
     <div id="gif-container6" class="gif-container">
         <img class="gif" src="https://media.giphy.com/media/fMB0JDo2OhCVzn8X3T/giphy.gif" alt="gif6">
     </div>
-    <div id="gif-container7" class="gif-container lax lax_preset_hueRotate:1498:360">
+    <div id="gif-container7" class="gif-container lax lax_preset_hueRotate:1498:360 lax_preset_jiggle:89:20 lax_preset_fadeIn:237:0.2">
         <img class="gif" src="https://media.giphy.com/media/3o6ZtorWFFcQYie8rC/giphy.gif" alt="gif7">
     </div>
-    <div id="gif-container8" class="gif-container lax lax lax_preset_slideY:842:55">
+    <div id="gif-container8" class="gif-container">
         <img class="gif" src="https://media.giphy.com/media/u3P8ktWNkjwOUTDnhi/giphy.gif" alt="gif8">
     </div>
 </body>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha512-z4OUqw38qN,pn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<!-- <script src="https://cdn.jsdelivr.net/npm/lax@0.0.40/lax.min.js"></script> -->
+
 <script src="https://cdn.jsdelivr.net/npm/lax.js"></script>
+<script src="/randomColorsOnSVG.72a80cc1.js"></script>
 <script>var elements = document.querySelectorAll("#svg_anim polygon");
+var wrapper = document.getElementById("wrapper");
 var morphing = anime({
   targets: [elements],
   points: [{
@@ -67,6 +71,47 @@ var morphing = anime({
   duration: 2200,
   loop: true,
   direction: "alternate"
+}); //random cirles
+
+for (var i = 0; i < 60; i++) {
+  var div = document.createElement("div");
+  var animateCircle = wrapper.appendChild(div);
+  animateCircle.classList.add("anime_circles");
+} //nodelist
+
+
+var circles = document.querySelectorAll(".anime_circles"); //animation circles
+
+var randomAnimation = anime({
+  targets: circles,
+  background: function background() {
+    var hue = anime.random(0, 360);
+    var saturation = 75;
+    var luminosity = 40;
+    var hslValue = "hsl(" + hue + "," + saturation + "%," + luminosity + "%)";
+    return hslValue;
+  },
+  borderRadius: function borderRadius() {
+    return anime.random(35, 70);
+  },
+  translateX: function translateX() {
+    return anime.random(-80, 80) + "vh";
+  },
+  translateY: function translateY() {
+    return anime.random(-80, 80) + "vh";
+  },
+  scale: function scale() {
+    return anime.random(0.45, 1.74);
+  },
+  duration: function duration() {
+    return anime.random(350, 1500);
+  },
+  delay: function delay() {
+    return anime.random(500, 1000);
+  },
+  loop: true,
+  direction: "alternate",
+  easing: "easeOutSine"
 });</script>
 
 <script>window.onload = function () {

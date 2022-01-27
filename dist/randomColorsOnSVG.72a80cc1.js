@@ -117,36 +117,25 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"js/count_down.js":[function(require,module,exports) {
-//get the time in miliseconds.
-//get the current time.
-//get the difference between future and now and substracting it.
-//how many miliseconds are there in a seconds and so on...
-//i have the difference now can i calculate how many days are there and how many minutes are there (167 days )
-// 25 - 10 = 15
-// 15 :
-var countDown = function countDown() {
-  var countDate = new Date("October 20, 2022 00:00:00").getTime();
-  var nowDate = new Date().getTime();
-  var difference = countDate - nowDate;
-  var second = 1000;
-  var minute = second * 60;
-  var hour = minute * 60;
-  var day = hour * 24;
-  var textDay = Math.floor(difference / day);
-  console.log(textDay);
-  var textHour = Math.floor(difference % day / hour);
-  var textMinute = Math.floor(difference % hour / minute);
-  var textSecond = Math.floor(difference % minute / second);
-  document.querySelector(".day").innerText = textDay;
-  document.querySelector(".hour").innerText = textHour;
-  document.querySelector(".minute").innerText = textMinute;
-  document.querySelector(".seconds").innerText = textSecond;
-};
+})({"js/randomColorsOnSVG.js":[function(require,module,exports) {
+//get the elements
+var my_btn = document.querySelector(".my-btn");
+var polygon = document.getElementById("polygon"); //function for random Colors on my svg with hsl
 
-countDown(); //run every seconds
+var randomColorsOnSvg = function randomColorsOnSvg() {
+  return "hsl(" + 360 * Math.random() + ",60%,70%)";
+}; //apply the function that makes the color changes on my svg.
 
-setInterval(countDown, 1000); //format all numbers
+
+var randomizeColors = function randomizeColors() {
+  polygon.style.fill = randomColorsOnSvg();
+}; //add the click event listener for button and calls the above functions.
+
+
+my_btn.addEventListener("click", function () {
+  randomColorsOnSvg();
+  randomizeColors();
+});
 },{}],"../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -351,5 +340,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","js/count_down.js"], null)
-//# sourceMappingURL=/count_down.e7a63ccc.js.map
+},{}]},{},["../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","js/randomColorsOnSVG.js"], null)
+//# sourceMappingURL=/randomColorsOnSVG.72a80cc1.js.map
