@@ -656,49 +656,11 @@ Now we will have to add the javascript which will add this active class on the n
         }
     }
     main+.above-footer {
-        height: 180vh;
+        height: 100vh;
         display: flex;
         flex-direction: column;
         align-items: center;
         padding: 2em;
-    }
-    footer {
-        width: 100%;
-        height: 100vh;
-        background: #4b3f72;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
-        .container_one {
-            width: 300px;
-            height: 300px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: white;
-            text-align: center;
-        }
-        .container_two {
-            width: 300px;
-            height: 300px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            .logo {
-                width: 200px;
-                height: 113px;
-            }
-        }
-        .container_three {
-            width: 300px;
-            height: 300px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: white;
-            text-align: center;
-        }
     }
     .first_container ul img {
         margin: 1.5em;
@@ -1120,7 +1082,7 @@ Now we will have to add the javascript which will add this active class on the n
 
 ._section_ {
     width: 100%;
-    height: 40vh;
+    height: 80vh;
     display: flex;
     justify-content: center;
     align-items: center;
