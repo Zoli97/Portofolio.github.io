@@ -8,6 +8,7 @@ window.onload = () => {
   );
 
   //sync multiple animation on chars in the letter together.
+
   anime
     .timeline({
       loop: 4000,
