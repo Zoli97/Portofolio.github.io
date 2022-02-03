@@ -1,41 +1,42 @@
 {
-    "name": "portofolio",
-    "version": "1.0.0",
-    "description": "<<<<<<< HEAD # Zoli.github.io This is my portofolio and check this out !",
-    "type": "module",
-    "main": "index.js",
-    "scripts": {
-        "dev": "parcel index.html",
-        "dev2": "parcel countdown.html"
-    },
-    "author": "",
-    "license": "ISC",
-    "dependencies": {
-        "animejs": "^3.2.1",
-        "atropos": "^1.0.1",
-        "compass": "^0.1.1",
-        "gsap": "^3.9.1",
-        "gsap-trial": "^3.9.0",
-        "jquery": "^3.6.0",
-        "lax.js": "^2.0.3",
-        "sass-cache": "0.0.3",
-        "smooth-scrollbar": "^8.6.2",
-        "vanilla-tilt": "^1.7.2"
-    },
-    "devDependencies": {
-        "@babel/cli": "^7.15.7",
-        "@babel/core": "^7.15.8",
-        "@babel/preset-env": "^7.15.8",
-        "@types/animejs": "^3.1.4",
-        "sass-resources-loader": "^2.2.1"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/Zoli97/Zoli.github.io.git"
-    },
-    "keywords": [],
-    "bugs": {
-        "url": "https://github.com/Zoli97/Zoli.github.io/issues"
-    },
-    "homepage": "https://github.com/Zoli97/Zoli.github.io#readme"
+  "name": "portofolio",
+  "version": "1.0.0",
+  "description": "<<<<<<< HEAD # Zoli.github.io This is my portofolio and check this out !",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel index.html",
+    "dev2": "parcel countdown.html"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "animejs": "^3.2.1",
+    "atropos": "^1.0.1",
+    "compass": "^0.1.1",
+    "gsap": "^3.9.1",
+    "gsap-trial": "^3.9.0",
+    "jquery": "^3.6.0",
+    "lax.js": "^2.0.3",
+    "parcel": "^2.2.1",
+    "sass-cache": "0.0.3",
+    "smooth-scrollbar": "^8.6.2",
+    "vanilla-tilt": "^1.7.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.15.7",
+    "@babel/core": "^7.15.8",
+    "@babel/preset-env": "^7.15.8",
+    "@types/animejs": "^3.1.4",
+    "sass-resources-loader": "^2.2.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Zoli97/Zoli.github.io.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/Zoli97/Zoli.github.io/issues"
+  },
+  "homepage": "https://github.com/Zoli97/Zoli.github.io#readme"
 }

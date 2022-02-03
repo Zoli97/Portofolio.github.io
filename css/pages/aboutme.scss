@@ -1,0 +1,117 @@
+@import "../abstracts/variables";
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.grandparent,
+#grandparent {
+  padding: 8em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.grid_parent {
+  background-color: #1f2041;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+
+  .grid_box1 img,
+  #grid_box2 img {
+    width: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .grid_box2 {
+    background-color: #4b3f72;
+    padding: 1.2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+// .grid_parent .grid_box1 {
+//   width: 100%;
+// }
+
+.grid_parent > #grid_box2 {
+  background-image: url("/images/me2.jpg");
+  background-size: cover;
+  background-position: center top;
+}
+
+.grid_parent > #grid_box1 {
+  color: white;
+  padding: 1.2em;
+  font-size: 45px;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+//----- grid container 3 ------
+
+.grandparent2 {
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.grid_parent2 {
+  width: 80%;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+
+  .grid_box3 {
+    background-color: rgb(22, 16, 16);
+    color: white;
+    padding: 1.2em;
+    font-size: 35px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .grid_box4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .gif {
+    width: 100%;
+  }
+}
+
+// animate text with animejs
+.text {
+  color: white;
+  font-size: 35px;
+  font-weight: 200;
+  letter-spacing: 0.25em;
+}
+.text .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+
+@media only screen and (min-width: 1024px) {
+  .grid_box1::after {
+    content: "";
+    position: absolute;
+    right: 200px;
+    bottom: -140px;
+    left: 200px;
+    border-bottom: 2px solid rgb(207, 18, 18);
+  }
+}

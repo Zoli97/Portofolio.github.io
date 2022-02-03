@@ -1,87 +1,87 @@
 @import "../abstracts/variables";
 body,
 html {
-    width: 100%;
-    height: 100%;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 1em;
-    background: #4b3f72;
-    font-family: "Poppins", arial;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 1em;
+  background: #4b3f72;
+  font-family: "Poppins", arial;
 }
 
 .box {
-    width: 400px;
-    .my-btn {
-        width: 100px;
-        margin-top: 15px;
-        border: none;
-        border-radius: 2px;
-        padding: 1em;
-        cursor: pointer;
-        background: $smoke;
-    }
-    h1,
-    p {
-        color: white;
-    }
+  width: 400px;
+  .my-btn {
+    width: 100px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 2px;
+    padding: 1em;
+    cursor: pointer;
+    background: $smoke;
+  }
+  h1,
+  p {
+    color: white;
+  }
 }
 
 .box1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .box2 {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .parent {
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    grid-gap: 10px;
-    margin-top: 2.5em;
-    margin-bottom: 3.5em;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-gap: 10px;
+  margin-top: 2.5em;
+  margin-bottom: 3.5em;
 }
 
 .box1 {
-    grid-column: 1/2;
-    grid-row: 1/2;
+  grid-column: 1/2;
+  grid-row: 1/2;
 }
 
 .gif-container {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-bottom: 3em;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 3em;
 }
 
 .gif {
-    width: 100%;
-    max-width: 600px;
+  width: 100%;
+  max-width: 600px;
 }
 
 .wrapper {
-    width: 100%;
-    height: 65vh;
-    background: #f1f1f1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    position: relative;
+  width: 100%;
+  height: 65vh;
+  background: #f1f1f1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
 }
 
 .anime_circles {
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    background: #fff;
-    position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #fff;
+  position: absolute;
 }

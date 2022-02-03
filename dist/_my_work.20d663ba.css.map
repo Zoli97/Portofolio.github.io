@@ -1,1 +1,0 @@
-{"version":3,"sources":["css\\pages\\_my_work.scss"],"names":[],"mappings":"AAAA,OAAO,CAAC,yFAAI","file":"_my_work.20d663ba.css","sourceRoot":"..","sourcesContent":["@import url(\"https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap\");\r\n@import \"../abstracts/mixins.scss\";\r\n@import \"../abstracts/_variables.scss\";"]}
