@@ -1,0 +1,25 @@
+@mixin displayGrid($display_grid, $template-columns) {
+  display: grid;
+  grid-template-columns: $template-columns;
+  grid-gap: 1em;
+}
+
+@mixin grid() {
+  display: grid;
+}
+@mixin displayFlex($display_flex) {
+  display: flex;
+  justify-content: space-between;
+}
+
+@mixin displayBlock() {
+  display: block;
+}
+
+@mixin displayNone() {
+  display: none;
+}
+
+@mixin displayUnset() {
+  display: unset;
+}

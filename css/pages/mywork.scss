@@ -1,0 +1,247 @@
+@import "../abstracts/variables";
+body,
+html {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background: $rich_black;
+  font-family: "Poppins", arial;
+}
+
+.box {
+  width: 400px;
+  .my-btn {
+    width: 100px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 2px;
+    padding: 1em;
+    cursor: pointer;
+    background: $smoke;
+  }
+  h1,
+  p {
+    color: white;
+  }
+}
+
+.box1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.box2 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.parent {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-gap: 10px;
+  margin-top: 2.5em;
+  margin-bottom: 3.5em;
+}
+
+.box1 {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+.gif-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 3em;
+}
+
+.gif {
+  width: 100%;
+  max-width: 600px;
+}
+
+.wrapper {
+  width: 100%;
+  height: 65vh;
+  background: $ming;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.anime_circles {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #fff;
+  position: absolute;
+}
+
+a {
+  text-decoration: none;
+}
+
+header nav ul {
+  list-style: none;
+}
+
+.nav-container {
+  //background: $dark_violet_color_;
+  background: $rich_black;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 5;
+  a {
+    color: $white_color;
+  }
+}
+@import "../layouts/header";
+.hamburger {
+  @include displayNone();
+  .bar {
+    @include displayBlock();
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: $white_color;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .nav-menu {
+    position: fixed;
+    right: 0;
+    top: 5rem;
+    flex-direction: column;
+    width: 100%;
+    height: 425px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 10px 27px $box_shadow_color;
+    -webkit-clip-path: circle(100px at 90% -25%);
+    clip-path: circle(100px at 90% -25%);
+    transition: all 1.3s ease-out;
+    pointer-events: none;
+    z-index: 1;
+
+    background: $rich_black;
+  }
+  .nav-menu.active {
+    left: 0;
+    -webkit-clip-path: circle(1000px at 90% -10%);
+    clip-path: circle(1000px at 90% -10%);
+    pointer-events: all;
+    cursor: pointer;
+  }
+  .nav-item {
+    margin: 2rem 0;
+  }
+  ul.nav-menu.active {
+    background: $rich_black;
+    z-index: 1;
+    height: 425px;
+    position: absolute;
+  }
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active {
+    span {
+      &:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+      }
+    }
+  }
+  .hamburger.active {
+    span {
+      &:nth-child(2) {
+        transform: translateY(8px) rotate(45deg);
+      }
+    }
+  }
+  .hamburger.active {
+    span {
+      &:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+      }
+    }
+  }
+  .nav-menu {
+    li {
+      opacity: 0;
+    }
+  }
+  ul {
+    li {
+      a {
+        font-size: 1.3em;
+      }
+    }
+  }
+  ul {
+    li {
+      &:nth-child(1) {
+        transition: all 0.5s ease 0.2s;
+      }
+    }
+  }
+  ul {
+    li {
+      &:nth-child(2) {
+        transition: all 0.5s ease 0.4s;
+      }
+    }
+  }
+  ul {
+    li {
+      &:nth-child(3) {
+        transition: all 0.5s ease 0.6s;
+      }
+    }
+  }
+  ul {
+    li {
+      &:nth-child(4) {
+        transition: all 0.5s ease 0.8s;
+      }
+    }
+  }
+  li.fade {
+    opacity: 1;
+  }
+}
+
+@media only screen and (min-width: 1050px) {
+  header {
+    padding: 2em 2em 2em 4em;
+  }
+}
+
+@media only screen and (min-width: 1250px) {
+  header {
+    padding: 2em 2em 2em 10em;
+  }
+}
+
+@media only screen and (min-width: 1550px) {
+  header {
+    padding: 2em 2em 2em 20em;
+  }
+}

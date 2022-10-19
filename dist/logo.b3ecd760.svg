@@ -1,0 +1,56 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 249.79 167.66"><defs>
+ <style>cls-1 {
+  fill: #f28e13;
+}
+
+.cls-1, .cls-3, .cls-4, .cls-5, .cls-6, .cls-7 {
+  stroke: #000;
+  stroke-width: .5px;
+}
+
+.cls-1, .cls-3, .cls-4, .cls-5, .cls-6, .cls-7, .cls-8 {
+  stroke-miterlimit: 10;
+}
+
+.cls-2 {
+  fill: #18b8cc;
+  font-family: MyanmarText-Bold, Myanmar Text;
+  font-size: 105.88px;
+  font-weight: 700;
+}
+
+.cls-3, .cls-8 {
+  fill: #f20732;
+}
+
+.cls-4 {
+  fill: #0c1d40;
+}
+
+.cls-5 {
+  fill: #1d4273;
+}
+
+.cls-6 {
+  fill: #8fcbd9;
+}
+
+.cls-7 {
+  fill: #dad9d9;
+}
+
+.cls-8 {
+  stroke: #fff;
+}
+
+</style>
+ </defs>
+ <rect id="Circle3" class="cls-1" x="0.25" y="7.13" width="90" height="90" rx="45"></rect>
+ <text class="cls-2" transform="translate(95.79 90.01) scale(0.68 1)">TZE </text>
+ <rect id="Circle2" class="cls-3" x="5.35" y="11.99" width="80" height="80" rx="40"></rect>
+ <rect id="Circle4" class="cls-4" x="10.35" y="16.99" width="70" height="70" rx="35"></rect>
+ <rect id="Circle5" class="cls-5" x="15.35" y="21.99" width="60" height="60" rx="30"></rect>
+ <rect id="Circle6" class="cls-6" x="20.35" y="26.99" width="50" height="50" rx="25"></rect>
+ <rect id="Circle7" class="cls-7" x="25.35" y="31.99" width="40" height="40" rx="20"></rect>
+ <path class="cls-8" d="M408.05,301.06c-13.92-1.61-15.59,1.19-15.86,2.44-.86,4.08,8.2,15.49,16,11.76C413,313,417.1,305,415.73,298.4c-1.42-6.93-8-8.81-10.57-9.54-2.87-.82-7.42-2.12-10.57,2-3.43,4.48-2.5,11.87-2.4,12.64" transform="translate(-358.21 -250.37)"></path>
+ </svg>

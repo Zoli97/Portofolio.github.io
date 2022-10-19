@@ -1,0 +1,19 @@
+@import "../abstracts/mixins.scss";
+header {
+  @include displayFlex(flex);
+  align-items: center;
+  padding: 2em;
+  nav {
+    float: right;
+    ul {
+      display: flex;
+      a {
+        @include displayBlock();
+        padding: 0 2em;
+      }
+    }
+  }
+  img.my_logo {
+    width: 80px;
+  }
+}
