@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/myWork.46b18006.css">
+    <link rel="stylesheet" href="/myWork.45164288.css">
+
+    <title>My Work</title>
+  </head>
+
+  <body>
+    <div class="nav-container">
+      <header class="header">
+        <!-- <a href="index.html" class="logo">Tazlo Zoli</a> -->
+        <a href="/index.html">
+          <img src="/logo.b3ecd760.svg" class="my_logo" alt="">
+        </a>
+        <!--navigation the 3 elements-->
+        <nav class="navbar">
+          <ul class="nav-menu" id="navbar">
+            <li class="nav-item">
+              <a class="nav-link" href="/myWork.html">My work</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/mySKills.html">My skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/countdown.html">Hire me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/contact.html">Contact</a>
+            </li>
+          </ul>
+
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </nav>
+      </header>
+    </div>
+
+    <section id="wrapper" class="wrapper"></section>
+
+    <div class="parent">
+      <main class="box1" id="sect1">
+        <div class="box">
+          <h1>Boom Boom</h1>
+          <p>Just scroll down</p>
+          <button type="button" class="my-btn" id="my-btn">Press me</button>
+        </div>
+      </main>
+
+      <main class="box2">
+        <svg id="svg_anim" width="420" height="400" viewbox="0 0 500 500" preserveaspectratio="none">
+          <polygon stroke="none" points="100 100, 150 300 , 350 350 , 400 100 , 350 0 , 200 50 , 100 100 " fill="#119da4" id="polygon"></polygon>
+        </svg>
+      </main>
+    </div>
+
+    <div class="gif-container lax lax_preset_fadeIn:237:0.6 lax_preset_seesaw:140:20">
+      <img class="gif" src="https://media.giphy.com/media/DMNqE0oBP2BEY/giphy.gif" alt="gif1">
+    </div>
+
+    <div id="gif-container2 " class="gif-container lax lax_preset_zigzag:135:200 lax_preset_fadeIn:237:0.2">
+      <img class="gif" src="https://media.giphy.com/media/PzY2K7SaqIEyA/giphy.gif" alt="gif2">
+    </div>
+    <div id="gif-container3" class="gif-container lax lax_preset_jiggle:89:20 lax_preset_fadeIn:237:0.2">
+      <img class="gif" src="https://media.giphy.com/media/3ohjULxZhn1cwjLTVu/giphy.gif" alt="gif3">
+    </div>
+    <div id="gif-container4" class="gif-container">
+      <img class="gif" src="https://media.giphy.com/media/ltMLWLHyjuHkY/giphy.gif" alt="gif4">
+    </div>
+    <div id="gif-container5" class="gif-container lax lax_preset_spin:1028:360 lax_preset_fadeIn:237:0.2">
+      <img class="gif" src="https://media.giphy.com/media/lhdgGZHCmhApa/giphy.gif" alt="gif5">
+    </div>
+    <div id="gif-container6" class="gif-container">
+      <img class="gif" src="https://media.giphy.com/media/fMB0JDo2OhCVzn8X3T/giphy.gif" alt="gif6">
+    </div>
+    <div id="gif-container7" class="gif-container lax lax_preset_hueRotate:1498:360 lax_preset_jiggle:89:20 lax_preset_fadeIn:237:0.2">
+      <img class="gif" src="https://media.giphy.com/media/3o6ZtorWFFcQYie8rC/giphy.gif" alt="gif7">
+    </div>
+    <div id="gif-container8" class="gif-container">
+      <img class="gif" src="https://media.giphy.com/media/u3P8ktWNkjwOUTDnhi/giphy.gif" alt="gif8">
+    </div>
+  <script src="/myWork.f5d4ebde.js"></script></body>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha512-z4OUqw38qN,pn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/lax.js"></script>
+  <script src="/myWork.01ca0cc5.js"></script>
+  <script>var elements = document.querySelectorAll("#svg_anim polygon");
+const wrapper = document.getElementById("wrapper");
+const morphing = anime({
+    targets: [
+        elements
+    ],
+    points: [
+        {
+            value: [
+                "100 100, 150 300 , 350 350 , 400 100 , 350 0 , 200 50 , 100 100",
+                " 100 100 , 150 300 , 300 200 , 450 300 , 500 100 , 300 150 , 100 100 ", 
+            ]
+        }, 
+    ],
+    easing: "easeOutSine",
+    duration: 2200,
+    loop: true,
+    direction: "alternate"
+});
+//random cirles
+for(let i = 0; i < 60; i++){
+    let div = document.createElement("div");
+    let animateCircle = wrapper.appendChild(div);
+    animateCircle.classList.add("anime_circles");
+}
+//nodelist
+const circles = document.querySelectorAll(".anime_circles");
+//animation circles
+let randomAnimation = anime({
+    targets: circles,
+    background: ()=>{
+        let hue = anime.random(0, 360);
+        let saturation = 75;
+        let luminosity = 40;
+        let hslValue = "hsl(" + hue + "," + saturation + "%," + luminosity + "%)";
+        return hslValue;
+    },
+    borderRadius: ()=>{
+        return anime.random(35, 70);
+    },
+    translateX: ()=>{
+        return anime.random(-80, 80) + "vh";
+    },
+    translateY: ()=>{
+        return anime.random(-80, 80) + "vh";
+    },
+    scale: ()=>{
+        return anime.random(0.45, 1.74);
+    },
+    duration: ()=>{
+        return anime.random(350, 1500);
+    },
+    delay: ()=>{
+        return anime.random(500, 1000);
+    },
+    loop: true,
+    direction: "alternate",
+    easing: "easeOutSine"
+});
+
+</script>
+
+  <script>window.onload = ()=>{
+    lax.init();
+    //adding the driver that i use to control my animations;
+    lax.addDriver("scrollY", ()=>{
+        return window.scrollY;
+    });
+//add animation bindings to elements
+};
+
+</script>
+
+  <script src="/mySKills.be2ce8a8.js"></script>
+</html>

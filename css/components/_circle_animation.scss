@@ -1,0 +1,16 @@
+//animate the button up and down (go back and forward)
+.circle {
+  animation: circleAnim 1s infinite alternate-reverse;
+}
+
+@keyframes circleAnim {
+  from {
+    transform: translate(314px, 640px);
+    z-index: 5;
+  }
+
+  to {
+    transform: translate(314px, 677px);
+    z-index: 5;
+  }
+}

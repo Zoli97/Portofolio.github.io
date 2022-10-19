@@ -1,0 +1,280 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: var(--scroll-top, 50px);
+}
+
+body {
+  background: #fff7eb;
+  font-family: Poppins, arial;
+}
+
+a {
+  text-decoration: none;
+}
+
+header nav ul {
+  list-style: none;
+}
+
+.nav-link-color {
+  font-weight: 300;
+  color: #ff7d00 !important;
+}
+
+.nav-container {
+  width: 100%;
+  z-index: 5;
+  background: #001524;
+  position: sticky;
+  top: 0;
+}
+
+.nav-container a {
+  color: #fff;
+}
+
+header {
+  justify-content: space-between;
+  align-items: center;
+  padding: 2em;
+  display: flex;
+}
+
+header nav {
+  float: right;
+}
+
+header nav ul {
+  display: flex;
+}
+
+header nav ul a {
+  padding: 0 2em;
+  display: block;
+}
+
+header img.my_logo {
+  width: 80px;
+}
+
+.hamburger {
+  display: none;
+}
+
+.hamburger .bar {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 5px auto;
+  transition: all .3s ease-in-out;
+  display: block;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-menu {
+    width: 100%;
+    height: 425px;
+    text-align: center;
+    clip-path: circle(100px at 90% -25%);
+    pointer-events: none;
+    z-index: 1;
+    background: #001524;
+    border-radius: 10px;
+    flex-direction: column;
+    transition: all 1.3s ease-out;
+    position: fixed;
+    top: 5rem;
+    right: 0;
+    box-shadow: 0 10px 27px #0000000d;
+  }
+
+  .nav-menu.active {
+    clip-path: circle(1000px at 90% -10%);
+    pointer-events: all;
+    cursor: pointer;
+    left: 0;
+  }
+
+  .nav-item {
+    margin: 2rem 0;
+  }
+
+  ul.nav-menu.active {
+    z-index: 1;
+    height: 425px;
+    background: #001524;
+    position: absolute;
+  }
+
+  .hamburger {
+    cursor: pointer;
+    display: block;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active span:nth-child(1), .hamburger.active span:nth-child(2) {
+    transform: translateY(8px)rotate(45deg);
+  }
+
+  .hamburger.active span:nth-child(3) {
+    transform: translateY(-8px)rotate(-45deg);
+  }
+
+  .nav-menu li {
+    opacity: 0;
+  }
+
+  ul li a {
+    font-size: 1.3em;
+  }
+
+  ul li:nth-child(1) {
+    transition: all .5s .2s;
+  }
+
+  ul li:nth-child(2) {
+    transition: all .5s .4s;
+  }
+
+  ul li:nth-child(3) {
+    transition: all .5s .6s;
+  }
+
+  ul li:nth-child(4) {
+    transition: all .5s .8s;
+  }
+
+  li.fade {
+    opacity: 1;
+  }
+}
+
+._section_ > h1 {
+  text-align: center;
+  color: #000;
+  padding-top: 4em;
+  font-size: 3em;
+}
+
+._section_ > p {
+  text-align: center;
+  color: #001524;
+  padding-top: 2.5em;
+  font-size: 1.5em;
+  font-weight: normal;
+}
+
+.menu {
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  padding-top: 2.5em;
+  display: grid;
+}
+
+.menu li a {
+  color: #001524;
+  align-items: center;
+  gap: 1em;
+  padding-right: 1em;
+  text-decoration: none;
+  display: flex;
+}
+
+.menu li {
+  cursor: pointer;
+  font-size: 1.2em;
+  list-style: none;
+}
+
+.copyright {
+  width: 100%;
+  height: 40px;
+  text-align: center;
+  color: #fff;
+  background: #001524;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: fixed;
+  bottom: 0;
+}
+
+.copyright .copyright_text {
+  margin: 0;
+}
+
+@media only screen and (min-width: 320px) {
+  ._section_ > h1 {
+    font-size: 2em;
+  }
+
+  ._section_ > p {
+    font-size: 1em;
+  }
+
+  .menu li {
+    cursor: pointer;
+    font-size: .9em;
+    list-style: none;
+  }
+}
+
+@media only screen and (min-width: 680px) {
+  ._section_ > h1 {
+    font-size: 2em;
+  }
+
+  ._section_ > p {
+    font-size: 1em;
+  }
+
+  .menu li {
+    cursor: pointer;
+    font-size: 1em;
+    list-style: none;
+  }
+}
+
+@media only screen and (min-width: 920px) {
+  ._section_ > h1 {
+    font-size: 2em;
+  }
+
+  ._section_ > p {
+    font-size: 1em;
+  }
+
+  .menu li {
+    cursor: pointer;
+    font-size: 1em;
+    list-style: none;
+  }
+}
+
+@media only screen and (min-width: 1050px) {
+  ._section_ > h1 {
+    font-size: 3em;
+  }
+
+  ._section_ > p {
+    font-size: 1.5em;
+  }
+
+  .menu li {
+    cursor: pointer;
+    font-size: 1.2em;
+    list-style: none;
+  }
+}
+
+/*# sourceMappingURL=contact.deecd534.css.map */

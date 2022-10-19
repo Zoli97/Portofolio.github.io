@@ -1,0 +1,45 @@
+{
+  "name": "portofolio",
+  "version": "1.0.0",
+  "description": "<<<<<<< HEAD # Zoli.github.io This is my portofolio and check this out !",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel index.html",
+    "dev2": "parcel countdown.html"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "animejs": "^3.2.1",
+    "atropos": "^1.0.2",
+    "compass": "^0.1.1",
+    "gsap": "^3.11.3",
+    "gsap-trial": "^3.11.3",
+    "jquery": "^3.6.1",
+    "lax.js": "^2.0.3",
+    "parallax-js": "^3.1.0",
+    "parcel": "^2.7.0",
+    "rellax": "^1.12.1",
+    "sass-cache": "0.0.3",
+    "smooth-scrollbar": "^8.8.1",
+    "vanilla-tilt": "^1.7.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.19.3",
+    "@babel/core": "^7.19.3",
+    "@babel/preset-env": "^7.19.3",
+    "@parcel/transformer-sass": "^2.7.0",
+    "@types/animejs": "^3.1.5",
+    "sass-resources-loader": "^2.2.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Zoli97/Zoli.github.io.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/Zoli97/Zoli.github.io/issues"
+  },
+  "homepage": "https://github.com/Zoli97/Zoli.github.io#readme"
+}
