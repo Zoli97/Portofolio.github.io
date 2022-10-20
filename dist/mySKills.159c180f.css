@@ -245,7 +245,6 @@ header img.my_logo {
   background: #001524;
   justify-content: center;
   align-items: center;
-  padding-top: 1em;
   display: flex;
 }
 
@@ -256,11 +255,14 @@ header img.my_logo {
 @media only screen and (min-width: 320px) {
   section > article > .title {
     color: #fff;
-    text-align: center;
-    margin-top: 3em;
+    text-align: justify;
     padding-top: 3em;
-    font-size: 1.5em;
+    font-size: 3.5em;
     font-weight: bold;
+  }
+
+  span.sub-title.rellax {
+    font-size: 25px;
   }
 
   .section2 .article3 .text, .section3 .article3 .text {
@@ -273,11 +275,10 @@ header img.my_logo {
   }
 
   .article1 {
-    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     padding: 1em 1em 2em;
-    display: flex;
+    display: grid;
   }
 
   .article4 {
@@ -307,7 +308,15 @@ header img.my_logo {
   }
 
   section > article > .title {
-    font-size: 3em;
+    color: #fff;
+    text-align: justify;
+    padding-top: 3em;
+    font-size: 4.5em;
+    font-weight: bold;
+  }
+
+  span.sub-title.rellax {
+    font-size: 30px;
   }
 
   .btn {
@@ -353,6 +362,18 @@ header img.my_logo {
     padding: 2em 2em 2em 4em;
   }
 
+  span.sub-title.rellax {
+    font-size: .7em;
+  }
+
+  .article1 {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 1em 1em 2em;
+    display: flex;
+  }
+
   .article4 {
     display: flex !important;
   }
@@ -390,6 +411,26 @@ header img.my_logo {
     font-weight: bold;
   }
 
+  .article1 {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 1em 1em 2em;
+    display: flex;
+  }
+
+  span.sub-title.rellax {
+    font-size: .7em;
+  }
+
+  .article1 {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 1em 1em 2em;
+    display: flex;
+  }
+
   .section3 .article3 .align-text {
     text-align: right;
     font-size: 16px;
@@ -412,6 +453,10 @@ header img.my_logo {
     padding: 1em;
     font-size: 6em;
     font-weight: bold;
+  }
+
+  span.sub-title.rellax {
+    font-size: .7em;
   }
 
   .section3 .article3 .align-text {
