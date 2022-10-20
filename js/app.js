@@ -1,7 +1,7 @@
 //1. the content come down and fade in when the browser loads
 //come from -30%, opacity: 0(fade in) so its going to come from zero, come from -30
 
-import { default as gsap } from "gsap/all";
+import { default as gsap } from "gsap";
 
 gsap.registerPlugin(ScrollTrigger);
 
