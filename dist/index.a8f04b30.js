@@ -532,12 +532,14 @@ function hmrAcceptRun(bundle, id) {
 }
 
 },{}],"5AKj5":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 //1. the content come down and fade in when the browser loads
 //come from -30%, opacity: 0(fade in) so its going to come from zero, come from -30
-const { default: gsap  } = require("gsap/all");
-gsap.registerPlugin(ScrollTrigger);
+var _all = require("gsap/all");
+var _allDefault = parcelHelpers.interopDefault(_all);
+(0, _allDefault.default).registerPlugin(ScrollTrigger);
 //create timeline
-var timeline = gsap.timeline();
+var timeline = (0, _allDefault.default).timeline();
 timeline.from(".content", {
     y: "-30%",
     opacity: 0,
@@ -566,7 +568,7 @@ timeline.from(".about", {
     duration: 1
 }, "-=1.5");
 //or 10% of the current value
-gsap.from(".square-anim", {
+(0, _allDefault.default).from(".square-anim", {
     stagger: 0.2,
     scale: 0.1,
     duration: 1,
@@ -574,7 +576,7 @@ gsap.from(".square-anim", {
 });
 //any element that has the transition2 class applied to it
 //when the top of the transition2 reaches the bottom of the scroll bar its gonna animate
-gsap.from(".transition2", {
+(0, _allDefault.default).from(".transition2", {
     scrollTrigger: {
         trigger: ".transition2",
         start: "top bottom"
@@ -585,7 +587,7 @@ gsap.from(".transition2", {
     stagger: 0.3
 });
 
-},{"gsap/all":"3UJRo"}],"3UJRo":[function(require,module,exports) {
+},{"gsap/all":"3UJRo","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"3UJRo":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "gsap", ()=>gsapWithCSS);
