@@ -429,12 +429,12 @@
 
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="/index.a8f04b30.js" defer=""></script>
     <script src="/index.478a33b3.js" defer=""></script>
     <script src="/index.5d9dacde.js" defer=""></script>
     <script src="/index.34be0385.js"></script>
  
 
+                                                           <!-----///////  THE GSAP ANIMATION  ///////-->
 <script>//1. the content come down and fade in when the browser loads
 //come from -30%, opacity: 0(fade in) so its going to come from zero, come from -30
 gsap.registerPlugin(ScrollTrigger);
@@ -489,7 +489,9 @@ gsap.from(".transition2", {
 
 </script>
 
+                                                <!-----///////  THE END OF THE GSAP ANIMATION  ///////-->
 
+                                                <!-----///////  THE TILT ANIMATION  ///////-->
     <script type="text/javascript">VanillaTilt.init(document.querySelectorAll(".tilt, .tilt2, .tilt3"), {
     max: 25,
     speed: 350,
@@ -504,7 +506,9 @@ gsap.from(".transition2", {
 });
 
 </script>
+                                               <!-----///////  END OF THE TILT ANIMATION  ///////-->
 
+                                               <!-----///////  THE ANIME ANIMATION  ///////-->
 <script>window.onload = ()=>{
     var balls = document.querySelectorAll("._section_ ._circle_");
     function randomValues() {
@@ -527,7 +531,5 @@ gsap.from(".transition2", {
 
 </script>
 
-
-   
   </body>
 </html>
