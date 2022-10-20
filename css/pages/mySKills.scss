@@ -280,7 +280,7 @@ header nav ul {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: 1em;
+
   .copyright_text {
     margin: 0;
   }
@@ -289,11 +289,14 @@ header nav ul {
 @media only screen and (min-width: 320px) {
   section > article > .title {
     color: white;
-    font-size: 1.5em;
+    font-size: 3.5em;
     font-weight: bold;
-    margin-top: 3em;
     padding-top: 3em;
-    text-align: center;
+    text-align: justify;
+  }
+
+  span.sub-title.rellax {
+    font-size: 25px;
   }
 
   .section2 .article3 .text,
@@ -307,11 +310,10 @@ header nav ul {
   }
 
   .article1 {
-    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     padding: 1em 1em 2em;
-    display: flex;
+    display: grid;
   }
 
   .article4 {
@@ -342,6 +344,18 @@ header nav ul {
 
   section > article > .title {
     font-size: 3em;
+  }
+
+  section > article > .title {
+    color: white;
+    font-size: 4.5em;
+    font-weight: bold;
+    padding-top: 3em;
+    text-align: justify;
+  }
+
+  span.sub-title.rellax {
+    font-size: 30px;
   }
 
   .btn {
@@ -393,6 +407,17 @@ header nav ul {
   header {
     padding: 2em 2em 2em 4em;
   }
+  span.sub-title.rellax {
+    font-size: 0.7em;
+  }
+
+  .article1 {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 1em 1em 2em;
+    display: flex;
+  }
 
   .article4 {
     display: flex !important;
@@ -432,6 +457,25 @@ header nav ul {
     padding-top: 1em;
   }
 
+  .article1 {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 1em 1em 2em;
+    display: flex;
+  }
+  span.sub-title.rellax {
+    font-size: 0.7em;
+  }
+
+  .article1 {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 1em 1em 2em;
+    display: flex;
+  }
+
   .section3 .article3 .align-text {
     text-align: right;
     font-size: 16px;
@@ -454,6 +498,10 @@ header nav ul {
     font-weight: bold;
     padding: 1em;
     text-align: justify;
+  }
+
+  span.sub-title.rellax {
+    font-size: 0.7em;
   }
 
   .section3 .article3 .align-text {

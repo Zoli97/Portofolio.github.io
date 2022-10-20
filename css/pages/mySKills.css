@@ -245,7 +245,6 @@ header img.my_logo {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: 1em;
 }
 .copyright .copyright_text {
   margin: 0;
@@ -254,11 +253,13 @@ header img.my_logo {
 @media only screen and (min-width: 320px) {
   section > article > .title {
     color: white;
-    font-size: 1.5em;
+    font-size: 3.5em;
     font-weight: bold;
-    margin-top: 3em;
     padding-top: 3em;
-    text-align: center;
+    text-align: justify;
+  }
+  span.sub-title.rellax {
+    font-size: 25px;
   }
   .section2 .article3 .text,
 .section3 .article3 .text {
@@ -269,11 +270,10 @@ header img.my_logo {
     margin-top: 1em;
   }
   .article1 {
-    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     padding: 1em 1em 2em;
-    display: flex;
+    display: grid;
   }
   .article4 {
     padding: 1em;
@@ -298,6 +298,16 @@ header img.my_logo {
   }
   section > article > .title {
     font-size: 3em;
+  }
+  section > article > .title {
+    color: white;
+    font-size: 4.5em;
+    font-weight: bold;
+    padding-top: 3em;
+    text-align: justify;
+  }
+  span.sub-title.rellax {
+    font-size: 30px;
   }
   .btn {
     width: 500px;
@@ -348,6 +358,16 @@ header img.my_logo {
   header {
     padding: 2em 2em 2em 4em;
   }
+  span.sub-title.rellax {
+    font-size: 0.7em;
+  }
+  .article1 {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 1em 1em 2em;
+    display: flex;
+  }
   .article4 {
     display: flex !important;
   }
@@ -380,6 +400,23 @@ header img.my_logo {
     margin-top: 0;
     padding-top: 1em;
   }
+  .article1 {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 1em 1em 2em;
+    display: flex;
+  }
+  span.sub-title.rellax {
+    font-size: 0.7em;
+  }
+  .article1 {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 1em 1em 2em;
+    display: flex;
+  }
   .section3 .article3 .align-text {
     text-align: right;
     font-size: 16px;
@@ -400,6 +437,9 @@ header img.my_logo {
     font-weight: bold;
     padding: 1em;
     text-align: justify;
+  }
+  span.sub-title.rellax {
+    font-size: 0.7em;
   }
   .section3 .article3 .align-text {
     text-align: right;
