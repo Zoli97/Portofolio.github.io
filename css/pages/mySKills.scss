@@ -401,6 +401,21 @@ header nav ul {
     text-align: right;
     font-size: 16px;
   }
+
+  .copyright {
+    width: 100%;
+    height: 40px;
+    background: $rich_black;
+    text-align: center;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 1em;
+    .copyright_text {
+      margin: 0;
+    }
+  }
 }
 
 @media only screen and (min-width: 1050px) {
@@ -440,6 +455,21 @@ header nav ul {
   .section3 .article3 .align-text {
     text-align: right;
     font-size: 16px;
+  }
+
+  .copyright {
+    width: 100%;
+    height: 40px;
+    background: $rich_black;
+    text-align: center;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 1em;
+    .copyright_text {
+      margin: 0;
+    }
   }
 }
 
@@ -485,6 +515,21 @@ header nav ul {
     margin: 0 auto;
     margin-top: 8em;
   }
+
+  .copyright {
+    width: 100%;
+    height: 40px;
+    background: $rich_black;
+    text-align: center;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 1em;
+    .copyright_text {
+      margin: 0;
+    }
+  }
 }
 
 @media only screen and (min-width: 1550px) {
@@ -513,6 +558,21 @@ header nav ul {
     cursor: pointer;
     margin: 0 auto;
     margin-top: 5em;
+  }
+
+  .copyright {
+    width: 100%;
+    height: 40px;
+    background: $rich_black;
+    text-align: center;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 1em;
+    .copyright_text {
+      margin: 0;
+    }
   }
 }
 
