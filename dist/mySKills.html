@@ -120,12 +120,24 @@
     </div>
 
     <script src="/contact.be2ce8a8.js"></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.min.js" integrity="sha512-f5HTYZYTDZelxS7LEQYv8ppMHTZ6JJWglzeQmr0CVTS70vJgaJiIO15ALqI7bhsracojbXkezUIL+35UXwwGrQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.0/lightgallery.min.js" integrity="sha512-pG+XpUdyBtp28FzjpaIaj72KYvZ87ZbmB3iytDK5+WFVyun8r5LJ2x1/Jy/KHdtzUXA0CUVhEnG+Isy1jVJAbA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-    <script src="/mySKills.24ca2391.js" defer=""></script>
+    <script>const rellax = new Rellax(".rellax", {
+    center: true,
+    breakpoints: [
+        576,
+        768,
+        1150,
+        1201,
+        1250,
+        1550
+    ],
+    offset: true
+});
 
+</script>
     <script>ScrollOut({
     threshold: 0.5,
     targets: ".img, .my-text, .card-img, .card-img1, .card-img2"
@@ -154,5 +166,5 @@ console.log(document.documentElement);
 document.documentElement.style.setProperty("--scroll-top", scrollHeight + "px");
 
 </script>
-  </body>
+  <script src="/mySKills.3d743f51.js"></script></body>
 </html>

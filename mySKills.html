@@ -179,7 +179,12 @@
     </div>
 
     <script src="./js/hamburger.js"></script>
-
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.min.js"
+      integrity="sha512-f5HTYZYTDZelxS7LEQYv8ppMHTZ6JJWglzeQmr0CVTS70vJgaJiIO15ALqI7bhsracojbXkezUIL+35UXwwGrQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.0/lightgallery.min.js"
@@ -188,8 +193,13 @@
       referrerpolicy="no-referrer"
     ></script>
 
-    <script src="./js/parallax.js" type="module"></script>
-
+    <script>
+      const rellax = new Rellax(".rellax", {
+        center: true,
+        breakpoints: [576, 768, 1150, 1201, 1250, 1550],
+        offset: true,
+      });
+    </script>
     <script>
       ScrollOut({
         threshold: 0.5,
