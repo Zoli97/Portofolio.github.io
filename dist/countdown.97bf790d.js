@@ -6,7 +6,7 @@
 // 25 - 10 = 15
 // 15 :
 const countDown = ()=>{
-    const countDate = new Date("October 20, 2022 00:00:00").getTime();
+    const countDate = new Date("December 20, 2022 00:00:00").getTime();
     const nowDate = new Date().getTime();
     const difference = countDate - nowDate;
     const second = 1000;

@@ -179,23 +179,23 @@
     </div>
 
     <script src="./js/hamburger.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
+
     <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
-
-    <script src="./js/parallax.js" type="module"></script>
-    <script type="module">
-      ScrollOut({
-        threshold: 0.5,
-        targets: ".img, .my-text, .card-img, .card-img1, .card-img2",
-      });
-    </script>
-
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.0/lightgallery.min.js"
       integrity="sha512-pG+XpUdyBtp28FzjpaIaj72KYvZ87ZbmB3iytDK5+WFVyun8r5LJ2x1/Jy/KHdtzUXA0CUVhEnG+Isy1jVJAbA=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+
+    <script src="./js/parallax.js" type="module"></script>
+
+    <script>
+      ScrollOut({
+        threshold: 0.5,
+        targets: ".img, .my-text, .card-img, .card-img1, .card-img2",
+      });
+    </script>
 
     <script>
       const light_gallery = document.getElementById("lightgallery");
