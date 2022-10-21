@@ -532,10 +532,9 @@ function hmrAcceptRun(bundle, id) {
 }
 
 },{}],"gdpHN":[function(require,module,exports) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-var _rellax = require("rellax");
-var _rellaxDefault = parcelHelpers.interopDefault(_rellax);
-var rellax = new (0, _rellaxDefault.default)(".rellax", {
+//import Rellax from "rellax";
+const Rellax = require("rellax");
+var rellax = new Rellax(".rellax", {
     center: true,
     breakpoints: [
         576,
@@ -548,7 +547,7 @@ var rellax = new (0, _rellaxDefault.default)(".rellax", {
     offset: true
 });
 
-},{"rellax":"64yfe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"64yfe":[function(require,module,exports) {
+},{"rellax":"64yfe"}],"64yfe":[function(require,module,exports) {
 var global = arguments[3];
 // ------------------------------------------
 // Rellax.js
@@ -945,36 +944,6 @@ var global = arguments[3];
     };
     return Rellax;
 });
-
-},{}],"gkKU3":[function(require,module,exports) {
-exports.interopDefault = function(a) {
-    return a && a.__esModule ? a : {
-        default: a
-    };
-};
-exports.defineInteropFlag = function(a) {
-    Object.defineProperty(a, "__esModule", {
-        value: true
-    });
-};
-exports.exportAll = function(source, dest) {
-    Object.keys(source).forEach(function(key) {
-        if (key === "default" || key === "__esModule" || dest.hasOwnProperty(key)) return;
-        Object.defineProperty(dest, key, {
-            enumerable: true,
-            get: function() {
-                return source[key];
-            }
-        });
-    });
-    return dest;
-};
-exports.export = function(dest, destName, get) {
-    Object.defineProperty(dest, destName, {
-        enumerable: true,
-        get: get
-    });
-};
 
 },{}]},["5LyA0","gdpHN"], "gdpHN", "parcelRequiree693")
 
