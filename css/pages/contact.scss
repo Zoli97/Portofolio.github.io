@@ -12,8 +12,10 @@ html {
 }
 
 body {
+  height: 100vh;
   background: $balanced-almond-shade;
   font-family: "Poppins", arial;
+  overflow-x: hidden;
 }
 
 a {
@@ -172,6 +174,7 @@ header nav ul {
 
 ._section_ > p {
   padding-top: 2.5em;
+  padding-bottom: 2.5em;
   text-align: center;
   font-size: 1.5em;
   font-weight: normal;
@@ -184,6 +187,7 @@ header nav ul {
   justify-content: center;
   align-items: center;
   padding-top: 2.5em;
+  padding-bottom: 2.5em;
 }
 
 .menu li a {
@@ -219,9 +223,29 @@ header nav ul {
   }
 }
 
+//initial position
+#topLine {
+  transform: translate(-110%, 0%);
+}
+//move to right
+#topLine.move {
+  transition: all 1.9s ease-in;
+  transform: translate(0%, 0%);
+}
+
+//initial position
+#bottomLine {
+  transform: translate(110%, 0%);
+}
+
+#bottomLine.move {
+  transition: all 1.9s ease-in;
+  transform: translate(0%, 0%);
+}
+
 @media only screen and (min-width: 320px) {
   ._section_ > h1 {
-    font-size: 2em;
+    font-size: 2.5em;
   }
 
   ._section_ > p {
@@ -238,7 +262,7 @@ header nav ul {
 
 @media only screen and (min-width: 680px) {
   ._section_ > h1 {
-    font-size: 2em;
+    font-size: 2.5em;
   }
 
   ._section_ > p {
