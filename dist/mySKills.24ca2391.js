@@ -540,7 +540,10 @@ var rellax = new (0, _rellaxDefault.default)(".rellax", {
     breakpoints: [
         576,
         768,
-        1201
+        1150,
+        1201,
+        1250,
+        1550
     ],
     offset: true
 });
