@@ -10,8 +10,10 @@ html {
 }
 
 body {
+  height: 100vh;
   background: #fff7eb;
   font-family: Poppins, arial;
+  overflow-x: hidden;
 }
 
 a {
@@ -169,6 +171,7 @@ header img.my_logo {
   text-align: center;
   color: #001524;
   padding-top: 2.5em;
+  padding-bottom: 2.5em;
   font-size: 1.5em;
   font-weight: normal;
 }
@@ -178,6 +181,7 @@ header img.my_logo {
   align-items: center;
   gap: 1em;
   padding-top: 2.5em;
+  padding-bottom: 2.5em;
   display: grid;
 }
 
@@ -213,9 +217,27 @@ header img.my_logo {
   margin: 0;
 }
 
+#topLine {
+  transform: translate(-110%);
+}
+
+#topLine.move {
+  transition: all 1.9s ease-in;
+  transform: translate(0%);
+}
+
+#bottomLine {
+  transform: translate(110%);
+}
+
+#bottomLine.move {
+  transition: all 1.9s ease-in;
+  transform: translate(0%);
+}
+
 @media only screen and (min-width: 320px) {
   ._section_ > h1 {
-    font-size: 2em;
+    font-size: 2.5em;
   }
 
   ._section_ > p {
@@ -231,7 +253,7 @@ header img.my_logo {
 
 @media only screen and (min-width: 680px) {
   ._section_ > h1 {
-    font-size: 2em;
+    font-size: 2.5em;
   }
 
   ._section_ > p {

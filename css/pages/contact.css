@@ -10,8 +10,10 @@ html {
 }
 
 body {
+  height: 100vh;
   background: #fff7eb;
   font-family: "Poppins", arial;
+  overflow-x: hidden;
 }
 
 a {
@@ -152,6 +154,7 @@ header img.my_logo {
 
 ._section_ > p {
   padding-top: 2.5em;
+  padding-bottom: 2.5em;
   text-align: center;
   font-size: 1.5em;
   font-weight: normal;
@@ -164,6 +167,7 @@ header img.my_logo {
   justify-content: center;
   align-items: center;
   padding-top: 2.5em;
+  padding-bottom: 2.5em;
 }
 
 .menu li a {
@@ -197,9 +201,27 @@ header img.my_logo {
   margin: 0;
 }
 
+#topLine {
+  transform: translate(-110%, 0%);
+}
+
+#topLine.move {
+  transition: all 1.9s ease-in;
+  transform: translate(0%, 0%);
+}
+
+#bottomLine {
+  transform: translate(110%, 0%);
+}
+
+#bottomLine.move {
+  transition: all 1.9s ease-in;
+  transform: translate(0%, 0%);
+}
+
 @media only screen and (min-width: 320px) {
   ._section_ > h1 {
-    font-size: 2em;
+    font-size: 2.5em;
   }
   ._section_ > p {
     font-size: 1em;
@@ -212,7 +234,7 @@ header img.my_logo {
 }
 @media only screen and (min-width: 680px) {
   ._section_ > h1 {
-    font-size: 2em;
+    font-size: 2.5em;
   }
   ._section_ > p {
     font-size: 1em;
