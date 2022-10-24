@@ -8,6 +8,13 @@ html, body {
   overflow-x: hidden;
 }
 
+.line {
+  height: 1px;
+  background-color: #000;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 ul {
   color: #fff;
   margin: 0;
@@ -205,8 +212,8 @@ section {
   content: "";
   width: 200px;
   height: 200px;
-  z-index: -1;
-  background-image: url("my-blob2.e99bb904.gif");
+  z-index: 3;
+  background-image: url("my_blob.2bbf2441.gif");
   background-size: cover;
   position: absolute;
   top: 0;

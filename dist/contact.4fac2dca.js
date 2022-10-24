@@ -3,7 +3,7 @@ const top_line = document.getElementById("topLine");
 const bottom_line = document.getElementById("bottomLine");
 window.onload = ()=>{
     const offset = top_line.getBoundingClientRect().top - windowHeight;
-    console.log(offset);
+    console.log("\uD83D\uDE80 ~ file: moveTheLine.js ~ line 9 ~ offset", offset);
     if (offset > 0) {
         top_line.classList.remove("move");
         bottom_line.classList.remove("move");

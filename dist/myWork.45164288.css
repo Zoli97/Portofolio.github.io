@@ -8,6 +8,11 @@ body, html {
   font-family: Poppins, arial;
 }
 
+.nav-link-color {
+  font-weight: 300;
+  color: #ff7d00 !important;
+}
+
 .box {
   width: 400px;
 }
