@@ -229,6 +229,7 @@ header img.my_logo {
 }
 
 #bottomLine {
+  margin-bottom: 2.5em;
   transform: translate(110%);
 }
 
