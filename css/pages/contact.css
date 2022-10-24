@@ -214,7 +214,6 @@ header img.my_logo {
 
 #bottomLine {
   transform: translate(110%, 0%);
-  margin-bottom: 2.5em;
 }
 
 #bottomLine.move {
@@ -224,6 +223,7 @@ header img.my_logo {
 
 @media only screen and (min-width: 320px) {
   ._section_ > h1 {
+    padding-top: 2em;
     font-size: 2.5em;
   }
   ._section_ > p {
@@ -272,5 +272,10 @@ header img.my_logo {
     list-style: none;
     font-size: 1.2em;
     cursor: pointer;
+  }
+}
+@media only screen and (min-width: 1250px) {
+  ._section_ > h1 {
+    font-size: 3em;
   }
 }/*# sourceMappingURL=contact.css.map */
