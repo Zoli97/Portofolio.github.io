@@ -9,6 +9,11 @@ html {
   font-family: "Poppins", arial;
 }
 
+.nav-link-color {
+  color: #ff7d00 !important;
+  font-weight: 300;
+}
+
 .box {
   width: 400px;
 }

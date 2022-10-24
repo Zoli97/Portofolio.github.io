@@ -10,6 +10,11 @@ html {
   font-family: "Poppins", arial;
 }
 
+.nav-link-color {
+  color: $amber-color-bg !important;
+  font-weight: 300;
+}
+
 .box {
   width: 400px;
   .my-btn {

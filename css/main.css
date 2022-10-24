@@ -9,6 +9,13 @@ body {
   overflow-x: hidden;
 }
 
+.line {
+  margin-bottom: 0;
+  margin-top: 0;
+  height: 1px;
+  background-color: black;
+}
+
 ul {
   list-style-type: none;
   margin: 0;
@@ -205,11 +212,11 @@ section {
   position: absolute;
   width: 200px;
   height: 200px;
-  background-image: url("../images//my-blob2.gif");
+  background-image: url("../images//my_blob.gif");
   background-size: cover;
   top: 0;
   left: 0;
-  z-index: -1;
+  z-index: 3;
 }
 
 .right {
