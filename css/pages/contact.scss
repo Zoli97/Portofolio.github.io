@@ -9,6 +9,7 @@
 html {
   scroll-behavior: smooth;
   scroll-padding-top: var(--scroll-top, 50px);
+  overflow: hidden !important;
 }
 
 body {
