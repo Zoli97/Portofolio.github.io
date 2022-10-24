@@ -5,12 +5,14 @@
 }
 
 html {
+  height: 100%;
   scroll-behavior: smooth;
   scroll-padding-top: var(--scroll-top, 50px);
   overflow: hidden !important;
 }
 
 body {
+  height: 100%;
   background: #fff7eb;
   font-family: Poppins, arial;
   overflow-x: hidden !important;
