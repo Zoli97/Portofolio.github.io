@@ -229,7 +229,6 @@ header img.my_logo {
 }
 
 #bottomLine {
-  margin-bottom: 2.5em;
   transform: translate(110%);
 }
 
@@ -240,6 +239,7 @@ header img.my_logo {
 
 @media only screen and (min-width: 320px) {
   ._section_ > h1 {
+    padding-top: 2em;
     font-size: 2.5em;
   }
 
@@ -299,6 +299,12 @@ header img.my_logo {
     cursor: pointer;
     font-size: 1.2em;
     list-style: none;
+  }
+}
+
+@media only screen and (min-width: 1250px) {
+  ._section_ > h1 {
+    font-size: 3em;
   }
 }
 
