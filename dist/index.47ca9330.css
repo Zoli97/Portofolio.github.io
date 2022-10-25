@@ -280,12 +280,6 @@ section {
   margin-bottom: 2em;
 }
 
-.tilt3, .til2, .tilt {
-  transform-style: preserve-3d;
-  opacity: 1;
-  transform: perspective(1000px);
-}
-
 .colorcont {
   background-color: #fff7eb;
   transform: translateZ(40px);
