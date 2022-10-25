@@ -289,6 +289,52 @@ section > .little-text {
   background: #f7f7ff;
 }
 
+.tilt[data-scroll] {
+  transition: transform 6s ease-in-out;
+}
+
+.tilt[data-scroll="in"] {
+  animation: 2s fadein;
+}
+
+.tilt[data-scroll="out"] {
+  opacity: 1;
+}
+
+.tilt2[data-scroll] {
+  transition: transform 6s ease-in-out;
+}
+
+.tilt2[data-scroll="in"] {
+  animation: 4s fadein;
+}
+
+.tilt2[data-scroll="out"] {
+  opacity: 1;
+}
+
+.tilt3[data-scroll] {
+  transition: transform 6s ease-in-out;
+}
+
+.tilt3[data-scroll="in"] {
+  animation: 6s fadein;
+}
+
+.tilt3[data-scroll="out"] {
+  opacity: 1;
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .nav-menu {
     width: 100%;
@@ -776,7 +822,7 @@ section > .little-text {
     padding-top: 7em;
   }
 
-  .skills-container ul {
+  .skills-container ul.skillz {
     grid-gap: 1em;
     grid-template-columns: repeat(3, auto);
     display: grid;

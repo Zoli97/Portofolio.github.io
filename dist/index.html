@@ -162,7 +162,7 @@
     <section class="my-skills" id="my_skills">
       <h1 class="transition2">My Skills</h1>
       <div class="skills-container">
-        <ul>
+        <ul class="skillz">
           <li class="transition2 tilt">
             <div class="icon-container one">
               <img class="html5_img" src="/Icon%20awesome-html5.57d6494e.png" alt="">
@@ -200,9 +200,9 @@
                     </p>
                   </div>
                   </li>
-              </ul></div>
+              </ul>
         
-      
+      </div>
     </section>
 
     <main class="main" id="hire">
@@ -435,6 +435,7 @@
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js" integrity="sha512-Q+G390ZU2qKo+e4q+kVcJknwfGjKJOdyu5mVMcR95NqL6XaF4lY4nsSvIVB3NDP54ACsS9rqhE1DVqgpApl//Q==" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.8/lottie.min.js" integrity="sha512-w58XJ/0dVbEfZVJoJyBUOTMGBWmIW4jEYJSA0898d2L0Ghpum0FvwK7qTuHhkTctApzrchv3Neli+28ajI4+fg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
 
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -495,6 +496,15 @@ gsap.from(".transition2", {
 });
 
 </script>
+
+
+<script>ScrollOut({
+    threshold: 0.5,
+    targets: " .tilt, .tilt2, .tilt3"
+});
+
+</script>
+
 
 
                                                <!-----///////  THE ANIME ANIMATION  ///////-->

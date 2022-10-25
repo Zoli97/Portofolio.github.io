@@ -290,6 +290,63 @@ section > .little-text {
   background: #f7f7ff;
 }
 
+/*scroll out on iamge*/
+.tilt[data-scroll] {
+  transition: transform 6s ease-in-out;
+}
+
+.tilt[data-scroll=in] {
+  -webkit-animation: fadein 2s;
+          animation: fadein 2s;
+}
+
+.tilt[data-scroll=out] {
+  opacity: 1;
+}
+
+.tilt2[data-scroll] {
+  transition: transform 6s ease-in-out;
+}
+
+.tilt2[data-scroll=in] {
+  -webkit-animation: fadein 4s;
+          animation: fadein 4s;
+}
+
+.tilt2[data-scroll=out] {
+  opacity: 1;
+}
+
+.tilt3[data-scroll] {
+  transition: transform 6s ease-in-out;
+}
+
+.tilt3[data-scroll=in] {
+  -webkit-animation: fadein 6s;
+          animation: fadein 6s;
+}
+
+.tilt3[data-scroll=out] {
+  opacity: 1;
+}
+
+@-webkit-keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 @media screen and (max-width: 768px) {
   /*What this media query does is, hides our nav-menu by setting position: fixed; left: -100%; on it.
   Also, we set our hamburger to display: block; so it's visible now.
@@ -728,7 +785,7 @@ section > .little-text {
   .my-skills {
     padding-top: 7em;
   }
-  .skills-container ul {
+  .skills-container ul.skillz {
     display: grid;
     grid-template-columns: repeat(3, auto);
     grid-gap: 1em;

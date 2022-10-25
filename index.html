@@ -269,7 +269,7 @@
     <section class="my-skills" id="my_skills">
       <h1 class="transition2">My Skills</h1>
       <div class="skills-container">
-        <ul>
+        <ul class="skillz">
           <li class="transition2 tilt">
             <div class="icon-container one">
               <img
@@ -319,7 +319,7 @@
                     </p>
                   </div>
                   </li>
-              </div>
+              </ul>
         </ul>
       </div>
     </section>
@@ -562,6 +562,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+    <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
 
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q==" crossorigin="anonymous" referrerpolicy="no-referrer" ></script>
@@ -642,6 +643,15 @@ gsap.from(".transition2", {
 });
 
 </script>
+
+
+<script>
+  ScrollOut({
+    threshold: 0.5,
+    targets: " .tilt, .tilt2, .tilt3",
+  });
+</script>
+
 
 
                                                <!-----///////  THE ANIME ANIMATION  ///////-->
