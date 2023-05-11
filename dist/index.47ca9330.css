@@ -46,6 +46,15 @@ img {
   color: #fff;
 }
 
+.nav-link-color {
+  font-weight: 300;
+  color: #ff7d00 !important;
+}
+
+.nav-link-hover:hover {
+  color: #ff7d00 !important;
+}
+
 .html5_img, .css3_img, .js_img {
   cursor: pointer;
   width: 50px;

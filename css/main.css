@@ -47,6 +47,15 @@ img {
   color: #fff;
 }
 
+.nav-link-color {
+  font-weight: 300;
+  color: #ff7d00 !important;
+}
+
+.nav-link-hover:hover {
+  color: #ff7d00 !important;
+}
+
 .html5_img,
 .css3_img,
 .js_img {
@@ -295,12 +304,12 @@ section > .little-text {
   transition: transform 6s ease-in-out;
 }
 
-.tilt[data-scroll=in] {
+.tilt[data-scroll="in"] {
   -webkit-animation: fadein 2s;
-          animation: fadein 2s;
+  animation: fadein 2s;
 }
 
-.tilt[data-scroll=out] {
+.tilt[data-scroll="out"] {
   opacity: 1;
 }
 
@@ -308,12 +317,12 @@ section > .little-text {
   transition: transform 6s ease-in-out;
 }
 
-.tilt2[data-scroll=in] {
+.tilt2[data-scroll="in"] {
   -webkit-animation: fadein 4s;
-          animation: fadein 4s;
+  animation: fadein 4s;
 }
 
-.tilt2[data-scroll=out] {
+.tilt2[data-scroll="out"] {
   opacity: 1;
 }
 
@@ -321,12 +330,12 @@ section > .little-text {
   transition: transform 6s ease-in-out;
 }
 
-.tilt3[data-scroll=in] {
+.tilt3[data-scroll="in"] {
   -webkit-animation: fadein 6s;
-          animation: fadein 6s;
+  animation: fadein 6s;
 }
 
-.tilt3[data-scroll=out] {
+.tilt3[data-scroll="out"] {
   opacity: 1;
 }
 
@@ -575,7 +584,7 @@ section > .little-text {
 
 @media only screen and (max-width: 629px) {
   .featured::before,
-.featured2::before {
+  .featured2::before {
     display: none;
   }
   header img.my_logo {
@@ -643,7 +652,7 @@ section > .little-text {
 }
 @media only screen and (max-width: 799px) {
   .featured::before,
-.featured2::before {
+  .featured2::before {
     display: none;
   }
   div.container1 {
@@ -767,7 +776,7 @@ section > .little-text {
 }
 @media only screen and (min-width: 800px) {
   .featured,
-.featured2 {
+  .featured2 {
     text-align: left;
     display: grid;
     grid-template-columns: 60% auto;
@@ -809,14 +818,14 @@ section > .little-text {
     z-index: 1;
     border: 1px solid #119da4;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-            clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
     transition: -webkit-clip-path 1s;
     transition: clip-path 1s;
     transition: clip-path 1s, -webkit-clip-path 1s;
   }
   div.container1:hover {
     -webkit-clip-path: polygon(13% 5%, 100% 0, 98% 98%, 12% 85%);
-            clip-path: polygon(13% 5%, 100% 0, 98% 98%, 12% 85%);
+    clip-path: polygon(13% 5%, 100% 0, 98% 98%, 12% 85%);
   }
   div.container1 .cont {
     width: 360px;
@@ -1059,7 +1068,7 @@ section > .little-text {
 }
 #circle1 {
   -webkit-animation: changeColor1 1.5s infinite alternate;
-          animation: changeColor1 1.5s infinite alternate;
+  animation: changeColor1 1.5s infinite alternate;
 }
 
 @-webkit-keyframes changeColor1 {
@@ -1081,7 +1090,7 @@ section > .little-text {
 }
 #circle2 {
   -webkit-animation: changeColor2 1.5s infinite alternate;
-          animation: changeColor2 1.5s infinite alternate;
+  animation: changeColor2 1.5s infinite alternate;
 }
 
 @-webkit-keyframes changeColor2 {
@@ -1103,7 +1112,7 @@ section > .little-text {
 }
 #circle3 {
   -webkit-animation: changeColor3 1.5s infinite alternate;
-          animation: changeColor3 1.5s infinite alternate;
+  animation: changeColor3 1.5s infinite alternate;
 }
 
 @-webkit-keyframes changeColor3 {
@@ -1125,7 +1134,7 @@ section > .little-text {
 }
 #circle4 {
   -webkit-animation: changeColor4 1.5s infinite alternate;
-          animation: changeColor4 1.5s infinite alternate;
+  animation: changeColor4 1.5s infinite alternate;
 }
 
 @-webkit-keyframes changeColor4 {
@@ -1147,7 +1156,7 @@ section > .little-text {
 }
 #circle5 {
   -webkit-animation: changeColor5 1.5s infinite alternate;
-          animation: changeColor5 1.5s infinite alternate;
+  animation: changeColor5 1.5s infinite alternate;
 }
 
 @-webkit-keyframes changeColor5 {
@@ -1169,7 +1178,7 @@ section > .little-text {
 }
 #bounceUp {
   -webkit-animation: slowly_Bounce_Up_And_Down 2s ease-in-out infinite alternate;
-          animation: slowly_Bounce_Up_And_Down 2s ease-in-out infinite alternate;
+  animation: slowly_Bounce_Up_And_Down 2s ease-in-out infinite alternate;
   transform-origin: bottom;
   transform-box: fill-box;
 }
@@ -1229,4 +1238,4 @@ section > .little-text {
     transform: translate(314px, 677px);
     z-index: 5;
   }
-}/*# sourceMappingURL=main.css.map */
+} /*# sourceMappingURL=main.css.map */

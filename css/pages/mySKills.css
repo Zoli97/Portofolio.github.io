@@ -27,6 +27,10 @@ header nav ul {
   font-weight: 300;
 }
 
+.nav-link-hover:hover {
+  color: #ff7d00 !important;
+}
+
 .nav-container {
   background: #001524;
   position: -webkit-sticky;
@@ -177,9 +181,9 @@ header img.my_logo {
   width: 100%;
   height: 400px;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   -o-object-position: center;
-     object-position: center;
+  object-position: center;
   cursor: pointer;
 }
 
@@ -262,7 +266,7 @@ header img.my_logo {
     font-size: 25px;
   }
   .section2 .article3 .text,
-.section3 .article3 .text {
+  .section3 .article3 .text {
     margin: 10px;
   }
   .arrow-down {
@@ -319,7 +323,7 @@ header img.my_logo {
     display: grid !important;
     gap: 4em;
   }
-  .img[data-scroll=in] {
+  .img[data-scroll="in"] {
     transform: translateX(0px);
   }
   .section3 .article3 .align-text {
@@ -329,20 +333,20 @@ header img.my_logo {
 }
 .arrow {
   -webkit-animation: linear infinite alternate;
-          animation: linear infinite alternate;
+  animation: linear infinite alternate;
   -webkit-animation-name: move_the_arrow;
-          animation-name: move_the_arrow;
+  animation-name: move_the_arrow;
   -webkit-animation-duration: 2s;
-          animation-duration: 2s;
+  animation-duration: 2s;
 }
 
 .same_arrow {
   -webkit-animation: linear infinite alternate;
-          animation: linear infinite alternate;
+  animation: linear infinite alternate;
   -webkit-animation-name: move_the_arrow;
-          animation-name: move_the_arrow;
+  animation-name: move_the_arrow;
   -webkit-animation-duration: 2s;
-          animation-duration: 2s;
+  animation-duration: 2s;
 }
 
 @media only screen and (min-width: 920px) {
@@ -512,12 +516,12 @@ header img.my_logo {
   transition: transform 2s ease-in-out;
 }
 
-.my-text[data-scroll=in] {
+.my-text[data-scroll="in"] {
   opacity: 1;
   transform: translateX(0);
 }
 
-.my-text[data-scroll=out] {
+.my-text[data-scroll="out"] {
   opacity: 0;
   transform: translateX(-300px);
 }
@@ -527,12 +531,12 @@ header img.my_logo {
   transition: transform 2s ease-in-out;
 }
 
-.img[data-scroll=in] {
+.img[data-scroll="in"] {
   -webkit-animation: fadein 3s;
-          animation: fadein 3s;
+  animation: fadein 3s;
 }
 
-.img[data-scroll=out] {
+.img[data-scroll="out"] {
   opacity: 0;
 }
 
@@ -540,12 +544,12 @@ header img.my_logo {
   transition: transform 3s ease-in-out;
 }
 
-.card-img[data-scroll=in] {
+.card-img[data-scroll="in"] {
   -webkit-animation: fadein 2s;
-          animation: fadein 2s;
+  animation: fadein 2s;
 }
 
-.card-img[data-scroll=out] {
+.card-img[data-scroll="out"] {
   opacity: 0;
 }
 
@@ -553,21 +557,21 @@ header img.my_logo {
   transition: transform 3s ease-in-out;
 }
 
-.card-img1[data-scroll=in] {
+.card-img1[data-scroll="in"] {
   -webkit-animation: fadein 4s;
-          animation: fadein 4s;
+  animation: fadein 4s;
 }
 
-.card-img1[data-scroll=out] {
+.card-img1[data-scroll="out"] {
   opacity: 0;
 }
 
-.card-img2[data-scroll=in] {
+.card-img2[data-scroll="in"] {
   -webkit-animation: fadein 6s;
-          animation: fadein 6s;
+  animation: fadein 6s;
 }
 
-.card-img2[data-scroll=out] {
+.card-img2[data-scroll="out"] {
   opacity: 0;
 }
 
@@ -607,4 +611,4 @@ header img.my_logo {
     left: 100%;
     transform: translateX(100%);
   }
-}/*# sourceMappingURL=mySKills.css.map */
+} /*# sourceMappingURL=mySKills.css.map */
