@@ -30,6 +30,9 @@ header nav ul {
   color: #ff7d00 !important;
   font-weight: 300;
 }
+.nav-link-hover:hover {
+  color: #ff7d00 !important;
+}
 
 .nav-container {
   background: #001524;
@@ -279,4 +282,4 @@ header img.my_logo {
     padding-top: 3em;
     font-size: 3em;
   }
-}/*# sourceMappingURL=contact.css.map */
+} /*# sourceMappingURL=contact.css.map */
