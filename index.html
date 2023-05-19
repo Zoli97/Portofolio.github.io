@@ -723,8 +723,10 @@ randomValues();
 
 <script>
 
-  window.addEventListener("load", ()=>{
-    new Glide(".glide", {
+
+
+    if(document.querySelector(".glide") !== null){
+      new Glide(".glide", {
   type: "slider",
   perView: 3,
   breakpoints: {
@@ -737,7 +739,9 @@ randomValues();
   bound: true,
 }).mount();
 
-  })
+    }
+
+ 
 
 </script>
 
