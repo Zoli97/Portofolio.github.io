@@ -411,7 +411,23 @@ Now we will have to add the javascript which will add this active class on the n
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    background: $balanced-almond-shade;
+    // background: $balanced-almond-shade;
+    background-size: 400%;
+    background-image: linear-gradient(
+      45deg,
+      hsl(36deg 100% 96%) 0%,
+      hsl(36deg 100% 96%) 16%,
+      hsl(36deg 100% 95%) 27%,
+      hsl(36deg 100% 95%) 36%,
+      hsl(36deg 100% 94%) 45%,
+      hsl(36deg 100% 94%) 54%,
+      hsl(36deg 100% 93%) 62%,
+      hsl(37deg 100% 93%) 72%,
+      hsl(37deg 100% 92%) 83%,
+      hsl(37deg 100% 92%) 100%
+    );
+
+    animation: gradientAnimation 8s ease-in-out infinite;
   }
   div.container1 {
     position: relative;
@@ -453,7 +469,8 @@ Now we will have to add the javascript which will add this active class on the n
     position: relative;
     z-index: 1;
     //border: 1px solid $white_color;
-    background: #ffffff;
+    // background: #ffffff;
+    background: transparent;
     .cont {
       width: 360px;
       height: 360px;
@@ -672,7 +689,7 @@ Now we will have to add the javascript which will add this active class on the n
     //border: 1px solid $white_color;
     // background: #faf9f9;
     background: $balanced-almond-shade;
-    s .cont {
+    .cont {
       width: 360px;
       height: 360px;
       transform: rotate(-4deg);
@@ -786,7 +803,22 @@ Now we will have to add the javascript which will add this active class on the n
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    background: $balanced-almond-shade;
+    // background: $balanced-almond-shade;
+    background-size: 400%;
+    background-image: linear-gradient(
+      45deg,
+      hsl(36deg 100% 96%) 0%,
+      hsl(36deg 100% 96%) 16%,
+      hsl(36deg 100% 95%) 27%,
+      hsl(36deg 100% 95%) 36%,
+      hsl(36deg 100% 94%) 45%,
+      hsl(36deg 100% 94%) 54%,
+      hsl(36deg 100% 93%) 62%,
+      hsl(37deg 100% 93%) 72%,
+      hsl(37deg 100% 92%) 83%,
+      hsl(37deg 100% 92%) 100%
+    );
+    animation: gradientAnimation 8s ease-in-out infinite;
   }
   div.container1 {
     position: relative;
@@ -833,7 +865,8 @@ Now we will have to add the javascript which will add this active class on the n
     position: relative;
     z-index: 1;
     //border: 1px solid $white_color;
-    background: $balanced-almond-shade;
+    // background: $balanced-almond-shade;
+    background: transparent;
     .cont {
       width: 360px;
       height: 360px;
@@ -881,7 +914,23 @@ Now we will have to add the javascript which will add this active class on the n
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    background: $balanced-almond-shade;
+    // background: $balanced-almond-shade;
+    background-size: 400%;
+    background-image: linear-gradient(
+      45deg,
+      hsl(36deg 100% 96%) 0%,
+      hsl(36deg 100% 96%) 16%,
+      hsl(36deg 100% 95%) 27%,
+      hsl(36deg 100% 95%) 36%,
+      hsl(36deg 100% 94%) 45%,
+      hsl(36deg 100% 94%) 54%,
+      hsl(36deg 100% 93%) 62%,
+      hsl(37deg 100% 93%) 72%,
+      hsl(37deg 100% 92%) 83%,
+      hsl(37deg 100% 92%) 100%
+    );
+
+    animation: gradientAnimation 8s ease-in-out infinite;
   }
   .hero {
     height: 110vh;
@@ -891,7 +940,6 @@ Now we will have to add the javascript which will add this active class on the n
     display: grid;
     -ms-grid-columns: 66% auto;
     grid-template-columns: 66% auto;
-
     background: $balanced-almond-shade;
   }
   header {
@@ -1126,41 +1174,24 @@ Now we will have to add the javascript which will add this active class on the n
   background: $balanced-almond-shade;
 }
 
-.glide .glide__slide .card {
-  height: 400px;
-  background: #000;
-  overflow: hidden;
-  // position: relative;
-}
-
-.glide .glide__slide .card img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.glide__arrow--left,
-.glide__arrow--right {
-  width: 65px;
-  height: 65px;
-  border-radius: 50%;
-  border: 2px solid white;
-}
-
-.glide__arrow--left:hover,
-.glide__arrow--right:hover {
-  background-color: rgb(255, 255, 255);
-  color: rgb(0, 0, 0);
-  transition: all 1s ease-in-out;
-}
-
-.glide__arrow {
-  font-size: 1.5rem;
-  font-weight: bold;
+.glider_contain {
+  width: 85% !important;
 }
 ._wrapper_ {
   width: 100%;
   margin: 1em;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
 }
 
 @import "./components/circle_animation";

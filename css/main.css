@@ -294,11 +294,11 @@ section > .little-text {
   transition: transform 6s ease-in-out;
 }
 
-.tilt[data-scroll=in] {
+.tilt[data-scroll="in"] {
   animation: fadein 2s;
 }
 
-.tilt[data-scroll=out] {
+.tilt[data-scroll="out"] {
   opacity: 1;
 }
 
@@ -306,11 +306,11 @@ section > .little-text {
   transition: transform 6s ease-in-out;
 }
 
-.tilt2[data-scroll=in] {
+.tilt2[data-scroll="in"] {
   animation: fadein 4s;
 }
 
-.tilt2[data-scroll=out] {
+.tilt2[data-scroll="out"] {
   opacity: 1;
 }
 
@@ -318,11 +318,11 @@ section > .little-text {
   transition: transform 6s ease-in-out;
 }
 
-.tilt3[data-scroll=in] {
+.tilt3[data-scroll="in"] {
   animation: fadein 6s;
 }
 
-.tilt3[data-scroll=out] {
+.tilt3[data-scroll="out"] {
   opacity: 1;
 }
 
@@ -417,7 +417,21 @@ section > .little-text {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    background: #fff7eb;
+    background-size: 400%;
+    background-image: linear-gradient(
+      45deg,
+      hsl(36, 100%, 96%) 0%,
+      hsl(36, 100%, 96%) 16%,
+      hsl(36, 100%, 95%) 27%,
+      hsl(36, 100%, 95%) 36%,
+      hsl(36, 100%, 94%) 45%,
+      hsl(36, 100%, 94%) 54%,
+      hsl(36, 100%, 93%) 62%,
+      hsl(37, 100%, 93%) 72%,
+      hsl(37, 100%, 92%) 83%,
+      hsl(37, 100%, 92%) 100%
+    );
+    animation: gradientAnimation 8s ease-in-out infinite;
   }
   div.container1 {
     position: relative;
@@ -458,7 +472,7 @@ section > .little-text {
     height: 360px;
     position: relative;
     z-index: 1;
-    background: #ffffff;
+    background: transparent;
   }
   div.container2 .cont {
     width: 360px;
@@ -672,9 +686,10 @@ section > .little-text {
     height: 360px;
     position: relative;
     z-index: 1;
-    background: #fff7eb;
+    /* background: #fff7eb; */
+    background: transparent;
   }
-  div.container2 s .cont {
+  div.container2 .cont {
     width: 360px;
     height: 360px;
     transform: rotate(-4deg);
@@ -786,7 +801,21 @@ section > .little-text {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    background: #fff7eb;
+    background-size: 400%;
+    background-image: linear-gradient(
+      45deg,
+      hsl(36, 100%, 96%) 0%,
+      hsl(36, 100%, 96%) 16%,
+      hsl(36, 100%, 95%) 27%,
+      hsl(36, 100%, 95%) 36%,
+      hsl(36, 100%, 94%) 45%,
+      hsl(36, 100%, 94%) 54%,
+      hsl(36, 100%, 93%) 62%,
+      hsl(37, 100%, 93%) 72%,
+      hsl(37, 100%, 92%) 83%,
+      hsl(37, 100%, 92%) 100%
+    );
+    animation: gradientAnimation 8s ease-in-out infinite;
   }
   div.container1 {
     position: relative;
@@ -796,14 +825,14 @@ section > .little-text {
     z-index: 1;
     border: 1px solid #119da4;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-            clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
     transition: -webkit-clip-path 1s;
     transition: clip-path 1s;
     transition: clip-path 1s, -webkit-clip-path 1s;
   }
   div.container1:hover {
     -webkit-clip-path: polygon(13% 5%, 100% 0, 98% 98%, 12% 85%);
-            clip-path: polygon(13% 5%, 100% 0, 98% 98%, 12% 85%);
+    clip-path: polygon(13% 5%, 100% 0, 98% 98%, 12% 85%);
   }
   div.container1 .cont {
     width: 360px;
@@ -836,7 +865,7 @@ section > .little-text {
     height: 360px;
     position: relative;
     z-index: 1;
-    background: #fff7eb;
+    background: transparent;
   }
   div.container2 .cont {
     width: 360px;
@@ -883,7 +912,21 @@ section > .little-text {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    background: #fff7eb;
+    background-size: 400%;
+    background-image: linear-gradient(
+      45deg,
+      hsl(36, 100%, 96%) 0%,
+      hsl(36, 100%, 96%) 16%,
+      hsl(36, 100%, 95%) 27%,
+      hsl(36, 100%, 95%) 36%,
+      hsl(36, 100%, 94%) 45%,
+      hsl(36, 100%, 94%) 54%,
+      hsl(36, 100%, 93%) 62%,
+      hsl(37, 100%, 93%) 72%,
+      hsl(37, 100%, 92%) 83%,
+      hsl(37, 100%, 92%) 100%
+    );
+    animation: gradientAnimation 8s ease-in-out infinite;
   }
   .hero {
     height: 110vh;
@@ -1125,37 +1168,8 @@ section > .little-text {
   background: #fff7eb;
 }
 
-.glide .glide__slide .card {
-  height: 400px;
-  background: #000;
-  overflow: hidden;
-}
-
-.glide .glide__slide .card img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.glide__arrow--left,
-.glide__arrow--right {
-  width: 65px;
-  height: 65px;
-  border-radius: 50%;
-  border: 2px solid white;
-}
-
-.glide__arrow--left:hover,
-.glide__arrow--right:hover {
-  background-color: rgb(255, 255, 255);
-  color: rgb(0, 0, 0);
-  transition: all 1s ease-in-out;
-}
-
-.glide__arrow {
-  font-size: 1.5rem;
-  font-weight: bold;
+.glider_contain {
+  width: 85% !important;
 }
 
 ._wrapper_ {
@@ -1163,6 +1177,17 @@ section > .little-text {
   margin: 1em;
 }
 
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
 .circle {
   animation: circleAnim 1s infinite alternate-reverse;
 }
@@ -1176,4 +1201,4 @@ section > .little-text {
     transform: translate(314px, 677px);
     z-index: 5;
   }
-}/*# sourceMappingURL=main.css.map */
+} /*# sourceMappingURL=main.css.map */
