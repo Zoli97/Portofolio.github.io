@@ -569,26 +569,28 @@ gsap.from(".transition2", {
 
 </script>
 
-<script>new Glide(".glide", {
-    type: "slider",
-    perView: 3,
-    breakpoints: {
-        600: {
-            perView: 1
+<script>window.addEventListener("load", ()=>{
+    new Glide(".glide", {
+        type: "slider",
+        perView: 3,
+        breakpoints: {
+            600: {
+                perView: 1
+            },
+            800: {
+                perView: 2
+            },
+            950: {
+                perView: 3
+            },
+            1500: {
+                perView: 4
+            }
         },
-        800: {
-            perView: 2
-        },
-        950: {
-            perView: 3
-        },
-        1500: {
-            perView: 4
-        }
-    },
-    autoplay: 2500,
-    bound: true
-}).mount();
+        autoplay: 2500,
+        bound: true
+    }).mount();
+});
 
 </script>
 
