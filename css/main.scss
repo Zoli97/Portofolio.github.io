@@ -688,7 +688,8 @@ Now we will have to add the javascript which will add this active class on the n
     z-index: 1;
     //border: 1px solid $white_color;
     // background: #faf9f9;
-    background: $balanced-almond-shade;
+    // background: $balanced-almond-shade;
+    background: transparent;
     .cont {
       width: 360px;
       height: 360px;
