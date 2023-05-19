@@ -37,7 +37,6 @@ img {
 
 .nav-container {
   background: #001524;
-  position: -webkit-sticky;
   position: sticky;
   top: 0;
   width: 100%;
@@ -45,15 +44,6 @@ img {
 }
 .nav-container a {
   color: #fff;
-}
-
-.nav-link-color {
-  font-weight: 300;
-  color: #ff7d00 !important;
-}
-
-.nav-link-hover:hover {
-  color: #ff7d00 !important;
 }
 
 .html5_img,
@@ -304,12 +294,11 @@ section > .little-text {
   transition: transform 6s ease-in-out;
 }
 
-.tilt[data-scroll="in"] {
-  -webkit-animation: fadein 2s;
+.tilt[data-scroll=in] {
   animation: fadein 2s;
 }
 
-.tilt[data-scroll="out"] {
+.tilt[data-scroll=out] {
   opacity: 1;
 }
 
@@ -317,12 +306,11 @@ section > .little-text {
   transition: transform 6s ease-in-out;
 }
 
-.tilt2[data-scroll="in"] {
-  -webkit-animation: fadein 4s;
+.tilt2[data-scroll=in] {
   animation: fadein 4s;
 }
 
-.tilt2[data-scroll="out"] {
+.tilt2[data-scroll=out] {
   opacity: 1;
 }
 
@@ -330,22 +318,12 @@ section > .little-text {
   transition: transform 6s ease-in-out;
 }
 
-.tilt3[data-scroll="in"] {
-  -webkit-animation: fadein 6s;
+.tilt3[data-scroll=in] {
   animation: fadein 6s;
 }
 
-.tilt3[data-scroll="out"] {
+.tilt3[data-scroll=out] {
   opacity: 1;
-}
-
-@-webkit-keyframes fadein {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
 }
 
 @keyframes fadein {
@@ -818,14 +796,14 @@ section > .little-text {
     z-index: 1;
     border: 1px solid #119da4;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
     transition: -webkit-clip-path 1s;
     transition: clip-path 1s;
     transition: clip-path 1s, -webkit-clip-path 1s;
   }
   div.container1:hover {
     -webkit-clip-path: polygon(13% 5%, 100% 0, 98% 98%, 12% 85%);
-    clip-path: polygon(13% 5%, 100% 0, 98% 98%, 12% 85%);
+            clip-path: polygon(13% 5%, 100% 0, 98% 98%, 12% 85%);
   }
   div.container1 .cont {
     width: 360px;
@@ -911,9 +889,7 @@ section > .little-text {
     height: 110vh;
   }
   .nav-container {
-    display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 66% auto;
     grid-template-columns: 66% auto;
     background: #fff7eb;
   }
@@ -1067,17 +1043,7 @@ section > .little-text {
   }
 }
 #circle1 {
-  -webkit-animation: changeColor1 1.5s infinite alternate;
   animation: changeColor1 1.5s infinite alternate;
-}
-
-@-webkit-keyframes changeColor1 {
-  0% {
-    fill: #ff0000;
-  }
-  100% {
-    fill: #ff8700;
-  }
 }
 
 @keyframes changeColor1 {
@@ -1089,17 +1055,7 @@ section > .little-text {
   }
 }
 #circle2 {
-  -webkit-animation: changeColor2 1.5s infinite alternate;
   animation: changeColor2 1.5s infinite alternate;
-}
-
-@-webkit-keyframes changeColor2 {
-  0% {
-    fill: #ffd300;
-  }
-  100% {
-    fill: #0aefff;
-  }
 }
 
 @keyframes changeColor2 {
@@ -1111,17 +1067,7 @@ section > .little-text {
   }
 }
 #circle3 {
-  -webkit-animation: changeColor3 1.5s infinite alternate;
   animation: changeColor3 1.5s infinite alternate;
-}
-
-@-webkit-keyframes changeColor3 {
-  0% {
-    fill: #ff8700;
-  }
-  100% {
-    fill: #a1ff0a;
-  }
 }
 
 @keyframes changeColor3 {
@@ -1133,17 +1079,7 @@ section > .little-text {
   }
 }
 #circle4 {
-  -webkit-animation: changeColor4 1.5s infinite alternate;
   animation: changeColor4 1.5s infinite alternate;
-}
-
-@-webkit-keyframes changeColor4 {
-  0% {
-    fill: #147df5;
-  }
-  100% {
-    fill: #580aff;
-  }
 }
 
 @keyframes changeColor4 {
@@ -1155,17 +1091,7 @@ section > .little-text {
   }
 }
 #circle5 {
-  -webkit-animation: changeColor5 1.5s infinite alternate;
   animation: changeColor5 1.5s infinite alternate;
-}
-
-@-webkit-keyframes changeColor5 {
-  0% {
-    fill: #be0aff;
-  }
-  100% {
-    fill: #0aff99;
-  }
 }
 
 @keyframes changeColor5 {
@@ -1177,19 +1103,9 @@ section > .little-text {
   }
 }
 #bounceUp {
-  -webkit-animation: slowly_Bounce_Up_And_Down 2s ease-in-out infinite alternate;
   animation: slowly_Bounce_Up_And_Down 2s ease-in-out infinite alternate;
   transform-origin: bottom;
   transform-box: fill-box;
-}
-
-@-webkit-keyframes slowly_Bounce_Up_And_Down {
-  from {
-    transform: rotateX(0deg);
-  }
-  to {
-    transform: rotateX(20deg);
-  }
 }
 
 @keyframes slowly_Bounce_Up_And_Down {
@@ -1209,6 +1125,39 @@ section > .little-text {
   background: #fff7eb;
 }
 
+.glide .glide__slide .card {
+  height: 400px;
+  background: #000;
+  overflow: hidden;
+}
+
+.glide .glide__slide .card img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.glide__arrow--left,
+.glide__arrow--right {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+.glide__arrow--left:hover,
+.glide__arrow--right:hover {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  transition: all 1s ease-in-out;
+}
+
+.glide__arrow {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
 ._wrapper_ {
   width: 100%;
   margin: 1em;
@@ -1216,17 +1165,6 @@ section > .little-text {
 
 .circle {
   animation: circleAnim 1s infinite alternate-reverse;
-}
-
-@-webkit-keyframes circleAnim {
-  from {
-    transform: translate(314px, 640px);
-    z-index: 5;
-  }
-  to {
-    transform: translate(314px, 677px);
-    z-index: 5;
-  }
 }
 
 @keyframes circleAnim {
@@ -1238,4 +1176,4 @@ section > .little-text {
     transform: translate(314px, 677px);
     z-index: 5;
   }
-} /*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */

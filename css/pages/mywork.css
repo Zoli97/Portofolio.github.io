@@ -100,7 +100,6 @@ header nav ul {
 
 .nav-container {
   background: #001524;
-  position: -webkit-sticky;
   position: sticky;
   top: 0;
   width: 100%;
@@ -140,20 +139,6 @@ header img.my_logo {
   margin: 5px auto;
   transition: all 0.3s ease-in-out;
   background-color: #fff;
-}
-
-.copyright {
-  width: 100%;
-  height: 40px;
-  background: #001524;
-  text-align: center;
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.copyright .copyright_text {
-  margin: 0;
 }
 
 @media screen and (max-width: 768px) {
@@ -242,4 +227,4 @@ header img.my_logo {
   header {
     padding: 2em 2em 2em 20em;
   }
-} /*# sourceMappingURL=mywork.css.map */
+}/*# sourceMappingURL=mywork.css.map */

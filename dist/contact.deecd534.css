@@ -31,10 +31,6 @@ header nav ul {
   color: #ff7d00 !important;
 }
 
-.nav-link-hover:hover {
-  color: #ff7d00 !important;
-}
-
 .nav-container {
   width: 100%;
   z-index: 5;
