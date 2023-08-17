@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+:root {
+  font-size: 65.2%;
+}
+
 html {
   height: 100%;
   scroll-behavior: smooth;
@@ -16,6 +20,7 @@ body {
   background: #fff7eb;
   font-family: "Poppins", arial;
   overflow-x: hidden !important;
+  font-size: 1.6rem;
 }
 
 a {
@@ -60,6 +65,9 @@ header nav ul a {
 }
 header img.my_logo {
   width: 80px;
+}
+header .hide_logo {
+  opacity: 0;
 }
 
 .hamburger {
@@ -149,15 +157,14 @@ header img.my_logo {
 ._section_ > h1 {
   padding-top: 4em;
   text-align: center;
-  font-size: 3em;
   color: black;
 }
 
 ._section_ > p {
-  padding-top: 2.5em;
-  padding-bottom: 2.5em;
+  padding-top: 2em;
+  padding-bottom: 2em;
   text-align: center;
-  font-size: 1.5em;
+  font-size: 1.5rem;
   font-weight: normal;
   color: #001524;
 }
@@ -178,6 +185,7 @@ header img.my_logo {
   display: flex;
   align-items: center;
   gap: 1em;
+  font-size: 1.5rem;
 }
 
 .menu li {
@@ -222,11 +230,15 @@ header img.my_logo {
 
 @media only screen and (min-width: 320px) {
   ._section_ > h1 {
+    font-size: 3rem;
     padding-top: 2em;
-    font-size: 2.5em;
+    padding-left: 1em;
+    padding-right: 1em;
   }
   ._section_ > p {
-    font-size: 1em;
+    font-size: 1.5rem;
+    padding-left: 1em;
+    padding-right: 1em;
   }
   .menu li {
     list-style: none;
@@ -236,10 +248,10 @@ header img.my_logo {
 }
 @media only screen and (min-width: 680px) {
   ._section_ > h1 {
-    font-size: 2.5em;
+    font-size: 2.5rem;
   }
   ._section_ > p {
-    font-size: 1em;
+    font-size: 2rem;
   }
   .menu li {
     list-style: none;
@@ -249,10 +261,7 @@ header img.my_logo {
 }
 @media only screen and (min-width: 920px) {
   ._section_ > h1 {
-    font-size: 2em;
-  }
-  ._section_ > p {
-    font-size: 1em;
+    font-size: 3.5rem;
   }
   .menu li {
     list-style: none;
@@ -261,12 +270,6 @@ header img.my_logo {
   }
 }
 @media only screen and (min-width: 1050px) {
-  ._section_ > h1 {
-    font-size: 3em;
-  }
-  ._section_ > p {
-    font-size: 1.5em;
-  }
   .menu li {
     list-style: none;
     font-size: 1.2em;
@@ -276,6 +279,6 @@ header img.my_logo {
 @media only screen and (min-width: 1250px) {
   ._section_ > h1 {
     padding-top: 3em;
-    font-size: 3em;
+    font-size: 4rem;
   }
 }/*# sourceMappingURL=contact.css.map */

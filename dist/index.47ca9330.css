@@ -76,6 +76,10 @@ header img.my_logo {
   width: 80px;
 }
 
+header .hide_logo {
+  opacity: 0;
+}
+
 .hamburger {
   display: none;
 }
@@ -184,10 +188,6 @@ section {
   transition: all .5s;
   left: 0;
   right: 0;
-}
-
-.hide {
-  display: none;
 }
 
 .text {
