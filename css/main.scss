@@ -169,9 +169,7 @@ section {
   }
 }
 
-.hide {
-  display: none;
-}
+
 
 .text {
   font-size: 24px;
@@ -1085,6 +1083,10 @@ Now we will have to add the javascript which will add this active class on the n
     justify-content: center;
   }
 }
+
+// .hide {
+//   transition: opacity 500 ease-in-out;
+// }
 
 #circle1 {
   animation: changeColor1 1.5s infinite alternate;

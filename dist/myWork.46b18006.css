@@ -22,4 +22,8 @@ header img.my_logo {
   width: 80px;
 }
 
+header .hide_logo {
+  opacity: 0;
+}
+
 /*# sourceMappingURL=myWork.46b18006.css.map */
