@@ -1,7 +1,32 @@
 @import "https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap";
+::-webkit-scrollbar {
+  width: 1.5em;
+}
+
+::-webkit-scrollbar-track {
+  z-index: 9099;
+  background: #15616d;
+  border-radius: 100vw;
+  margin-block: .5em;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #0a2e33;
+  border: .25em solid #0f7383;
+  border-radius: 100vw;
+}
+
+@supports (scrollbar-color: red blue) {
+  * {
+    scrollbar-color: #0a2e33 #15616d;
+    scrollbar-width: auto;
+  }
+}
+
 html, body {
   height: 100vh;
   box-sizing: border-box;
+  scroll-behavior: smooth;
   margin: 0;
   padding: 0;
   font-family: Poppins, arial;
