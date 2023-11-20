@@ -2,10 +2,41 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  transition: background-color 0.8s ease, color 1s ease;
 }
 
 :root {
   font-size: 65.2%;
+  --defaultTheme: #fff7eb;
+  --darkTheme: #000000;
+  --navbarDefaultTheme: #001524;
+  --navbarDarkBg: #000000;
+  --defaultFontTitleColor: #000000;
+  --darkModeFontTitleColor: #ffffff;
+  --defaultParagraphFontColor: #001524;
+  --darkModeParagraphFontColor: #ffffff;
+  --defaultSocialNameColor: #001524;
+  --darkModeSocialNameColor: #ffffff;
+  --copyrightDefaultTheme: #001524;
+  --copyrightDarkBg: #000000;
+}
+
+.light-theme {
+  --bg_: var(--defaultTheme);
+  --navbar: var(--navbarDefaultTheme);
+  --title: var(--defaultFontTitleColor);
+  --paragraph: var(--defaultParagraphFontColor);
+  --social: var(--defaultSocialNameColor);
+  --copyright: var(--copyrightDefaultTheme);
+}
+
+.dark-theme {
+  --bg_: var(--darkTheme);
+  --navbar: var(--navbarDarkBg);
+  --title: var(--darkModeFontTitleColor);
+  --paragraph: var(--darkModeParagraphFontColor);
+  --social: var(--darkModeSocialNameColor);
+  --copyright: var(--copyrightDarkBg);
 }
 
 html {
@@ -17,7 +48,7 @@ html {
 
 body {
   height: 100%;
-  background: #fff7eb;
+  background: var(--bg_);
   font-family: "Poppins", arial;
   overflow-x: hidden !important;
   font-size: 1.6rem;
@@ -27,8 +58,14 @@ a {
   text-decoration: none;
 }
 
+.social {
+  color: var(--social) !important;
+}
+
 header nav ul {
   list-style: none;
+  display: flex;
+  align-items: center;
 }
 
 .nav-link-color {
@@ -37,7 +74,7 @@ header nav ul {
 }
 
 .nav-container {
-  background: #001524;
+  background: var(--navbar);
   position: sticky;
   top: 0;
   width: 100%;
@@ -82,6 +119,38 @@ header .hide_logo {
   background-color: #fff;
 }
 
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+.checkbox-label {
+  width: 55px;
+  border-radius: 50px;
+  padding: 0.5em;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  background-color: #15616d;
+}
+
+.checkbox-label .ball {
+  width: 23px;
+  height: 23px;
+  position: absolute;
+  top: 5px;
+  left: 2px;
+  border-radius: 50%;
+  background-color: #fff;
+  transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .checkbox-label .ball {
+  transform: translateX(24px);
+}
+
 @media screen and (max-width: 768px) {
   .nav-menu {
     position: fixed;
@@ -98,7 +167,7 @@ header .hide_logo {
     transition: all 1.3s ease-out;
     pointer-events: none;
     z-index: 1;
-    background: #001524;
+    background: var(--navbar);
   }
   .nav-menu.active {
     left: 0;
@@ -111,7 +180,7 @@ header .hide_logo {
     margin: 2rem 0;
   }
   ul.nav-menu.active {
-    background: #001524;
+    background: var(--navbar);
     z-index: 1;
     height: 425px;
     position: absolute;
@@ -157,7 +226,7 @@ header .hide_logo {
 ._section_ > h1 {
   padding-top: 4em;
   text-align: center;
-  color: black;
+  color: var(--title);
 }
 
 ._section_ > p {
@@ -166,7 +235,7 @@ header .hide_logo {
   text-align: center;
   font-size: 1.5rem;
   font-weight: normal;
-  color: #001524;
+  color: var(--paragraph);
 }
 
 .menu {
@@ -199,7 +268,7 @@ header .hide_logo {
   height: 40px;
   position: fixed;
   bottom: 0;
-  background: #001524;
+  background: var(--copyright);
   text-align: center;
   color: white;
   display: flex;
@@ -234,11 +303,13 @@ header .hide_logo {
     padding-top: 2em;
     padding-left: 1em;
     padding-right: 1em;
+    color: var(--title);
   }
   ._section_ > p {
     font-size: 1.5rem;
     padding-left: 1em;
     padding-right: 1em;
+    color: var(--paragraph);
   }
   .menu li {
     list-style: none;
@@ -249,9 +320,11 @@ header .hide_logo {
 @media only screen and (min-width: 680px) {
   ._section_ > h1 {
     font-size: 2.5rem;
+    color: var(--title);
   }
   ._section_ > p {
     font-size: 2rem;
+    color: var(--paragraph);
   }
   .menu li {
     list-style: none;
@@ -262,6 +335,7 @@ header .hide_logo {
 @media only screen and (min-width: 920px) {
   ._section_ > h1 {
     font-size: 3.5rem;
+    color: var(--title);
   }
   .menu li {
     list-style: none;
@@ -280,5 +354,6 @@ header .hide_logo {
   ._section_ > h1 {
     padding-top: 3em;
     font-size: 4rem;
+    color: var(--title);
   }
 }/*# sourceMappingURL=contact.css.map */

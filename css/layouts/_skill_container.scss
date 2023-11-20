@@ -1,9 +1,36 @@
+@import "../abstracts/variables";
+:root {
+  --whiteFont: #fff;
+  --grayFont: #252525;
+  --darkFont: $black_color_;
+  --skills_container_light: #96b0a9;
+  --skills_container_dark: #000000;
+  --skill_container_light: #fff7eb;
+  --skill_container_dark: #2a2a2a;
+  --whiteIcon: #fff;
+}
+
+.light-theme {
+  --skills-container: var(--skills_container_light);
+  --skill-title: var(--darkFont);
+  --skill-box: var(--skill_container_light);
+}
+
+.dark-theme {
+  --skills-container: var(--skills_container_dark);
+  --skill-title: var(--whiteFont);
+  --skill-box: var(--skill_container_dark);
+}
 .my-skills {
-  background: $morning-blue;
+  background: var(--skills-container);
+}
+
+h1 {
+  color: var(--skill-title);
 }
 
 .skills-container ul li {
-  background: $balanced-almond-shade;
+  background: var(--skill-box);
   padding: 2em;
   border-radius: 1em;
   margin-bottom: 1em;
@@ -26,7 +53,7 @@
   }
   .skills-title {
     font-weight: bold;
-    color: $gray_color_dark;
+    color: var(--skills-title);
   }
   .skills-desc {
     margin-bottom: 2em;
@@ -34,6 +61,5 @@
 }
 
 .colorcont {
-  background-color: $balanced-almond-shade;
   transform: translateZ(40px);
 }

@@ -5,13 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="view-transition" content="same-origin" />
-    <link rel="icon" href="./public/abstract-shape.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+    <link <link rel="icon" href="./public/abstract-shape.png" />
     <link rel="stylesheet" href="./css/layouts/_header.scss" />
     <link rel="stylesheet" href="./css/pages/mySKills.css" />
     <link rel="stylesheet" href="./css/lightgallery.css" />
     <title>My skills</title>
   </head>
-  <body>
+  <body class="light-theme">
     <div class="nav-container">
       <header class="header">
         <a href="index.html">
@@ -31,6 +35,18 @@
 
             <li class="nav-item">
               <a class="nav-link nav-link-hover" href="contact.html">Contact</a>
+            </li>
+
+            <li>
+              <div>
+                <input type="checkbox" id="checkbox" class="checkbox" />
+                <label for="checkbox" class="checkbox-label">
+                  <i class="fas fa-sun" style="color: #ffbb00"></i>
+                  <i class="fas fa-moon" style="color: #fbe918"></i>
+
+                  <span class="ball"></span>
+                </label>
+              </div>
             </li>
           </ul>
 
@@ -194,7 +210,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
-
+    <script src="./js/skillsTheme.js"></script>
     <script>
       const rellax = new Rellax(".rellax", {
         center: true,

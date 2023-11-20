@@ -5,12 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="view-transition" content="same-origin" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
     <link rel="icon" href="./public/abstract-shape.png" />
     <link rel="stylesheet" href="./css/layouts/_header.scss" />
     <link rel="stylesheet" href="./css/pages/contact.css" />
     <title>Contact</title>
   </head>
-  <body>
+  <body class="light-theme">
     <div class="nav-container">
       <header class="header">
         <a href="index.html">
@@ -30,6 +34,18 @@
 
             <li class="nav-item">
               <a class="nav-link nav-link-hover" href="contact.html">Contact</a>
+            </li>
+
+            <li>
+              <div>
+                <input type="checkbox" id="checkbox" class="checkbox" />
+                <label for="checkbox" class="checkbox-label">
+                  <i class="fas fa-sun" style="color: #ffbb00"></i>
+                  <i class="fas fa-moon" style="color: #fbe918"></i>
+
+                  <span class="ball"></span>
+                </label>
+              </div>
             </li>
           </ul>
 
@@ -57,6 +73,7 @@
             <a
               href="https://www.linkedin.com/in/tazlo-zoli-7021b1195/"
               target="_blank"
+              class="social"
             >
               <svg
                 class="icon"
@@ -96,7 +113,11 @@
           </li>
 
           <li class="menu-item">
-            <a href="https://www.facebook.com/zoli.tazlo" target="_blank">
+            <a
+              href="https://www.facebook.com/zoli.tazlo"
+              target="_blank"
+              class="social"
+            >
               <svg
                 class="icon"
                 enable-background="new 0 0 32 32"
@@ -132,7 +153,7 @@
           </li>
 
           <li class="menu-item">
-            <a href="https://github.com/Zoli97" target="_blank">
+            <a href="https://github.com/Zoli97" target="_blank" class="social">
               <svg
                 height="32"
                 viewBox="0 0 72 72"
