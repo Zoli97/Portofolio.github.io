@@ -11,6 +11,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.4.2",
+    "@fortawesome/free-solid-svg-icons": "^6.4.2",
     "@glidejs/glide": "^3.6.0",
     "animejs": "^3.2.1",
     "atropos": "^1.0.2",

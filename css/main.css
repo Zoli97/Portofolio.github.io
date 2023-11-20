@@ -1,4 +1,93 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap");
+:root {
+  --dark: #000000;
+  --blackFont: $black_color;
+  --grayFont: $gray_color_;
+  --whiteFont: #fff;
+  --subTitleDark: #1c2541;
+  --whiteBg: #fff;
+  --navbarDefault: #001524;
+  --headerDefault: #001524;
+  --heroDefault: $ming;
+  --about_section: #ffefd6;
+  --mainBgDefault: #fff7eb;
+  --featured2BgDefault: #fff7eb;
+  --contentDefault: #15616d;
+  --heroDefault: #fff7eb;
+  --navbarbg: #252525;
+  --copyRightDefault: #15616d;
+  --colorBtnDefault: ##4b3f72;
+  --whiteFontDarkBtn: #fff;
+  --bg_animation_default: linear-gradient(
+    45deg,
+    hsl(36deg 100% 96%) 0%,
+    hsl(36deg 100% 96%) 16%,
+    hsl(36deg 100% 95%) 27%,
+    hsl(36deg 100% 95%) 36%,
+    hsl(36deg 100% 94%) 45%,
+    hsl(36deg 100% 94%) 54%,
+    hsl(36deg 100% 93%) 62%,
+    hsl(37deg 100% 93%) 72%,
+    hsl(37deg 100% 92%) 83%,
+    hsl(37deg 100% 92%) 100%
+  );
+  --bg_animation_on_dark_mode: linear-gradient(
+    45deg,
+    hsla(0, 0%, 0%, 1) 0%,
+    hsla(7, 2%, 0%, 1) 16%,
+    hsla(12, 0%, 2%, 1) 27%,
+    hsla(15, 0%, 5%, 1) 36%,
+    hsla(18, 0%, 6%, 1) 45%,
+    hsla(0, 0%, 9%, 1) 54%,
+    hsla(0, 0%, 10%, 1) 62%,
+    hsla(0, 0%, 12%, 1) 72%,
+    hsla(0, 0%, 15%, 1) 83%,
+    hsla(0, 0%, 16%, 1) 100%
+  );
+}
+
+/*represent colors for diff elements dark theme and light theme */
+.light-theme {
+  --heroTheme: var(--heroDefault);
+  --nabvar: var(--navbarDefault);
+  --header: var(--headerDefault);
+  --about: var(--about_section);
+  --paragraph: var(--grayFont);
+  --title: var(--blackFont);
+  --skills-title: var(--grayFont);
+  --main: var(--mainBgDefault);
+  --featured2: var(--featured2BgDefault);
+  --text: var(--dark);
+  --subtitle: var(--subTitleDark);
+  --content: var(--contentDefault);
+  --hero: var(--heroDefault);
+  --copyright: var(--copyRightDefault);
+  --colorFont: var(--colorBtnDefault);
+  --bg_animation: var(--bg_animation_default);
+}
+
+.dark-theme {
+  --heroTheme: var(--dark);
+  --featured: var(--featured);
+  --navbar: var(--navbarbg);
+  --header: var(--dark);
+  --about: var(--dark);
+  --paragraph: var(--whiteFont);
+  --title: var(--whiteFont);
+  --skills-title: var(--whiteFont);
+  --icons: var(--whiteBg);
+  --main: var(--dark);
+  --aboveFooter: var(--dark);
+  --featured2: var(--dark);
+  --text: var(--whiteFont);
+  --subtitle: var(--whiteFont);
+  --content: var(--dark);
+  --hero: #252525;
+  --copyright: var(--dark);
+  --colorFont: var(--whiteFontDarkBtn);
+  --bg_animation: var(--bg_animation_on_dark_mode);
+}
+
 ::-webkit-scrollbar {
   width: 1.5em;
 }
@@ -24,6 +113,10 @@
     scrollbar-width: auto;
   }
 }
+* {
+  transition: background-color 0.8s ease, color 1s ease;
+}
+
 html,
 body {
   height: 100vh;
@@ -33,6 +126,42 @@ body {
   box-sizing: border-box;
   overflow-x: hidden;
   scroll-behavior: smooth;
+}
+
+.cookies-eu-banner {
+  width: 100%;
+  background-color: #0a2e33;
+  color: #fff;
+  padding: 1em;
+  font-size: 14px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  z-index: 10;
+}
+
+.cookies-eu-banner .cookies-eu-button {
+  text-decoration: none;
+  background: #15616d;
+  color: #fff;
+  border: 1px solid #fff;
+  cursor: pointer;
+  padding: 1em;
+  margin: 0.4em 0;
+  font-size: 14px;
+  font-weight: 700;
+  transition: background 0.07s, color 0.07s, border-color 0.07s;
+}
+
+.cookies-eu-banner .cookies-eu-button:hover {
+  background-color: white;
+  color: #000;
+  border: 1px solid #fff;
+}
+
+/*hidden by default and then at some point of time i can remove this class*/
+.hidden {
+  display: none;
 }
 
 .line {
@@ -49,6 +178,11 @@ ul {
   color: #fff;
 }
 
+.nav-link-color {
+  font-weight: 300;
+  color: #ff7d00 !important;
+}
+
 a {
   text-decoration: none;
 }
@@ -62,7 +196,7 @@ img {
 }
 
 .nav-container {
-  background: #001524;
+  background: var(--nabvar);
   position: sticky;
   top: 0;
   width: 100%;
@@ -121,7 +255,6 @@ header .hide_logo {
 }
 
 .hero {
-  background: #15616d;
   color: #fff;
   display: grid;
   text-align: center;
@@ -151,10 +284,13 @@ header .hide_logo {
 }
 
 .about {
-  background: #ffefd6;
+  background: var(--about);
 }
 .about p {
-  color: #252525;
+  color: var(--paragraph) !important;
+}
+.about h1 {
+  color: var(--title) !important;
 }
 
 ._span_ {
@@ -171,12 +307,12 @@ section {
   padding: 3em;
   text-align: center;
   position: relative;
-  background: #fff7eb;
+  background: var(--main);
 }
 
 .my_button {
   width: 130px;
-  color: #4b3f72;
+  color: var(--colorFont);
   font-weight: bold;
   cursor: pointer;
   border-radius: 4px;
@@ -214,6 +350,7 @@ section {
 .text {
   font-size: 24px;
   font-weight: bold;
+  color: var(--text);
 }
 
 .svg {
@@ -228,6 +365,7 @@ section {
 .featured,
 .featured2 {
   position: relative;
+  background: var(--featured2);
 }
 
 .featured::before,
@@ -251,7 +389,7 @@ section {
 .subtitle {
   text-transform: uppercase;
   font-weight: bold;
-  color: #1c2541;
+  color: var(--subtitle);
   letter-spacing: 0.2em;
   font-size: 0.85em;
 }
@@ -265,19 +403,46 @@ section {
 }
 
 .featured-desc {
-  color: #252525;
+  color: var(--skills-title);
   margin-bottom: 3em;
   font-size: 0.9em;
   line-height: 1.8em;
   font-weight: 500;
 }
 
+:root {
+  --whiteFont: #fff;
+  --grayFont: #252525;
+  --darkFont: $black_color_;
+  --skills_container_light: #96b0a9;
+  --skills_container_dark: #000000;
+  --skill_container_light: #fff7eb;
+  --skill_container_dark: #2a2a2a;
+  --whiteIcon: #fff;
+}
+
+.light-theme {
+  --skills-container: var(--skills_container_light);
+  --skill-title: var(--darkFont);
+  --skill-box: var(--skill_container_light);
+}
+
+.dark-theme {
+  --skills-container: var(--skills_container_dark);
+  --skill-title: var(--whiteFont);
+  --skill-box: var(--skill_container_dark);
+}
+
 .my-skills {
-  background: #96b0a9;
+  background: var(--skills-container);
+}
+
+h1 {
+  color: var(--skill-title);
 }
 
 .skills-container ul li {
-  background: #fff7eb;
+  background: var(--skill-box);
   padding: 2em;
   border-radius: 1em;
   margin-bottom: 1em;
@@ -299,14 +464,13 @@ section {
 }
 .skills-container ul li .skills-title {
   font-weight: bold;
-  color: #252525;
+  color: var(--skills-title);
 }
 .skills-container ul li .skills-desc {
   margin-bottom: 2em;
 }
 
 .colorcont {
-  background-color: #fff7eb;
   transform: translateZ(40px);
 }
 
@@ -366,6 +530,9 @@ section > .little-text {
   We have also added an extra class that is .nav-menu.active which sets left: 0; on the nav-menu. 
   Now we will have to add the javascript which will add this active class on the nav-menu when we click our hamburger.
   */
+  header {
+    background: var(--header);
+  }
   .nav-menu {
     position: fixed;
     right: 0;
@@ -381,7 +548,7 @@ section > .little-text {
     transition: all 1.3s ease-out;
     pointer-events: none;
     z-index: 1;
-    background: #001524;
+    background: var(--header);
   }
   .nav-menu.active {
     left: 0;
@@ -394,7 +561,10 @@ section > .little-text {
     margin: 2rem 0;
   }
   ul.nav-menu.active {
-    background: #001524;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--header);
     z-index: 1;
     height: 425px;
     position: absolute;
@@ -443,7 +613,7 @@ section > .little-text {
     align-items: center;
     justify-content: space-around;
     background-size: 400%;
-    background-image: linear-gradient(45deg, hsl(36, 100%, 96%) 0%, hsl(36, 100%, 96%) 16%, hsl(36, 100%, 95%) 27%, hsl(36, 100%, 95%) 36%, hsl(36, 100%, 94%) 45%, hsl(36, 100%, 94%) 54%, hsl(36, 100%, 93%) 62%, hsl(37, 100%, 93%) 72%, hsl(37, 100%, 92%) 83%, hsl(37, 100%, 92%) 100%);
+    background-image: var(--bg_animation);
     animation: gradientAnimation 8s ease-in-out infinite;
   }
   div.container1 {
@@ -580,6 +750,16 @@ section > .little-text {
     display: flex;
     justify-content: space-between;
   }
+  .content {
+    background: var(--content);
+  }
+  .hero {
+    background: var(--content);
+  }
+  .featured,
+  .featured2 {
+    background: var(--featured2);
+  }
 }
 .list_menu {
   display: flex;
@@ -588,6 +768,10 @@ section > .little-text {
 }
 
 @media only screen and (max-width: 629px) {
+  .featured,
+  .featured2 {
+    background: var(--featured2);
+  }
   .featured::before,
   .featured2::before {
     display: none;
@@ -647,15 +831,24 @@ section > .little-text {
   .copyright {
     width: 100%;
     height: 40px;
-    background: #15616d;
+    background: var(--copyright);
     text-align: center;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
   }
+  .content {
+    background: var(--content);
+  }
+  .hero {
+    background: var(--content);
+  }
 }
 @media only screen and (max-width: 799px) {
+  header {
+    background: var(--header);
+  }
   .featured::before,
   .featured2::before {
     display: none;
@@ -771,22 +964,31 @@ section > .little-text {
   .copyright {
     width: 100%;
     height: 40px;
-    background: #15616d;
+    background: var(--copyright);
     text-align: center;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
   }
+  .content {
+    background: var(--content);
+  }
+  .hero {
+    background: var(--content);
+  }
 }
 @media only screen and (min-width: 800px) {
+  header {
+    background: var(--header);
+  }
   .featured,
   .featured2 {
     text-align: left;
     display: grid;
     grid-template-columns: 60% auto;
     grid-gap: 1em;
-    background: #fff7eb;
+    background: var(--featured2);
   }
   .left {
     display: grid;
@@ -814,7 +1016,7 @@ section > .little-text {
     align-items: center;
     justify-content: space-around;
     background-size: 400%;
-    background-image: linear-gradient(45deg, hsl(36, 100%, 96%) 0%, hsl(36, 100%, 96%) 16%, hsl(36, 100%, 95%) 27%, hsl(36, 100%, 95%) 36%, hsl(36, 100%, 94%) 45%, hsl(36, 100%, 94%) 54%, hsl(36, 100%, 93%) 62%, hsl(37, 100%, 93%) 72%, hsl(37, 100%, 92%) 83%, hsl(37, 100%, 92%) 100%);
+    background-image: var(--bg_animation);
     animation: gradientAnimation 8s ease-in-out infinite;
   }
   div.container1 {
@@ -894,7 +1096,7 @@ section > .little-text {
   .copyright {
     width: 100%;
     height: 40px;
-    background: #15616d;
+    background: var(--copyright);
     text-align: center;
     color: white;
     display: flex;
@@ -903,6 +1105,12 @@ section > .little-text {
   }
   .copyright .copyright_text {
     margin: 0;
+  }
+  .content {
+    background: var(--content);
+  }
+  .hero {
+    background: var(--content);
   }
 }
 @media only screen and (min-width: 1050px) {
@@ -913,7 +1121,7 @@ section > .little-text {
     flex-direction: row;
     justify-content: space-around;
     background-size: 400%;
-    background-image: linear-gradient(45deg, hsl(36, 100%, 96%) 0%, hsl(36, 100%, 96%) 16%, hsl(36, 100%, 95%) 27%, hsl(36, 100%, 95%) 36%, hsl(36, 100%, 94%) 45%, hsl(36, 100%, 94%) 54%, hsl(36, 100%, 93%) 62%, hsl(37, 100%, 93%) 72%, hsl(37, 100%, 92%) 83%, hsl(37, 100%, 92%) 100%);
+    background-image: var(--bg_animation);
     animation: gradientAnimation 8s ease-in-out infinite;
   }
   .hero {
@@ -925,19 +1133,22 @@ section > .little-text {
     background: #fff7eb;
   }
   header {
-    background: #001524;
+    background: var(--header);
   }
   header {
     padding: 2em 2em 2em 4em;
   }
   .social-header {
     padding: 2em 2em 4em 2em 0;
+    background: var(--navbar);
   }
   section {
     padding: 4em;
   }
   .social-header {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .social-header ul {
     display: flex;
@@ -953,11 +1164,11 @@ section > .little-text {
     display: grid;
     grid-template-columns: 66% auto;
     grid-gap: 1em;
-    background: #fff7eb;
+    background: var(--hero);
     padding: 0;
   }
   .hero .content {
-    background: #15616d;
+    background: var(--content);
     padding: 6em 8em 6em 4em;
     text-align: left;
   }
@@ -986,7 +1197,7 @@ section > .little-text {
   .copyright {
     width: 100%;
     height: 40px;
-    background: #15616d;
+    background: var(--copyright);
     text-align: center;
     color: white;
     display: flex;
@@ -1013,6 +1224,7 @@ section > .little-text {
   }
   .hero .content {
     padding: 6em 8em 6em 10em;
+    background: var(--content);
   }
   .hero-design {
     margin-left: -54%;
@@ -1029,7 +1241,7 @@ section > .little-text {
   .copyright {
     width: 100%;
     height: 40px;
-    background: #15616d;
+    background: var(--copyright);
     text-align: center;
     color: white;
     display: flex;
@@ -1065,7 +1277,7 @@ section > .little-text {
   .copyright {
     width: 100%;
     height: 40px;
-    background: #15616d;
+    background: var(--copyright);
     text-align: center;
     color: white;
     display: flex;
@@ -1163,6 +1375,38 @@ section > .little-text {
 ._wrapper_ {
   width: 100%;
   margin: 1em;
+}
+
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+.checkbox-label {
+  width: 40px;
+  border-radius: 50px;
+  padding: 0.5em;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #15616d;
+  position: relative;
+}
+
+.checkbox-label .ball {
+  width: 23px;
+  height: 23px;
+  position: absolute;
+  top: 5px;
+  left: 2px;
+  border-radius: 50%;
+  background-color: #fff;
+  transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .checkbox-label .ball {
+  transform: translateX(24px);
 }
 
 @keyframes gradientAnimation {

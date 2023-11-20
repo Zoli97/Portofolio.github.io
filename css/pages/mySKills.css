@@ -1,3 +1,18 @@
+:root {
+  --defaultTheme: #001524;
+  --darkTheme: #000000;
+}
+
+.light-theme {
+  --bg_: var(--defaultTheme);
+  --copyright: var(--defaultTheme);
+}
+
+.dark-theme {
+  --bg_: var(--darkTheme);
+  --copyright: var(--darkTheme);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -29,6 +44,10 @@
     scrollbar-width: auto;
   }
 }
+* {
+  transition: background-color 0.8s ease, color 1s ease;
+}
+
 html {
   scroll-behavior: smooth;
   scroll-padding-top: var(--scroll-top, 350px);
@@ -36,7 +55,7 @@ html {
 }
 
 body {
-  background: #001524;
+  background: var(--bg_);
   font-family: "Poppins", arial;
 }
 
@@ -46,6 +65,8 @@ a {
 
 header nav ul {
   list-style: none;
+  display: flex;
+  align-items: center;
 }
 
 .nav-link-color {
@@ -54,7 +75,7 @@ header nav ul {
 }
 
 .nav-container {
-  background: #001524;
+  background: var(--bg);
   position: sticky;
   top: 0;
   width: 100%;
@@ -99,6 +120,38 @@ header .hide_logo {
   background-color: #fff;
 }
 
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+.checkbox-label {
+  width: 55px;
+  border-radius: 50px;
+  padding: 0.5em;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  background-color: #15616d;
+}
+
+.checkbox-label .ball {
+  width: 23px;
+  height: 23px;
+  position: absolute;
+  top: 5px;
+  left: 2px;
+  border-radius: 50%;
+  background-color: #fff;
+  transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .checkbox-label .ball {
+  transform: translateX(24px);
+}
+
 @media screen and (max-width: 768px) {
   .nav-menu {
     position: fixed;
@@ -128,7 +181,7 @@ header .hide_logo {
     margin: 2rem 0;
   }
   ul.nav-menu.active {
-    background: #001524;
+    background: var(--bg_);
     z-index: 1;
     height: 425px;
     position: absolute;
@@ -267,7 +320,7 @@ header .hide_logo {
 .copyright {
   width: 100%;
   height: 40px;
-  background: #001524;
+  background: var(--copyright);
   text-align: center;
   color: white;
   display: flex;
@@ -323,6 +376,7 @@ header .hide_logo {
   body {
     margin: 1.4em 3em;
     overflow-x: hidden;
+    background: var(--bg_);
   }
   section > article > .title {
     font-size: 3em;
@@ -368,6 +422,9 @@ header .hide_logo {
 }
 
 @media only screen and (min-width: 920px) {
+  body {
+    background: var(--bg_);
+  }
   .article4 {
     display: flex !important;
   }
@@ -378,7 +435,7 @@ header .hide_logo {
   .copyright {
     width: 100%;
     height: 40px;
-    background: #001524;
+    background: var(--copyright);
     text-align: center;
     color: white;
     display: flex;
@@ -391,6 +448,9 @@ header .hide_logo {
   }
 }
 @media only screen and (min-width: 1050px) {
+  body {
+    background: var(--bg_);
+  }
   header {
     padding: 2em 2em 2em 4em;
   }
@@ -426,7 +486,7 @@ header .hide_logo {
   .copyright {
     width: 100%;
     height: 40px;
-    background: #001524;
+    background: var(--copyright);
     text-align: center;
     color: white;
     display: flex;
@@ -439,6 +499,9 @@ header .hide_logo {
   }
 }
 @media only screen and (min-width: 1250px) {
+  body {
+    background: var(--bg_);
+  }
   header {
     padding: 2em 2em 2em 10em;
   }
@@ -479,7 +542,7 @@ header .hide_logo {
   .copyright {
     width: 100%;
     height: 40px;
-    background: #001524;
+    background: var(--copyright);
     text-align: center;
     color: white;
     display: flex;
@@ -492,6 +555,9 @@ header .hide_logo {
   }
 }
 @media only screen and (min-width: 1550px) {
+  body {
+    background: var(--bg_);
+  }
   header {
     padding: 2em 2em 2em 20em;
   }
@@ -517,7 +583,7 @@ header .hide_logo {
   .copyright {
     width: 100%;
     height: 40px;
-    background: #001524;
+    background: var(--copyright);
     text-align: center;
     color: white;
     display: flex;
@@ -544,7 +610,7 @@ header .hide_logo {
   transform: translateX(-300px);
 }
 
-/*scroll out on iamge*/
+/*scroll out on image*/
 .img[data-scroll] {
   transition: transform 2s ease-in-out;
 }

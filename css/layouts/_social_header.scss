@@ -1,5 +1,7 @@
 .social-header {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   ul {
     display: flex;
     justify-content: space-between;

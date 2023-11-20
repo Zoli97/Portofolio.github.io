@@ -6,14 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Author: Zoli, This is my portofolio ">
     <meta name="view-transition" content="same-origin">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
     <link rel="icon" href="/abstract-shape.7be2a636.png">
+
     <link rel="stylesheet" href="/index.47ca9330.css">
 
     <title>Portofolio</title>
   </head>
 
-  <body id="my-scrollbar">
+  <body id="my-scrollbar" class="light-theme">
+    <div class="cookies-eu-banner hidden">
+      By clicking "Accept", you agree to the storing of cookies on your device
+      to enhance site navigation, anylize site usage, and improve marketing.
+      <button class="cookies-eu-button">Accept</button>
+    </div>
+
     <div class="nav-container">
       <header class="header">
         <!-- <a href="index.html" class="logo">Tazlo Zoli</a> -->
@@ -32,6 +40,18 @@
 
             <li class="nav-item">
               <a class="nav-link nav-link-hover" href="/contact.html">Contact</a>
+            </li>
+
+            <li>
+              <div>
+                <input type="checkbox" id="checkbox" class="checkbox" checked="">
+                <label for="checkbox" class="checkbox-label">
+                  <i class="fas fa-sun" style="color: #fb0"></i>
+                  <i class="fas fa-moon" style="color: #fbe918"></i>
+
+                  <span class="ball"></span>
+                </label>
+              </div>
             </li>
           </ul>
 
@@ -197,7 +217,7 @@
         <ul class="skillz">
           <li class="transition2 tilt">
             <div class="icon-container one">
-              <img class="html5_img" src="/Icon%20awesome-html5.57d6494e.png" alt="">
+              <img class="html5_img" src="/html.f243ad8a.png" alt="">
             </div>
             <p class="skills-title">HTML 5</p>
             <p class="featured-desc skill-desc">
@@ -208,7 +228,7 @@
 
           <li class="transition2 tilt2">
             <div class="icon-container two">
-              <img class="css3_img" src="/Icon%20awesome-css3-alt.c5840830.png" alt="">
+              <img class="css3_img" src="/css.3d1925cd.png" alt="">
             </div>
             <p class="skills-title">CSS3</p>
             <p class="featured-desc skill-desc">
@@ -220,7 +240,7 @@
           <li class="transition2 tilt3">
             <div class="colorcont">
               <div class="icon-container three">
-                <img class="js_img" src="/Icon%20awesome-js-square.fe303b3a.png" alt="">
+                <img class="js_img" src="/js.ca7f8ee9.png" alt="">
               </div>
               <p class="skills-title">JavaScript</p>
               <p class="featured-desc skill-desc">
@@ -238,7 +258,7 @@
       <div class="svg hide" id="svg"></div>
       <div class="little-text">
         <p class="text">
-          You like that? <button class="my_button">Hire Me</button>
+          You like that? <a href="/contact.html" class="my_button">Hire Me</a>
         </p>
       </div>
     </main>
@@ -354,7 +374,6 @@
         </svg>
       </div>
     </main>
-    <!-- <hr class="line"/> -->
 
     <div class="copyright">
       <p class="copyright_text">&copy; Copyright Tazlo Zoli 2023</p>
@@ -367,6 +386,7 @@
     <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="/mySKills.7510ec79.js"></script>
     <script src="/index.478a33b3.js" defer=""></script>
     <script src="/index.5d9dacde.js" defer=""></script>
 

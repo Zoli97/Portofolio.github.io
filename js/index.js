@@ -1,25 +1,35 @@
 //play the lottie when the span is clicked
 const play_button = document.querySelector("button");
 const svg_container = document.getElementById("svg");
+const switch_theme = document.getElementById("checkbox");
 
-const animation_item = bodymovin.loadAnimation({
-  wrapper: svg_container,
-  animType: "svg",
-  loop: false,
-  autoplay: false,
-  path: "https://assets8.lottiefiles.com/packages/lf20_tkvgymkx.json",
-});
+switch_theme.checked = false;
 
-play_button.addEventListener("click", () => {
-  //not hidden anymore
-  svg_container.classList.remove("hide");
-  animation_item.goToAndPlay(0, true);
-});
+window.onload = checkTheme();
 
-animation_item.addEventListener("complete", () => {
-  //once the aniamtion is complete
-  svg_container.classList.add("hide");
-});
+function changeTheme() {
+  if (this.checked) {
+    document.body.classList.remove("light-theme");
+    document.body.classList.add("dark-theme");
+    localStorage.setItem("theme", "dark-theme");
+  } else {
+    document.body.classList.remove("dark-theme");
+    document.body.classList.add("light-theme");
+    localStorage.setItem("theme", "light-theme");
+  }
+}
+
+function checkTheme() {
+  const localStorageTheme = localStorage.getItem("theme");
+  if (localStorageTheme !== null && localStorageTheme == "dark-theme") {
+    document.body.className = localStorageTheme;
+  }
+
+  const switch_theme = document.getElementById("checkbox");
+  switch_theme.checked = true;
+}
+
+switch_theme.addEventListener("change", changeTheme);
 
 //fadein animation
 
@@ -59,3 +69,52 @@ const $ = function (selector) {
   return fade_library;
 };
 $(".fadein").addClass("hide_logo").fadeIn(3500);
+
+//get cookie and set cookie
+//hidding the banner on init
+const getCookie = (name) => {
+  const value = " " + document.cookie;
+  console.log("Value", `==${value}==`);
+  const parts = value.split(" " + name + "=");
+  return parts.length < 2 ? undefined : parts.pop().split(";").shift();
+};
+
+const setCookie = function (name, value, expiryDays, doamin, path, secure) {
+  const exdate = new Date();
+  exdate.setHours(
+    exdate.getHours() + (typeof expiryDays !== "number" ? 365 : expiryDays) * 24
+  );
+
+  document.cookie =
+    name +
+    "=" +
+    value +
+    ";expires=" +
+    exdate.toUTCString() +
+    ";path=" +
+    (path || "/") +
+    (doamin ? ";domain=" + doamin : "") +
+    (secure ? ";secure" : "");
+};
+
+//self called function anonymous fun.
+//isolate all of the props inside the function their local props and not inside window, the function simply executed when i will load this index.js
+//when i click accept i want to remove the banner and also set a cookie in order to know that the user already closed this banner.
+//remove the banner from the dom.
+(() => {
+  const cookieName = "cookiesBanner";
+  const $cookieBanner = document.querySelector(".cookies-eu-banner");
+  const $cookieButton = document.querySelector(".cookies-eu-button");
+  const hasCookie = getCookie(cookieName);
+
+  //if i dont have the cookie just remove the class.
+  //actually means on init check if i have the cookie 'hasCookie' and if i have it then dont do anything
+  if (!hasCookie) {
+    $cookieBanner.classList.remove("hidden");
+  }
+  $cookieButton.addEventListener("click", () => {
+    console.log("clicked");
+    setCookie(cookieName, "closed", 31);
+    $cookieBanner.remove();
+  });
+})();
