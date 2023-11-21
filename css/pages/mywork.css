@@ -237,7 +237,7 @@ header .hide_logo {
     transition: all 1.3s ease-out;
     pointer-events: none;
     z-index: 1;
-    background: #001524;
+    background: var(--bg_);
   }
   .nav-menu.active {
     left: 0;
@@ -250,7 +250,6 @@ header .hide_logo {
     margin: 2rem 0;
   }
   ul.nav-menu.active {
-    background: var(--bg_);
     z-index: 1;
     height: 425px;
     position: absolute;

@@ -5,7 +5,7 @@
 34/var/www/html/portofolio/README.md1664886216885899123 0
 46/var/www/html/portofolio/dist/mee.17520502.jpg1700559360120142064 0
 75/var/www/html/portofolio/dist/undraw_work_in_progress_uhmv (1).58a1ca48.svg1691744202311665800 0
-53/var/www/html/portofolio/dist/myWork.45164288.css.map1700559359540149203 0
+53/var/www/html/portofolio/dist/myWork.45164288.css.map1700570012399843045 0
 54/var/www/html/portofolio/dist/atropos.min.085886fd.css1664886084059746146 0
 56/var/www/html/portofolio/dist/countdown.f100e3d0.css.map1691744200987686340 0
 48/var/www/html/portofolio/dist/index.10676faa.css1684434355086951162 0
@@ -3239,7 +3239,7 @@
 78/var/www/html/portofolio/node_modules/core-js/proposals/regexp-named-groups.js499162500000000000 0
 80/var/www/html/portofolio/node_modules/core-js/features/typed-array/find-index.js499162500000000000 0
 89/var/www/html/portofolio/node_modules/core-js/features/typed-array/uint8-clamped-array.js499162500000000000 0
-49/var/www/html/portofolio/dist/myWork.45164288.css1700559359532149301 0
+49/var/www/html/portofolio/dist/myWork.45164288.css1700570012399843045 0
 66/var/www/html/portofolio/node_modules/core-js/features/typed-array1664997653944704489 1
 71/var/www/html/portofolio/node_modules/core-js/features/iterator/drop.js499162500000000000 0
 71/var/www/html/portofolio/node_modules/core-js/features/iterator/take.js499162500000000000 0
@@ -10558,7 +10558,7 @@
 64/var/www/html/portofolio/node_modules/yaml/browser/dist/index.js1666266308794149277 0
 80/var/www/html/portofolio/node_modules/performance-now/lib/performance-now.js.map1487514525000000000 0
 91/var/www/html/portofolio/node_modules/@babel/preset-env/lib/polyfills/babel-polyfill.js.map456789000000000000 0
-46/var/www/html/portofolio/css/pages/mywork.scss1699891510430428313 0
+46/var/www/html/portofolio/css/pages/mywork.scss1700570012035847427 0
 80/var/www/html/portofolio/node_modules/@fortawesome/free-solid-svg-icons/faBug.js1698927806590662242 0
 49/var/www/html/portofolio/node_modules/psl/LICENSE499162500000000000 0
 85/var/www/html/portofolio/node_modules/@fortawesome/free-solid-svg-icons/faGaugeMed.js1698927806670661192 0
@@ -10925,7 +10925,7 @@
 60/var/www/html/portofolio/node_modules/immutable/package.json1665475515240886840 0
 71/var/www/html/portofolio/node_modules/readable-stream/duplex-browser.js499162500000000000 0
 65/var/www/html/portofolio/node_modules/domutils/lib/index.d.ts.map1666266308810149017 0
-46/var/www/html/portofolio/css/pages/contact.css1700564352490986312 0
+46/var/www/html/portofolio/css/pages/contact.css1700564373962706858 0
 95/var/www/html/portofolio/node_modules/@babel/helper-member-expression-to-functions/lib/index.js456789000000000000 0
 61/var/www/html/portofolio/node_modules/lodash/cloneDeepWith.js499162500000000000 0
 60/var/www/html/portofolio/node_modules/node-gyp/test/fixtures1664997652704705061 1
@@ -10968,7 +10968,7 @@
 60/var/www/html/portofolio/node_modules/ajv/dist/ajv.bundle.js499162500000000000 0
 59/var/www/html/portofolio/node_modules/jquery/src/effects.js499162500000000000 0
 75/var/www/html/portofolio/node_modules/has-property-descriptors/CHANGELOG.md499162500000000000 0
-47/var/www/html/portofolio/css/pages/contact.scss1700564352318988550 0
+47/var/www/html/portofolio/css/pages/contact.scss1700564373798708992 0
 75/var/www/html/portofolio/node_modules/@nicolo-ribaudo/chokidar-2/types.d.ts499162500000000000 0
 61/var/www/html/portofolio/node_modules/weak-lru-cache/index.js499162500000000000 0
 45/var/www/html/portofolio/node_modules/mime-db1664997654664704155 1
@@ -11013,7 +11013,7 @@
 87/var/www/html/portofolio/node_modules/babel-plugin-polyfill-corejs2/node_modules/semver1664997654796704094 1
 55/var/www/html/portofolio/node_modules/lodash/fp/drop.js499162500000000000 0
 87/var/www/html/portofolio/node_modules/@fortawesome/free-solid-svg-icons/faPhoneSlash.js1698927806754660090 0
-50/var/www/html/portofolio/css/pages/contact.css.map1700564352490986312 0
+50/var/www/html/portofolio/css/pages/contact.css.map1700564373962706858 0
 78/var/www/html/portofolio/node_modules/@fortawesome/free-solid-svg-icons/faZ.js1698927806850658831 0
 68/var/www/html/portofolio/node_modules/@babel/helper-plugin-utils/lib1664997651312705694 1
 62/var/www/html/portofolio/node_modules/core-js/es/math/trunc.js499162500000000000 0
@@ -11188,7 +11188,7 @@
 104/var/www/html/portofolio/node_modules/regenerate-unicode-properties/General_Category/Lowercase_Letter.js499162500000000000 0
 82/var/www/html/portofolio/node_modules/@fortawesome/free-solid-svg-icons/faDizzy.js1698927806634661665 0
 91/var/www/html/portofolio/node_modules/@fortawesome/free-solid-svg-icons/faHandBackFist.d.ts1698927806966657310 0
-49/var/www/html/portofolio/css/pages/mywork.css.map1700557795427980999 0
+49/var/www/html/portofolio/css/pages/mywork.css.map1700570012279844489 0
 94/var/www/html/portofolio/node_modules/@fortawesome/free-solid-svg-icons/faScrewdriverWrench.js1698927806782659723 0
 90/var/www/html/portofolio/node_modules/unicode-canonical-property-names-ecmascript/index.js499162500000000000 0
 70/var/www/html/portofolio/node_modules/@glidejs/glide/src/utils/time.js1684413247485606435 0
@@ -13594,7 +13594,7 @@
 60/var/www/html/portofolio/node_modules/@parcel/runtime-js/src1666266308926147132 1
 82/var/www/html/portofolio/node_modules/@babel/runtime/helpers/esm/defineProperty.js456789000000000000 0
 51/var/www/html/portofolio/node_modules/chalk/license1459195776000000000 0
-45/var/www/html/portofolio/css/pages/mywork.css1700557795427980999 0
+45/var/www/html/portofolio/css/pages/mywork.css1700570012279844489 0
 75/var/www/html/portofolio/node_modules/css-tree/node_modules/source-map/dist1666266308922147197 1
 48/var/www/html/portofolio/node_modules/path-parse1664997654660704157 1
 66/var/www/html/portofolio/node_modules/@swc/helpers/lib/_type_of.js1684413246517619173 0
@@ -17644,7 +17644,7 @@
 53/var/www/html/portofolio/node_modules/yallist/LICENSE1450425977000000000 0
 76/var/www/html/portofolio/node_modules/@parcel/core/test/fixtures/module-a.js499162500000000000 0
 82/var/www/html/portofolio/node_modules/@fortawesome/free-solid-svg-icons/faFan.d.ts1698927806946657572 0
-29/var/www/html/portofolio/dist1700564291555779558 1
+29/var/www/html/portofolio/dist1700570012399843045 1
 84/var/www/html/portofolio/node_modules/@fortawesome/free-solid-svg-icons/faTents.d.ts1698927807058656103 0
 90/var/www/html/portofolio/node_modules/@fortawesome/free-solid-svg-icons/faSquareParking.js1698927806806659408 0
 94/var/www/html/portofolio/node_modules/@fortawesome/free-solid-svg-icons/faLongArrowAltRight.js1698927806718660563 0
