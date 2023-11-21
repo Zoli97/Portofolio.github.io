@@ -76,7 +76,6 @@ header nav ul {
 }
 
 .nav-container {
-  //background: $dark_violet_color_;
   background: var(--bg);
   position: -webkit-sticky;
   position: sticky;
@@ -149,8 +148,7 @@ header nav ul {
     transition: all 1.3s ease-out;
     pointer-events: none;
     z-index: 1;
-
-    background: $rich_black;
+    background: var(--bg_);
   }
   .nav-menu.active {
     left: 0;
@@ -163,7 +161,6 @@ header nav ul {
     margin: 2rem 0;
   }
   ul.nav-menu.active {
-    background: var(--bg_);
     z-index: 1;
     height: 425px;
     position: absolute;

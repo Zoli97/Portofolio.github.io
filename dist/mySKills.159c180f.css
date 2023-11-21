@@ -166,7 +166,7 @@ header .hide_logo {
     clip-path: circle(100px at 90% -25%);
     pointer-events: none;
     z-index: 1;
-    background: #001524;
+    background: var(--bg_);
     border-radius: 10px;
     flex-direction: column;
     transition: all 1.3s ease-out;
@@ -188,7 +188,6 @@ header .hide_logo {
   }
 
   ul.nav-menu.active {
-    background: var(--bg_);
     z-index: 1;
     height: 425px;
     position: absolute;
