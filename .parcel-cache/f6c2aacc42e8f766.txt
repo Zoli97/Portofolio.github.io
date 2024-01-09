@@ -1,23 +1,23 @@
-19139
+19142
 31/var/www/html/portofolio/public1683818929617806552 1
 37/var/www/html/portofolio/package.json1698927807238653742 0
-35/var/www/html/portofolio/index.html1700559260517368079 0
+35/var/www/html/portofolio/index.html1704721745026194445 0
 34/var/www/html/portofolio/README.md1664886216885899123 0
-46/var/www/html/portofolio/dist/mee.17520502.jpg1700559360120142064 0
+46/var/www/html/portofolio/dist/mee.17520502.jpg1704804693340142423 0
 75/var/www/html/portofolio/dist/undraw_work_in_progress_uhmv (1).58a1ca48.svg1691744202311665800 0
-53/var/www/html/portofolio/dist/myWork.45164288.css.map1700570012399843045 0
+53/var/www/html/portofolio/dist/myWork.45164288.css.map1704813117564665095 0
 54/var/www/html/portofolio/dist/atropos.min.085886fd.css1664886084059746146 0
 56/var/www/html/portofolio/dist/countdown.f100e3d0.css.map1691744200987686340 0
 48/var/www/html/portofolio/dist/index.10676faa.css1684434355086951162 0
 56/var/www/html/portofolio/dist/countdown.194fa3bd.css.map1664886084063746091 0
-47/var/www/html/portofolio/dist/index.478a33b3.js1700559358052167517 0
+47/var/www/html/portofolio/dist/index.478a33b3.js1704804686900221739 0
 58/var/www/html/portofolio/dist/vanilla-tilt.min.e53017b8.js1664886084067746034 0
-51/var/www/html/portofolio/dist/mySKills.159c180f.css1700559358052167517 0
-53/var/www/html/portofolio/dist/contact.ebdd7f4b.js.map1700559359540149203 0
+51/var/www/html/portofolio/dist/mySKills.159c180f.css1704804690976171536 0
+53/var/www/html/portofolio/dist/contact.ebdd7f4b.js.map1704804687908209322 0
 65/var/www/html/portofolio/dist/Icon awesome-instagram.8a5cfcd4.png1664886084031746539 0
 51/var/www/html/portofolio/dist/mySKills.f0cbd4d7.css1665743277388090310 0
 57/var/www/html/portofolio/dist/atropos.min.085886fd.js.map1664886084059746146 0
-54/var/www/html/portofolio/dist/contact.deecd534.css.map1700564291555779558 0
+54/var/www/html/portofolio/dist/contact.deecd534.css.map1704804687908209322 0
 51/var/www/html/portofolio/dist/countdown.97bf790d.js1691744201195683114 0
 53/var/www/html/portofolio/dist/tilt.jquery.86ad4383.js1664886084063746091 0
 51/var/www/html/portofolio/dist/index.ecb2644b.js.map1684485272015678241 0
@@ -30,38 +30,39 @@
 59/var/www/html/portofolio/dist/randomColorsOnSVG.72a80cc1.js1664886084063746091 0
 42/var/www/html/portofolio/dist/my_work.html1664886084063746091 0
 54/var/www/html/portofolio/dist/mySKills.c98088d8.js.map1665741241733026852 0
-49/var/www/html/portofolio/dist/contact.4fac2dca.js1700559358052167517 0
+49/var/www/html/portofolio/dist/contact.4fac2dca.js1704804693232143752 0
 50/var/www/html/portofolio/dist/my_work.611ccd57.css1664886084063746091 0
-52/var/www/html/portofolio/dist/myWork.f5d4ebde.js.map1700559358060167418 0
-49/var/www/html/portofolio/dist/contact.ebdd7f4b.js1700559359532149301 0
-45/var/www/html/portofolio/dist/js.ca7f8ee9.png1700559360120142064 0
+52/var/www/html/portofolio/dist/myWork.f5d4ebde.js.map1704804693236143704 0
+49/var/www/html/portofolio/dist/contact.ebdd7f4b.js1704804686900221739 0
+45/var/www/html/portofolio/dist/js.ca7f8ee9.png1704804693232143752 0
 55/var/www/html/portofolio/dist/mySKills.f0cbd4d7.css.map1665743277788085048 0
 53/var/www/html/portofolio/dist/changeColor.c3899064.js1664886084059746146 0
 49/var/www/html/portofolio/dist/contact.a937e887.js1666350660903759441 0
 54/var/www/html/portofolio/dist/mySKills.24ca2391.js.map1666361001205832082 0
-51/var/www/html/portofolio/dist/index.5d9dacde.js.map1700559359540149203 0
+51/var/www/html/portofolio/dist/index.5d9dacde.js.map1704804693236143704 0
 52/var/www/html/portofolio/dist/index.021e8959.css.map1684490625049633700 0
 55/var/www/html/portofolio/dist/GradientBlur.93833597.jpg1684492217115150609 0
-47/var/www/html/portofolio/dist/index.5d9dacde.js1700559359532149301 0
+47/var/www/html/portofolio/dist/index.5d9dacde.js1704804693232143752 0
 57/var/www/html/portofolio/dist/tilt.jquery.86ad4383.js.map1664886084067746034 0
 48/var/www/html/portofolio/dist/myWork.be2ce8a8.js1666013792853888715 0
 51/var/www/html/portofolio/dist/main.c52e0fe2.css.map1664886084063746091 0
 61/var/www/html/portofolio/dist/Icon awesome-html5.57d6494e.png1699022743026720030 0
 45/var/www/html/portofolio/dist/app.c3f9f951.js1664886084043746372 0
-51/var/www/html/portofolio/dist/index.478a33b3.js.map1700559358064167369 0
-51/var/www/html/portofolio/dist/mySKills.da3073eb.css1700559359532149301 0
+51/var/www/html/portofolio/dist/index.478a33b3.js.map1704804687908209322 0
+51/var/www/html/portofolio/dist/mySKills.da3073eb.css1704804686900221739 0
 51/var/www/html/portofolio/dist/index.34be0385.js.map1666611464108378550 0
-43/var/www/html/portofolio/dist/mySKills.html1700559358048167566 0
+48/var/www/html/portofolio/dist/myWork.62be6bfe.js1704804686900221739 0
+43/var/www/html/portofolio/dist/mySKills.html1704804693996134344 0
 42/var/www/html/portofolio/dist/index.js.map1664886084063746091 0
 50/var/www/html/portofolio/dist/mySKills.c98088d8.js1665741241729026922 0
 53/var/www/html/portofolio/dist/my_work.611ccd57.js.map1664886084063746091 0
 49/var/www/html/portofolio/dist/circle.033f46e6.png1664886084059746146 0
 56/var/www/html/portofolio/dist/explode-shape.1f92f349.png1665049522711554639 0
-50/var/www/html/portofolio/dist/contact.deecd534.css1700564291551779610 0
+50/var/www/html/portofolio/dist/contact.deecd534.css1704804686900221739 0
 62/var/www/html/portofolio/dist/Icon material-email.751e74d5.png1664886084031746539 0
-49/var/www/html/portofolio/dist/contact.be2ce8a8.js1700559359532149301 0
+49/var/www/html/portofolio/dist/contact.be2ce8a8.js1704804686900221739 0
 57/var/www/html/portofolio/dist/changeColor.c3899064.js.map1664886084059746146 0
-45/var/www/html/portofolio/dist/me.0f438621.jpg1700559359544149153 0
+45/var/www/html/portofolio/dist/me.0f438621.jpg1704804693236143704 0
 46/var/www/html/portofolio/dist/main.54166fbf.js1664886084063746091 0
 50/var/www/html/portofolio/dist/main.c52e0fe2.js.map1664886084063746091 0
 53/var/www/html/portofolio/dist/BlurEffect.330d9420.jpg1684422156873368913 0
@@ -73,12 +74,12 @@
 66/var/www/html/portofolio/dist/Icon material-wb-cloudy.49f40a9d.png1664997916868073163 0
 64/var/www/html/portofolio/dist/Icon awesome-linkedin.6f60a72f.png1665389906784823584 0
 47/var/www/html/portofolio/dist/blob.b2a094b5.gif1665052551340025817 0
-48/var/www/html/portofolio/dist/myWork.01ca0cc5.js1700559358052167517 0
+48/var/www/html/portofolio/dist/myWork.01ca0cc5.js1704804693232143752 0
 57/var/www/html/portofolio/dist/facebook-white.25b17dd7.png1664886084063746091 0
 50/var/www/html/portofolio/dist/tilt.0007a1be.js.map1664886084063746091 0
 63/var/www/html/portofolio/dist/randomColorsOnSVG.72a80cc1.js.map1664886084063746091 0
 47/var/www/html/portofolio/dist/index.196a292d.js1666212772691692766 0
-55/var/www/html/portofolio/dist/mySKills.159c180f.css.map1700559358060167418 0
+55/var/www/html/portofolio/dist/mySKills.159c180f.css.map1704804691112169861 0
 47/var/www/html/portofolio/dist/main.c52e0fe2.css1664886084063746091 0
 44/var/www/html/portofolio/dist/js.00a46daa.js1664886084063746091 0
 57/var/www/html/portofolio/dist/linkedin-white.fc86444c.png1664886084063746091 0
@@ -86,12 +87,12 @@
 49/var/www/html/portofolio/dist/atropos.19481295.js1664886084059746146 0
 48/var/www/html/portofolio/dist/paint.1bbb4aa1.png1683818756788244529 0
 53/var/www/html/portofolio/dist/atropos.19481295.js.map1664886084059746146 0
-41/var/www/html/portofolio/dist/myWork.html1700559359528149350 0
-53/var/www/html/portofolio/dist/myWork.46b18006.css.map1700559358060167418 0
+41/var/www/html/portofolio/dist/myWork.html1704810753856610581 0
+53/var/www/html/portofolio/dist/myWork.46b18006.css.map1704804691112169861 0
 52/var/www/html/portofolio/dist/count_down.e7a63ccc.js1664886084063746091 0
-50/var/www/html/portofolio/dist/youtube.0246980e.gif1700559359148154027 0
-47/var/www/html/portofolio/dist/html.f243ad8a.png1700559360120142064 0
-66/var/www/html/portofolio/dist/skeleton-playing-guitar.36d29c57.gif1700559361644123307 0
+50/var/www/html/portofolio/dist/youtube.0246980e.gif1704804691108169909 0
+47/var/www/html/portofolio/dist/html.f243ad8a.png1704804693212143999 0
+66/var/www/html/portofolio/dist/skeleton-playing-guitar.36d29c57.gif1704804694720125429 0
 51/var/www/html/portofolio/dist/index.c9beaae7.js.map1684490625781605354 0
 68/var/www/html/portofolio/images/undraw_work_in_progress_uhmv (1).svg1664886084067746034 0
 46/var/www/html/portofolio/images/Ellipse 11.png1664886084067746034 0
@@ -102,11 +103,11 @@
 48/var/www/html/portofolio/images/footer-icons.png1664886084067746034 0
 59/var/www/html/portofolio/images/Icon awesome-arrow-down.png1664886084067746034 0
 39/var/www/html/portofolio/images/css.png1699272852083671236 0
-42/var/www/html/portofolio/package-lock.json1698927807238653742 0
+42/var/www/html/portofolio/package-lock.json1704799430184886997 0
 48/var/www/html/portofolio/js/randomColorsOnSVG.js1664886084071745977 0
 41/var/www/html/portofolio/js/count_down.js1666356862175412334 0
 47/var/www/html/portofolio/js/vanilla-tilt.min.js1664886084071745977 0
-27/var/www/html/portofolio/js1700559328836527111 1
+27/var/www/html/portofolio/js1703852561838248963 1
 61/var/www/html/portofolio/node_modules/har-validator/README.md499162500000000000 0
 59/var/www/html/portofolio/node_modules/har-validator/LICENSE499162500000000000 0
 64/var/www/html/portofolio/node_modules/har-validator/lib/error.js499162500000000000 0
@@ -172,7 +173,7 @@
 88/var/www/html/portofolio/node_modules/sass-resources-loader/node_modules/chalk/readme.md499162500000000000 0
 98/var/www/html/portofolio/node_modules/sass-resources-loader/node_modules/chalk/source/templates.js499162500000000000 0
 72/var/www/html/portofolio/node_modules/sass-resources-loader/node_modules1664997654172704384 1
-40/var/www/html/portofolio/dist/index.html1700559359528149350 0
+40/var/www/html/portofolio/dist/index.html1704804686676224498 0
 59/var/www/html/portofolio/node_modules/sass-resources-loader1664997654360704296 1
 54/var/www/html/portofolio/node_modules/pinkie/readme.md1454322504000000000 0
 44/var/www/html/portofolio/node_modules/pinkie1664997654600704185 1
@@ -499,7 +500,7 @@
 59/var/www/html/portofolio/node_modules/lodash/fp/isSymbol.js499162500000000000 0
 54/var/www/html/portofolio/node_modules/lodash/fp/any.js499162500000000000 0
 57/var/www/html/portofolio/node_modules/lodash/fp/filter.js499162500000000000 0
-42/var/www/html/portofolio/dist/contact.html1700562244911593327 0
+42/var/www/html/portofolio/dist/contact.html1704804686680224449 0
 58/var/www/html/portofolio/node_modules/lodash/fp/replace.js499162500000000000 0
 57/var/www/html/portofolio/node_modules/lodash/fp/equals.js499162500000000000 0
 74/var/www/html/portofolio/node_modules/mdn-data/api/inheritance.schema.json1666266308842148497 0
@@ -1138,7 +1139,7 @@
 66/var/www/html/portofolio/dist/Icon material-wb-cloudy.2cef5f54.png1664886084031746539 0
 77/var/www/html/portofolio/node_modules/@parcel/transformer-babel/lib/babel7.js1666266308670151292 0
 76/var/www/html/portofolio/node_modules/@parcel/transformer-babel/lib/utils.js1666266308842148497 0
-48/var/www/html/portofolio/dist/myWork.f5d4ebde.js1700559358052167517 0
+48/var/www/html/portofolio/dist/myWork.f5d4ebde.js1704804693232143752 0
 80/var/www/html/portofolio/node_modules/@parcel/transformer-babel/lib/constants.js1666266308758149861 0
 77/var/www/html/portofolio/node_modules/@parcel/transformer-babel/lib/config.js1666266308734150251 0
 76/var/www/html/portofolio/node_modules/@parcel/transformer-babel/lib/types.js1666266308830148692 0
@@ -2118,7 +2119,7 @@
 68/var/www/html/portofolio/node_modules/core-js/stable/symbol/split.js499162500000000000 0
 68/var/www/html/portofolio/node_modules/core-js/stable/symbol/index.js499162500000000000 0
 72/var/www/html/portofolio/node_modules/core-js/stable/symbol/match-all.js499162500000000000 0
-53/var/www/html/portofolio/dist/contact.be2ce8a8.js.map1700559359540149203 0
+53/var/www/html/portofolio/dist/contact.be2ce8a8.js.map1704804687908209322 0
 103/var/www/html/portofolio/node_modules/@parcel/transformer-posthtml/node_modules/posthtml-parser/license1684413246485619594 0
 71/var/www/html/portofolio/node_modules/core-js/stable/symbol/iterator.js499162500000000000 0
 58/var/www/html/portofolio/node_modules/lodash/fp/isError.js499162500000000000 0
@@ -2675,7 +2676,7 @@
 83/var/www/html/portofolio/node_modules/core-js/internals/require-object-coercible.js499162500000000000 0
 69/var/www/html/portofolio/node_modules/core-js/internals/math-trunc.js499162500000000000 0
 78/var/www/html/portofolio/node_modules/core-js/internals/species-constructor.js499162500000000000 0
-49/var/www/html/portofolio/dist/myWork.46b18006.css1700559358052167517 0
+49/var/www/html/portofolio/dist/myWork.46b18006.css1704804690976171536 0
 83/var/www/html/portofolio/node_modules/core-js/internals/correct-prototype-getter.js499162500000000000 0
 56/var/www/html/portofolio/node_modules/lodash/_setData.js499162500000000000 0
 70/var/www/html/portofolio/node_modules/core-js/internals/array-group.js499162500000000000 0
@@ -3207,7 +3208,7 @@
 60/var/www/html/portofolio/node_modules/pseudomap/package.json1664997654596704186 0
 80/var/www/html/portofolio/node_modules/core-js/features/object/iterate-entries.js499162500000000000 0
 74/var/www/html/portofolio/node_modules/core-js/features/object/is-frozen.js499162500000000000 0
-57/var/www/html/portofolio/dist/abstract-shape.7be2a636.png1700559359536149252 0
+57/var/www/html/portofolio/dist/abstract-shape.7be2a636.png1704804693232143752 0
 81/var/www/html/portofolio/node_modules/core-js/features/object/get-prototype-of.js499162500000000000 0
 80/var/www/html/portofolio/node_modules/core-js/features/object/define-property.js499162500000000000 0
 79/var/www/html/portofolio/node_modules/core-js/modules/es.symbol.to-primitive.js499162500000000000 0
@@ -3239,7 +3240,7 @@
 78/var/www/html/portofolio/node_modules/core-js/proposals/regexp-named-groups.js499162500000000000 0
 80/var/www/html/portofolio/node_modules/core-js/features/typed-array/find-index.js499162500000000000 0
 89/var/www/html/portofolio/node_modules/core-js/features/typed-array/uint8-clamped-array.js499162500000000000 0
-49/var/www/html/portofolio/dist/myWork.45164288.css1700570012399843045 0
+49/var/www/html/portofolio/dist/myWork.45164288.css1704813117564665095 0
 66/var/www/html/portofolio/node_modules/core-js/features/typed-array1664997653944704489 1
 71/var/www/html/portofolio/node_modules/core-js/features/iterator/drop.js499162500000000000 0
 71/var/www/html/portofolio/node_modules/core-js/features/iterator/take.js499162500000000000 0
@@ -3620,7 +3621,7 @@
 79/var/www/html/portofolio/node_modules/core-js/actual/typed-array/uint8-array.js499162500000000000 0
 71/var/www/html/portofolio/node_modules/core-js/actual/typed-array/map.js499162500000000000 0
 72/var/www/html/portofolio/node_modules/core-js/actual/typed-array/find.js499162500000000000 0
-46/var/www/html/portofolio/dist/css.3d1925cd.png1700559359536149252 0
+46/var/www/html/portofolio/dist/css.3d1925cd.png1704804693208144048 0
 73/var/www/html/portofolio/node_modules/core-js/actual/typed-array/slice.js499162500000000000 0
 69/var/www/html/portofolio/node_modules/minimist/test/parse_modified.js499162500000000000 0
 77/var/www/html/portofolio/node_modules/core-js/actual/typed-array/to-sorted.js499162500000000000 0
@@ -3940,7 +3941,7 @@
 65/var/www/html/portofolio/node_modules/core-js/full/object/seal.js499162500000000000 0
 75/var/www/html/portofolio/node_modules/core-js/es/string/virtual/trim-end.js499162500000000000 0
 76/var/www/html/portofolio/node_modules/core-js/full/object/iterate-entries.js499162500000000000 0
-46/var/www/html/portofolio/dist/me5.8e9191c8.jpg1700559359544149153 0
+46/var/www/html/portofolio/dist/me5.8e9191c8.jpg1704804693340142423 0
 72/var/www/html/portofolio/node_modules/core-js/es/typed-array/for-each.js499162500000000000 0
 70/var/www/html/portofolio/node_modules/core-js/full/object/is-frozen.js499162500000000000 0
 77/var/www/html/portofolio/node_modules/core-js/full/object/get-prototype-of.js499162500000000000 0
@@ -5040,7 +5041,7 @@
 88/var/www/html/portofolio/node_modules/@fortawesome/free-solid-svg-icons/faIdCardAlt.d.ts1698927806978657152 0
 88/var/www/html/portofolio/node_modules/@fortawesome/free-solid-svg-icons/faMobileAlt.d.ts1698927807002656837 0
 97/var/www/html/portofolio/node_modules/@fortawesome/free-solid-svg-icons/faTemperatureArrowDown.js1698927806822659199 0
-36/var/www/html/portofolio/myWork.html1699364400126447323 0
+36/var/www/html/portofolio/myWork.html1704810753520616284 0
 96/var/www/html/portofolio/node_modules/@fortawesome/free-solid-svg-icons/faPersonCircleMinus.d.ts1698927807018656628 0
 87/var/www/html/portofolio/node_modules/@fortawesome/free-solid-svg-icons/faProcedures.js1698927806758660038 0
 88/var/www/html/portofolio/node_modules/has-symbols/test/shams/get-own-property-symbols.js499162500000000000 0
@@ -5441,7 +5442,7 @@
 87/var/www/html/portofolio/node_modules/@fortawesome/free-solid-svg-icons/faCarCrash.d.ts1698927806918657939 0
 74/var/www/html/portofolio/node_modules/@babel/compat-data/native-modules.js456789000000000000 0
 101/var/www/html/portofolio/node_modules/@babel/plugin-transform-member-expression-literals/lib/index.js456789000000000000 0
-56/var/www/html/portofolio/node_modules/.package-lock.json1698927807274653270 0
+56/var/www/html/portofolio/node_modules/.package-lock.json1704799430224886462 0
 92/var/www/html/portofolio/node_modules/@babel/plugin-transform-member-expression-literals/lib1664997651308705695 1
 72/var/www/html/portofolio/node_modules/core-js/full/string/replace-all.js499162500000000000 0
 88/var/www/html/portofolio/node_modules/@babel/plugin-transform-member-expression-literals1664997654296704326 1
@@ -6325,7 +6326,7 @@
 65/var/www/html/portofolio/node_modules/core-js/full/url/to-json.js499162500000000000 0
 84/var/www/html/portofolio/node_modules/@babel/helper-environment-visitor/package.json1664997654252704347 0
 80/var/www/html/portofolio/node_modules/@fortawesome/free-solid-svg-icons/faUsd.js1698927806838658989 0
-47/var/www/html/portofolio/css/pages/mySKills.css1700562331849626219 0
+47/var/www/html/portofolio/css/pages/mySKills.css1704804685564238196 0
 91/var/www/html/portofolio/node_modules/regenerate-unicode-properties/Script_Extensions/Yi.js499162500000000000 0
 80/var/www/html/portofolio/node_modules/@babel/helper-validator-identifier/LICENSE456789000000000000 0
 63/var/www/html/portofolio/node_modules/rellax/tests/destroy.html1665665447902348568 0
@@ -7034,7 +7035,7 @@
 78/var/www/html/portofolio/node_modules/core-js/features/typed-array/group-by.js499162500000000000 0
 69/var/www/html/portofolio/node_modules/gsap/dist/CustomEase.min.js.map499162500000000000 0
 68/var/www/html/portofolio/node_modules/core-js/actual/string/small.js499162500000000000 0
-41/var/www/html/portofolio/css/main.css.map1700557795427980999 0
+41/var/www/html/portofolio/css/main.css.map1704804685564238196 0
 75/var/www/html/portofolio/node_modules/@babel/helper-hoist-variables/LICENSE456789000000000000 0
 55/var/www/html/portofolio/node_modules/lodash/fp/juxt.js499162500000000000 0
 69/var/www/html/portofolio/node_modules/caniuse-lite/data/regions/GY.js1692261505258322070 0
@@ -7614,6 +7615,7 @@
 84/var/www/html/portofolio/node_modules/@parcel/fs-search/fs-search.linux-x64-gnu.node499162500000000000 0
 74/var/www/html/portofolio/node_modules/core-js/features/composite-symbol.js499162500000000000 0
 81/var/www/html/portofolio/node_modules/caniuse-lite/data/features/input-pattern.js1692261505266322010 0
+52/var/www/html/portofolio/dist/myWork.62be6bfe.js.map1704804687908209322 0
 97/var/www/html/portofolio/node_modules/babel-plugin-polyfill-corejs2/node_modules/semver/README.md499162500000000000 0
 67/var/www/html/portofolio/node_modules/jquery/src/core/isAttached.js499162500000000000 0
 94/var/www/html/portofolio/node_modules/source-map-support/node_modules/source-map/lib/base64.js1666266308738150187 0
@@ -8454,7 +8456,7 @@
 55/var/www/html/portofolio/node_modules/lax.js/lib/lax.js499162500000000000 0
 78/var/www/html/portofolio/node_modules/@fortawesome/free-solid-svg-icons/fa5.js1698927806530663029 0
 57/var/www/html/portofolio/node_modules/yaml/browser/map.js1666266308830148692 0
-48/var/www/html/portofolio/css/pages/countdown.css1700557795427980999 0
+48/var/www/html/portofolio/css/pages/countdown.css1704804685564238196 0
 63/var/www/html/portofolio/node_modules/which-module/CHANGELOG.md1493669953000000000 0
 71/var/www/html/portofolio/node_modules/core-js/features/instance/keys.js499162500000000000 0
 59/var/www/html/portofolio/node_modules/yaml/browser/types.js1666266308938146938 0
@@ -8768,7 +8770,7 @@
 100/var/www/html/portofolio/node_modules/babel-plugin-polyfill-corejs2/node_modules/semver/package.json1664997654792704095 0
 101/var/www/html/portofolio/node_modules/babel-plugin-polyfill-corejs2/node_modules/semver/bin/semver.js499162500000000000 0
 80/var/www/html/portofolio/node_modules/@parcel/core/test/fixtures/parcel/index.js499162500000000000 0
-37/var/www/html/portofolio/node_modules1698927807134655106 1
+37/var/www/html/portofolio/node_modules1704799430096888173 1
 68/var/www/html/portofolio/node_modules/core-js/es/typed-array/fill.js499162500000000000 0
 89/var/www/html/portofolio/node_modules/caniuse-lite/data/features/css-media-interaction.js1692261505222322338 0
 84/var/www/html/portofolio/node_modules/@babel/runtime/helpers/esm/isNativeFunction.js456789000000000000 0
@@ -8809,7 +8811,7 @@
 48/var/www/html/portofolio/dist/index.021e8959.css1684490625041634010 0
 68/var/www/html/portofolio/node_modules/@babel/core/lib/config/full.js456789000000000000 0
 56/var/www/html/portofolio/node_modules/is-json/.npmignore1666266308626152006 0
-55/var/www/html/portofolio/dist/mySKills.da3073eb.css.map1700559359540149203 0
+55/var/www/html/portofolio/dist/mySKills.da3073eb.css.map1704804687908209322 0
 92/var/www/html/portofolio/node_modules/@babel/plugin-transform-destructuring/lib/index.js.map456789000000000000 0
 72/var/www/html/portofolio/node_modules/node-sass/src/sass_types/error.cpp499162500000000000 0
 69/var/www/html/portofolio/node_modules/caniuse-lite/data/regions/SY.js1692261507034308894 0
@@ -8865,7 +8867,7 @@
 96/var/www/html/portofolio/node_modules/@fortawesome/free-solid-svg-icons/faChevronCircleLeft.d.ts1698927806922657887 0
 89/var/www/html/portofolio/node_modules/@fortawesome/free-solid-svg-icons/faTextHeight.d.ts1698927807058656103 0
 55/var/www/html/portofolio/dist/countdown.1cf1b12b.js.map1664886084063746091 0
-51/var/www/html/portofolio/css/pages/mySKills.css.map1700562331849626219 0
+51/var/www/html/portofolio/css/pages/mySKills.css.map1704804685564238196 0
 78/var/www/html/portofolio/node_modules/caniuse-lite/data/features/indexeddb2.js1692261505266322010 0
 73/var/www/html/portofolio/node_modules/node-sass/src/libsass/Makefile.conf499162500000000000 0
 79/var/www/html/portofolio/node_modules/caniuse-lite/data/features/eventsource.js1692261505246322159 0
@@ -9120,7 +9122,7 @@
 72/var/www/html/portofolio/node_modules/core-js/es/string/virtual/index.js499162500000000000 0
 85/var/www/html/portofolio/node_modules/@swc/helpers/src/_object_without_properties.mjs1684413246549618751 0
 81/var/www/html/portofolio/node_modules/caniuse-lite/data/features/css-variables.js1692261505230322278 0
-47/var/www/html/portofolio/dist/logo.b3ecd760.svg1700559360324139554 0
+47/var/www/html/portofolio/dist/logo.b3ecd760.svg1704804693996134344 0
 64/var/www/html/portofolio/node_modules/lax.js/docs/assets/bg2.jpg499162500000000000 0
 75/var/www/html/portofolio/node_modules/resolve/test/node_path/y/ccc/index.js499162500000000000 0
 65/var/www/html/portofolio/node_modules/entities/lib/index.d.ts.map1666266308866148107 0
@@ -9694,7 +9696,7 @@
 72/var/www/html/portofolio/node_modules/caniuse-lite/data/features/zstd.js1692261507058308715 0
 76/var/www/html/portofolio/node_modules/@swc/helpers/src/_array_with_holes.mjs1684413246521619120 0
 84/var/www/html/portofolio/node_modules/@fortawesome/free-solid-svg-icons/faStapler.js1698927806810659356 0
-53/var/www/html/portofolio/dist/contact.4fac2dca.js.map1700559358060167418 0
+53/var/www/html/portofolio/dist/contact.4fac2dca.js.map1704804693236143704 0
 53/var/www/html/portofolio/node_modules/detect-libc/lib1664997705916477800 1
 83/var/www/html/portofolio/node_modules/@fortawesome/free-solid-svg-icons/faMobile.js1698927806730660405 0
 81/var/www/html/portofolio/node_modules/@fortawesome/free-solid-svg-icons/faUndo.js1698927806834659041 0
@@ -9724,7 +9726,7 @@
 52/var/www/html/portofolio/node_modules/glob/common.js499162500000000000 0
 77/var/www/html/portofolio/node_modules/core-js/actual/symbol/async-iterator.js499162500000000000 0
 87/var/www/html/portofolio/node_modules/@fortawesome/free-solid-svg-icons/faShoePrints.js1698927806786659671 0
-46/var/www/html/portofolio/dist/me3.29dc5421.jpg1700559359544149153 0
+46/var/www/html/portofolio/dist/me3.29dc5421.jpg1704804693996134344 0
 70/var/www/html/portofolio/node_modules/core-js/stable/json/stringify.js499162500000000000 0
 96/var/www/html/portofolio/node_modules/@babel/helper-module-transforms/lib/get-module-name.js.map456789000000000000 0
 80/var/www/html/portofolio/node_modules/babel-plugin-polyfill-corejs3/lib/utils.js456789000000000000 0
@@ -10029,7 +10031,7 @@
 76/var/www/html/portofolio/node_modules/css-tree/lib/syntax/atrule/supports.js1666266309050145117 0
 56/var/www/html/portofolio/node_modules/lodash/fp/range.js499162500000000000 0
 101/var/www/html/portofolio/node_modules/@fortawesome/free-solid-svg-icons/faHeartCircleExclamation.d.ts1698927806970657257 0
-52/var/www/html/portofolio/dist/myWork.01ca0cc5.js.map1700559358064167369 0
+52/var/www/html/portofolio/dist/myWork.01ca0cc5.js.map1704804693236143704 0
 80/var/www/html/portofolio/node_modules/utility-types/dist/functional-helpers.d.ts499162500000000000 0
 81/var/www/html/portofolio/node_modules/@jridgewell/set-array/dist/set-array.umd.js499162500000000000 0
 58/var/www/html/portofolio/node_modules/electron-to-chromium1692261505166322753 1
@@ -10413,7 +10415,7 @@
 83/var/www/html/portofolio/node_modules/@fortawesome/free-solid-svg-icons/faVest.d.ts1698927807070655946 0
 60/var/www/html/portofolio/node_modules/entities/lib/generated1666266308870148042 1
 75/var/www/html/portofolio/node_modules/babel-plugin-polyfill-corejs2/LICENSE456789000000000000 0
-53/var/www/html/portofolio/css/abstracts/mixins.css.map1700557795427980999 0
+53/var/www/html/portofolio/css/abstracts/mixins.css.map1704804685564238196 0
 83/var/www/html/portofolio/node_modules/@babel/types/scripts/generators/validators.js456789000000000000 0
 77/var/www/html/portofolio/node_modules/@babel/traverse/lib/path/replacement.js456789000000000000 0
 74/var/www/html/portofolio/node_modules/is-fullwidth-code-point/package.json1664997654660704157 0
@@ -10440,7 +10442,7 @@
 83/var/www/html/portofolio/node_modules/@babel/types/lib/clone/cloneWithoutLoc.js.map456789000000000000 0
 53/var/www/html/portofolio/node_modules/brace-expansion1664997654792704095 1
 78/var/www/html/portofolio/node_modules/core-js/features/string/virtual/index.js499162500000000000 0
-49/var/www/html/portofolio/css/abstracts/mixins.css1700557795427980999 0
+49/var/www/html/portofolio/css/abstracts/mixins.css1704804685564238196 0
 69/var/www/html/portofolio/node_modules/caniuse-lite/data/regions/BZ.js1692261505194322544 0
 62/var/www/html/portofolio/node_modules/async/internal/filter.js499162500000000000 0
 60/var/www/html/portofolio/node_modules/lodash/fp/invertObj.js499162500000000000 0
@@ -10466,7 +10468,7 @@
 90/var/www/html/portofolio/node_modules/@fortawesome/free-solid-svg-icons/faDrawPolygon.d.ts1698927806938657677 0
 65/var/www/html/portofolio/node_modules/spdx-license-ids/index.json499162500000000000 0
 88/var/www/html/portofolio/node_modules/@fortawesome/free-solid-svg-icons/faVenusDouble.js1698927806842658936 0
-38/var/www/html/portofolio/css/main.scss1700137461543215590 0
+38/var/www/html/portofolio/css/main.scss1703851289773596117 0
 84/var/www/html/portofolio/node_modules/css-tree/node_modules/source-map/lib/base64.js1666266308742150121 0
 72/var/www/html/portofolio/node_modules/core-js/modules/esnext.map.some.js499162500000000000 0
 69/var/www/html/portofolio/node_modules/core-js/actual/string/strike.js499162500000000000 0
@@ -10496,7 +10498,7 @@
 65/var/www/html/portofolio/node_modules/.bin/update-browserslist-db1692261507122308242 0
 87/var/www/html/portofolio/node_modules/regenerate-unicode-properties/Property_of_Strings1664997652904704970 1
 89/var/www/html/portofolio/node_modules/@fortawesome/free-solid-svg-icons/faPaintbrush.d.ts1698927807014656680 0
-48/var/www/html/portofolio/dist/index.47ca9330.css1700559358052167517 0
+48/var/www/html/portofolio/dist/index.47ca9330.css1704804686900221739 0
 60/var/www/html/portofolio/node_modules/form-data/package.json1664997654660704157 0
 75/var/www/html/portofolio/node_modules/@babel/plugin-syntax-json-strings/lib1664997651300705699 1
 84/var/www/html/portofolio/node_modules/@babel/plugin-syntax-optional-chaining/LICENSE499162500000000000 0
@@ -10558,7 +10560,7 @@
 64/var/www/html/portofolio/node_modules/yaml/browser/dist/index.js1666266308794149277 0
 80/var/www/html/portofolio/node_modules/performance-now/lib/performance-now.js.map1487514525000000000 0
 91/var/www/html/portofolio/node_modules/@babel/preset-env/lib/polyfills/babel-polyfill.js.map456789000000000000 0
-46/var/www/html/portofolio/css/pages/mywork.scss1700570012035847427 0
+46/var/www/html/portofolio/css/pages/mywork.scss1704813117336666394 0
 80/var/www/html/portofolio/node_modules/@fortawesome/free-solid-svg-icons/faBug.js1698927806590662242 0
 49/var/www/html/portofolio/node_modules/psl/LICENSE499162500000000000 0
 85/var/www/html/portofolio/node_modules/@fortawesome/free-solid-svg-icons/faGaugeMed.js1698927806670661192 0
@@ -10925,7 +10927,7 @@
 60/var/www/html/portofolio/node_modules/immutable/package.json1665475515240886840 0
 71/var/www/html/portofolio/node_modules/readable-stream/duplex-browser.js499162500000000000 0
 65/var/www/html/portofolio/node_modules/domutils/lib/index.d.ts.map1666266308810149017 0
-46/var/www/html/portofolio/css/pages/contact.css1700564373962706858 0
+46/var/www/html/portofolio/css/pages/contact.css1704804685564238196 0
 95/var/www/html/portofolio/node_modules/@babel/helper-member-expression-to-functions/lib/index.js456789000000000000 0
 61/var/www/html/portofolio/node_modules/lodash/cloneDeepWith.js499162500000000000 0
 60/var/www/html/portofolio/node_modules/node-gyp/test/fixtures1664997652704705061 1
@@ -11013,7 +11015,7 @@
 87/var/www/html/portofolio/node_modules/babel-plugin-polyfill-corejs2/node_modules/semver1664997654796704094 1
 55/var/www/html/portofolio/node_modules/lodash/fp/drop.js499162500000000000 0
 87/var/www/html/portofolio/node_modules/@fortawesome/free-solid-svg-icons/faPhoneSlash.js1698927806754660090 0
-50/var/www/html/portofolio/css/pages/contact.css.map1700564373962706858 0
+50/var/www/html/portofolio/css/pages/contact.css.map1704804685564238196 0
 78/var/www/html/portofolio/node_modules/@fortawesome/free-solid-svg-icons/faZ.js1698927806850658831 0
 68/var/www/html/portofolio/node_modules/@babel/helper-plugin-utils/lib1664997651312705694 1
 62/var/www/html/portofolio/node_modules/core-js/es/math/trunc.js499162500000000000 0
@@ -11188,7 +11190,7 @@
 104/var/www/html/portofolio/node_modules/regenerate-unicode-properties/General_Category/Lowercase_Letter.js499162500000000000 0
 82/var/www/html/portofolio/node_modules/@fortawesome/free-solid-svg-icons/faDizzy.js1698927806634661665 0
 91/var/www/html/portofolio/node_modules/@fortawesome/free-solid-svg-icons/faHandBackFist.d.ts1698927806966657310 0
-49/var/www/html/portofolio/css/pages/mywork.css.map1700570012279844489 0
+49/var/www/html/portofolio/css/pages/mywork.css.map1704813117484665551 0
 94/var/www/html/portofolio/node_modules/@fortawesome/free-solid-svg-icons/faScrewdriverWrench.js1698927806782659723 0
 90/var/www/html/portofolio/node_modules/unicode-canonical-property-names-ecmascript/index.js499162500000000000 0
 70/var/www/html/portofolio/node_modules/@glidejs/glide/src/utils/time.js1684413247485606435 0
@@ -12099,7 +12101,7 @@
 82/var/www/html/portofolio/node_modules/@babel/compat-data/data/plugin-bugfixes.json456789000000000000 0
 62/var/www/html/portofolio/node_modules/css-what/lib/es/index.js1666266308714150576 0
 67/var/www/html/portofolio/node_modules/source-map-support/LICENSE.md1666266308734150251 0
-52/var/www/html/portofolio/dist/index.47ca9330.css.map1700559358064167369 0
+52/var/www/html/portofolio/dist/index.47ca9330.css.map1704804687908209322 0
 55/var/www/html/portofolio/node_modules/debug/src/node.js499162500000000000 0
 86/var/www/html/portofolio/node_modules/@fortawesome/free-solid-svg-icons/faTractor.d.ts1698927807058656103 0
 58/var/www/html/portofolio/node_modules/css-select/README.md1666266308894147652 0
@@ -12305,7 +12307,7 @@
 51/var/www/html/portofolio/node_modules/rimraf/bin.js499162500000000000 0
 82/var/www/html/portofolio/node_modules/@fortawesome/free-solid-svg-icons/faChild.js1698927806614661927 0
 55/var/www/html/portofolio/node_modules/map-obj/readme.md1430589743000000000 0
-50/var/www/html/portofolio/dist/mySKills.3d743f51.js1700559359532149301 0
+50/var/www/html/portofolio/dist/mySKills.3d743f51.js1704804686900221739 0
 52/var/www/html/portofolio/node_modules/immutable/dist1665475515240886840 1
 66/var/www/html/portofolio/node_modules/lax.js/docs/assets/shoe1.png499162500000000000 0
 96/var/www/html/portofolio/node_modules/regenerate-unicode-properties/Binary_Property/Uppercase.js499162500000000000 0
@@ -12588,7 +12590,7 @@
 90/var/www/html/portofolio/node_modules/@fortawesome/free-solid-svg-icons/faStopwatch20.d.ts1698927807050656208 0
 52/var/www/html/portofolio/node_modules/lax.js/LICENSE499162500000000000 0
 72/var/www/html/portofolio/node_modules/core-js/full/typed-array/reduce.js499162500000000000 0
-43/var/www/html/portofolio/node_modules/@lmdb1698927807134655106 1
+43/var/www/html/portofolio/node_modules/@lmdb1704799430096888173 1
 78/var/www/html/portofolio/node_modules/@parcel/utils/node_modules/chalk/license499162500000000000 0
 58/var/www/html/portofolio/node_modules/block-stream/LICENSE1432105388000000000 0
 63/var/www/html/portofolio/node_modules/node-sass/test/binding.js499162500000000000 0
@@ -13594,7 +13596,7 @@
 60/var/www/html/portofolio/node_modules/@parcel/runtime-js/src1666266308926147132 1
 82/var/www/html/portofolio/node_modules/@babel/runtime/helpers/esm/defineProperty.js456789000000000000 0
 51/var/www/html/portofolio/node_modules/chalk/license1459195776000000000 0
-45/var/www/html/portofolio/css/pages/mywork.css1700570012279844489 0
+45/var/www/html/portofolio/css/pages/mywork.css1704813117484665551 0
 75/var/www/html/portofolio/node_modules/css-tree/node_modules/source-map/dist1666266308922147197 1
 48/var/www/html/portofolio/node_modules/path-parse1664997654660704157 1
 66/var/www/html/portofolio/node_modules/@swc/helpers/lib/_type_of.js1684413246517619173 0
@@ -14620,7 +14622,7 @@
 58/var/www/html/portofolio/node_modules/find-up/package.json1664997654596704186 0
 80/var/www/html/portofolio/node_modules/svgo/plugins/removeAttributesBySelector.js1666266308938146938 0
 88/var/www/html/portofolio/node_modules/@fortawesome/free-solid-svg-icons/faTimesSquare.js1698927806826659146 0
-55/var/www/html/portofolio/node_modules/@msgpackr-extract1698927807134655106 1
+55/var/www/html/portofolio/node_modules/@msgpackr-extract1704799430096888173 1
 67/var/www/html/portofolio/node_modules/@parcel/workers/src/Handle.js499162500000000000 0
 78/var/www/html/portofolio/node_modules/node-gyp/gyp/pylib/gyp/generator/msvs.py499162500000000000 0
 92/var/www/html/portofolio/node_modules/@msgpackr-extract/msgpackr-extract-linux-x64/README.md499162500000000000 0
@@ -15358,7 +15360,7 @@
 68/var/www/html/portofolio/node_modules/core-js/full/symbol/matcher.js499162500000000000 0
 70/var/www/html/portofolio/node_modules/resolve/lib/normalize-options.js499162500000000000 0
 85/var/www/html/portofolio/node_modules/@fortawesome/free-solid-svg-icons/faCarAlt.d.ts1698927806918657939 0
-54/var/www/html/portofolio/dist/mySKills.3d743f51.js.map1700559359540149203 0
+54/var/www/html/portofolio/dist/mySKills.3d743f51.js.map1704804687908209322 0
 67/var/www/html/portofolio/node_modules/@parcel/types/lib/unsafe.d.ts499162500000000000 0
 65/var/www/html/portofolio/node_modules/hosted-git-info/git-host.js499162500000000000 0
 62/var/www/html/portofolio/node_modules/hosted-git-info/index.js499162500000000000 0
@@ -15807,7 +15809,7 @@
 84/var/www/html/portofolio/node_modules/@swc/helpers/node_modules/tslib/tslib.es6.html1666266308622152071 0
 83/var/www/html/portofolio/node_modules/@fortawesome/free-solid-svg-icons/faPlug.d.ts1698927807026656523 0
 80/var/www/html/portofolio/node_modules/@fortawesome/free-solid-svg-icons/faQ.d.ts1698927807026656523 0
-50/var/www/html/portofolio/dist/my_blob.2bbf2441.gif1700559360116142113 0
+50/var/www/html/portofolio/dist/my_blob.2bbf2441.gif1704804693792136857 0
 66/var/www/html/portofolio/node_modules/yaml/dist/Schema-88e323a7.js1666266308926147132 0
 89/var/www/html/portofolio/node_modules/@fortawesome/free-solid-svg-icons/faDesktopAlt.d.ts1698927806934657729 0
 80/var/www/html/portofolio/node_modules/@fortawesome/free-solid-svg-icons/faDna.js1698927806634661665 0
@@ -17204,6 +17206,7 @@
 78/var/www/html/portofolio/node_modules/@babel/plugin-transform-literals/LICENSE456789000000000000 0
 64/var/www/html/portofolio/node_modules/concat-map/README.markdown1354099276000000000 0
 91/var/www/html/portofolio/node_modules/@fortawesome/free-solid-svg-icons/faCubesStacked.d.ts1698927806934657729 0
+44/var/www/html/portofolio/js/filterGallery.js1703859752764811979 0
 93/var/www/html/portofolio/node_modules/@fortawesome/free-solid-svg-icons/faBriefcaseClock.d.ts1698927806902658149 0
 93/var/www/html/portofolio/node_modules/node-sass/test/fixtures/watcher/main/partials/_two.scss499162500000000000 0
 86/var/www/html/portofolio/node_modules/@fortawesome/free-solid-svg-icons/faDiamond.d.ts1698927806934657729 0
@@ -17644,7 +17647,7 @@
 53/var/www/html/portofolio/node_modules/yallist/LICENSE1450425977000000000 0
 76/var/www/html/portofolio/node_modules/@parcel/core/test/fixtures/module-a.js499162500000000000 0
 82/var/www/html/portofolio/node_modules/@fortawesome/free-solid-svg-icons/faFan.d.ts1698927806946657572 0
-29/var/www/html/portofolio/dist1700570012399843045 1
+29/var/www/html/portofolio/dist1704813117564665095 1
 84/var/www/html/portofolio/node_modules/@fortawesome/free-solid-svg-icons/faTents.d.ts1698927807058656103 0
 90/var/www/html/portofolio/node_modules/@fortawesome/free-solid-svg-icons/faSquareParking.js1698927806806659408 0
 94/var/www/html/portofolio/node_modules/@fortawesome/free-solid-svg-icons/faLongArrowAltRight.js1698927806718660563 0
@@ -17951,7 +17954,7 @@
 89/var/www/html/portofolio/node_modules/@fortawesome/free-solid-svg-icons/faHourglass2.d.ts1698927806974657205 0
 66/var/www/html/portofolio/node_modules/core-js/full/regexp/flags.js499162500000000000 0
 87/var/www/html/portofolio/node_modules/@fortawesome/free-solid-svg-icons/faIdCardClip.js1698927806694660878 0
-52/var/www/html/portofolio/css/pages/countdown.css.map1700557795427980999 0
+52/var/www/html/portofolio/css/pages/countdown.css.map1704804685564238196 0
 89/var/www/html/portofolio/node_modules/@fortawesome/free-solid-svg-icons/faEarthAmerica.js1698927806638661612 0
 69/var/www/html/portofolio/node_modules/caniuse-lite/data/regions/SL.js1692261507026308954 0
 79/var/www/html/portofolio/node_modules/smooth-scrollbar/interfaces/plugin.js.map499162500000000000 0
@@ -18190,7 +18193,7 @@
 103/var/www/html/portofolio/node_modules/@fortawesome/free-solid-svg-icons/faDownLeftAndUpRightToCenter.js1698927806638661612 0
 78/var/www/html/portofolio/node_modules/cliui/node_modules/string-width/index.js499162500000000000 0
 89/var/www/html/portofolio/node_modules/@fortawesome/free-solid-svg-icons/faPersonCane.d.ts1698927807018656628 0
-37/var/www/html/portofolio/css/main.css1700557795427980999 0
+37/var/www/html/portofolio/css/main.css1704804685564238196 0
 78/var/www/html/portofolio/node_modules/@fortawesome/free-solid-svg-icons/faP.js1698927806742660248 0
 84/var/www/html/portofolio/node_modules/@fortawesome/free-solid-svg-icons/faVenus.d.ts1698927807070655946 0
 58/var/www/html/portofolio/node_modules/extsprintf/README.md1425686198000000000 0
@@ -18309,7 +18312,7 @@
 90/var/www/html/portofolio/node_modules/@fortawesome/free-solid-svg-icons/faTransgender.d.ts1698927807062656050 0
 54/var/www/html/portofolio/node_modules/lodash/invoke.js499162500000000000 0
 93/var/www/html/portofolio/node_modules/@fortawesome/free-solid-svg-icons/faPlaneDeparture.d.ts1698927807022656575 0
-46/var/www/html/portofolio/dist/me4.d6e49eaa.jpg1700559360120142064 0
+46/var/www/html/portofolio/dist/me4.d6e49eaa.jpg1704804693232143752 0
 92/var/www/html/portofolio/node_modules/@fortawesome/free-solid-svg-icons/faCartArrowDown.d.ts1698927806922657887 0
 95/var/www/html/portofolio/node_modules/@fortawesome/free-solid-svg-icons/faHandMiddleFinger.d.ts1698927806966657310 0
 71/var/www/html/portofolio/node_modules/core-js/full/number/is-integer.js499162500000000000 0
