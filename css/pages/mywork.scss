@@ -38,16 +38,15 @@
 * {
   transition: background-color 0.8s ease, color 1s ease;
 }
-body,
-html {
+body {
   width: 100%;
   height: 100%;
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
   background: var(--bg_);
   font-family: "Poppins", arial;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 .nav-link-color {
@@ -110,6 +109,14 @@ html {
 .gif {
   width: 100%;
   max-width: 600px;
+  border-radius: 16px;
+  background: linear-gradient(to right, #dc2f02, #8ac926, #0e6ba8);
+  padding: 3px;
+  cursor: pointer;
+}
+.gif:hover {
+  transform: scale(1.1);
+  transition: all 300ms ease-in-out;
 }
 
 .wrapper {
@@ -198,6 +205,76 @@ header nav ul {
   transform: translateX(24px);
 }
 
+section.btns {
+  padding: 2em 0 2.5em;
+}
+
+section.btns ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  list-style: none !important;
+}
+section.btns ul li {
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 0.5rem 0;
+  color: #fff;
+  letter-spacing: 1px;
+  margin: 0.3rem 1rem;
+  cursor: pointer;
+  transition: color 0.4s;
+}
+
+section.btns ul li:hover {
+  color: #149da4;
+}
+
+section.btns ul li.active {
+  position: relative;
+  color: #149da4;
+}
+section.btns ul li.active::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  top: 110%;
+  left: 0;
+  background-color: #149da4;
+  animation: animate 0.4s linear;
+}
+
+div.__grid__ .card.hide {
+  display: none;
+}
+
+div.__grid__ .card.active {
+  display: block;
+  animation: animateCards 0.6s;
+}
+
+@keyframes animate {
+  0% {
+    scale: (0);
+  }
+
+  100% {
+    scale: (1);
+  }
+}
+
+@keyframes animateCards {
+  0% {
+    transform: scale(0.6);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
 @media screen and (max-width: 768px) {
   .nav-menu {
     position: fixed;
@@ -214,7 +291,6 @@ header nav ul {
     transition: all 1.3s ease-out;
     pointer-events: none;
     z-index: 1;
-
     background: var(--bg_);
   }
   .nav-menu.active {
@@ -304,19 +380,17 @@ header nav ul {
     opacity: 1;
   }
 }
-
 .__grid__ {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: 2rem;
   padding-left: 1rem;
   padding-right: 1rem;
 }
 
-.__grid__ img {
-  width: 100%;
+img {
+  max-width: 100%;
 }
-
 .box p {
   font-size: 18px;
 }
@@ -334,6 +408,16 @@ header nav ul {
 
   .copyright_text {
     margin: 0;
+  }
+}
+
+@media only screen and (width <= 400px) {
+  .__grid__ {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 }
 

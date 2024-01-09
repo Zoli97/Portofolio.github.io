@@ -60,110 +60,269 @@
 
     <section id="wrapper" class="wrapper"></section>
 
-    <div class="parent">
-      <main class="box1" id="sect1">
-        <div class="box">
-          <h1>Boom Boom</h1>
-          <p>Just scroll down</p>
-          <button type="button" class="my-btn" id="my-btn">Press me</button>
-        </div>
-      </main>
-
-      <main class="box2">
-        <svg
-          id="svg_anim"
-          width="420"
-          height="400"
-          viewBox="0 0 500 500"
-          preserveAspectRatio="none"
-        >
-          <polygon
-            stroke="none"
-            points="100 100, 150 300 , 350 350 , 400 100 , 350 0 , 200 50 , 100 100 "
-            fill="#119da4"
-            id="polygon"
-          ></polygon>
-        </svg>
-      </main>
-    </div>
+    <section class="btns">
+      <ul>
+        <li class="btn active" data-filter="all">All</li>
+        <li class="btn" data-filter="retro">Retro</li>
+        <li class="btn" data-filter="trippy">Trippy</li>
+        <li class="btn" data-filter="art">Art</li>
+        <li class="btn" data-filter="cartoons">Cartoons</li>
+      </ul>
+    </section>
 
     <div class="__grid__">
-      <div
-        class="gif-container lax lax_preset_fadeIn:237:0.6 lax_preset_seesaw:140:20"
-      >
+      <div class="card gif-container" data-item="retro">
         <img
           class="gif"
-          src="https://media.giphy.com/media/DMNqE0oBP2BEY/giphy.gif"
+          src="https://media.giphy.com/media/3o6YglHGRqkaf1DAkw/giphy.gif"
           alt="gif1"
         />
       </div>
 
-      <div
-        id="gif-container2 "
-        class="gif-container lax lax_preset_zigzag:135:200 lax_preset_fadeIn:237:0.2"
-      >
+      <div class="card gif-container card1" data-item="retro">
         <img
           class="gif"
-          src="https://media.giphy.com/media/PzY2K7SaqIEyA/giphy.gif"
+          src="https://media.giphy.com/media/l0HlNaQ6gWfllcjDO/giphy.gif"
           alt="gif2"
         />
       </div>
-      <div
-        id="gif-container3"
-        class="gif-container lax lax_preset_jiggle:89:20 lax_preset_fadeIn:237:0.2"
-      >
+
+      <div class="card gif-container" data-item="retro">
         <img
           class="gif"
-          src="https://media.giphy.com/media/3ohjULxZhn1cwjLTVu/giphy.gif"
+          src="https://media.giphy.com/media/jzZUevfIY7spW/giphy.gif"
           alt="gif3"
         />
       </div>
-      <div id="gif-container4" class="gif-container">
+
+      <div class="card gif-container" data-item="retro">
+        <img
+          class="gif"
+          src="https://media.giphy.com/media/WFGW9xik06wtG/giphy.gif"
+          alt="gif4"
+        />
+      </div>
+
+      <div class="card gif-container" data-item="retro">
+        <img
+          class="gif"
+          src="https://media.giphy.com/media/SjTc7eXQ5zWzC/giphy.gif"
+          alt="gif5"
+        />
+      </div>
+
+      <div class="card gif-container" data-item="retro">
+        <img
+          class="gif"
+          src="https://media.giphy.com/media/jobZpJ2vUWRdS/giphy.gif"
+          alt="gif6"
+        />
+      </div>
+
+      <div class="card gif-container" data-item="retro">
+        <img
+          class="gif"
+          src="https://media.giphy.com/media/11jQqqyF4S5MWY/giphy.gif"
+          alt="gif7"
+        />
+      </div>
+
+      <div class="card gif-container" data-item="retro">
+        <img
+          class="gif"
+          src="https://media.giphy.com/media/bZQvimlS7kuGc/giphy.gif"
+          alt="gif8"
+        />
+      </div>
+      <div class="card gif-container" data-item="art">
+        <img
+          class="gif"
+          src="https://media.giphy.com/media/l3nWmT23qQ75R4Pg4/giphy.gif"
+          alt="gif9"
+        />
+      </div>
+
+      <div id="gif-container2 " class="card gif-container" data-item="art">
+        <img
+          class="gif"
+          src="https://media.giphy.com/media/PzY2K7SaqIEyA/giphy.gif"
+          alt="gif10"
+        />
+      </div>
+      <div id="gif-container3" class="card gif-container" data-item="art">
+        <img
+          class="gif"
+          src="https://media.giphy.com/media/BXfMQUTvNNBFm/giphy.gif"
+          alt="gif11"
+        />
+      </div>
+
+      <div id="gif-container3" class="card gif-container" data-item="art">
+        <img
+          class="gif"
+          src="https://media.giphy.com/media/4y6DqPvlICp5S/giphy.gif"
+          alt="gif12"
+        />
+      </div>
+
+      <div id="gif-container3" class="card gif-container" data-item="art">
+        <img
+          class="gif"
+          src="https://media.giphy.com/media/jsfXMQV3stAve3RBRr/giphy.gif"
+          alt="gif13"
+        />
+      </div>
+
+      <div id="gif-container3" class="card gif-container" data-item="art">
+        <img
+          class="gif"
+          src="https://media.giphy.com/media/ZYjiO1TxQvXGCrCqBd/giphy.gif"
+          alt="gif14"
+        />
+      </div>
+
+      <div id="gif-container3" class="card gif-container" data-item="art">
+        <img
+          class="gif"
+          src="https://media.giphy.com/media/BkIw566SwiR4qeZdm8/giphy.gif"
+          alt="gif15"
+        />
+      </div>
+
+      <div id="gif-container3" class="card gif-container" data-item="art">
+        <img
+          class="gif"
+          src="https://media.giphy.com/media/3o7TKpIINjewcOTurm/giphy.gif"
+          alt="gif16"
+        />
+      </div>
+      <div id="gif-container4" class="card gif-container" data-item="trippy">
         <img
           class="gif"
           src="https://media.giphy.com/media/ltMLWLHyjuHkY/giphy.gif"
-          alt="gif4"
+          alt="gif17"
         />
       </div>
       <div
         id="gif-container5"
-        class="gif-container lax lax_preset_spin:1028:360 lax_preset_fadeIn:237:0.2"
+        class="card gif-container lax lax_preset_spin:1028:360 lax_preset_fadeIn:237:0.2"
+        data-item="trippy"
       >
         <img
           class="gif"
           src="https://media.giphy.com/media/lhdgGZHCmhApa/giphy.gif"
-          alt="gif5"
+          alt="gif18"
         />
       </div>
-      <div id="gif-container6" class="gif-container">
+      <div id="gif-container6" class="card gif-container" data-item="trippy">
         <img
           class="gif"
           src="https://media.giphy.com/media/fMB0JDo2OhCVzn8X3T/giphy.gif"
-          alt="gif6"
+          alt="gif19"
+        />
+      </div>
+
+      <div id="gif-container6" class="card gif-container" data-item="trippy">
+        <img
+          class="gif"
+          src="https://media.giphy.com/media/xT9IgH0fInLY2LCDPa/giphy.gif"
+          alt="gif20"
+        />
+      </div>
+
+      <div id="gif-container6" class="card gif-container" data-item="trippy">
+        <img
+          class="gif"
+          src="https://media.giphy.com/media/26hiu2HzJGIdUN1Qc/giphy.gif"
+          alt="gif21"
+        />
+      </div>
+
+      <div id="gif-container6" class="card gif-container" data-item="trippy">
+        <img
+          class="gif"
+          src="https://media.giphy.com/media/l1J9BNjq8Flf4XM40/giphy-downsized-large.gif"
+          alt="gif22"
+        />
+      </div>
+
+      <div id="gif-container6" class="card gif-container" data-item="trippy">
+        <img
+          class="gif"
+          src="https://media.giphy.com/media/xTiTnnEDnHkidOckcE/giphy.gif"
+          alt="gif23"
+        />
+      </div>
+
+      <div id="gif-container6" class="card gif-container" data-item="trippy">
+        <img
+          class="gif"
+          src="https://media.giphy.com/media/l4Ki3FQ0l9h4CY1y0/giphy-downsized-large.gif"
+          alt="gif24"
         />
       </div>
       <div
         id="gif-container7"
-        class="gif-container lax lax_preset_hueRotate:1498:360 lax_preset_jiggle:89:20 lax_preset_fadeIn:237:0.2"
+        class="card gif-container lax lax_preset_hueRotate:1498:360 lax_preset_jiggle:89:20 lax_preset_fadeIn:237:0.2"
+        data-item="cartoons"
       >
         <img
           class="gif"
-          src="https://media.giphy.com/media/3o6ZtorWFFcQYie8rC/giphy.gif"
-          alt="gif7"
+          src="https://media.giphy.com/media/l0NwOkgTYRi30mT4Y/giphy.gif"
+          alt="gif25"
         />
       </div>
-      <div id="gif-container8" class="gif-container">
+      <div id="gif-container8" class="card gif-container" data-item="cartoons">
         <img
           class="gif"
-          src="https://media.giphy.com/media/u3P8ktWNkjwOUTDnhi/giphy.gif"
-          alt="gif8"
+          src="https://media.giphy.com/media/11Tf5hgi4fEQ24/giphy.gif"
+          alt="gif26"
         />
       </div>
 
-      <div id="gif-container9" class="gif-container">
+      <div id="gif-container9" class="card gif-container" data-item="cartoons">
         <img
-          src="https://media.giphy.com/media/vrcoalzSZ7ivu/giphy.gif"
-          alt="gif9"
+          class="gif"
+          src="https://media.giphy.com/media/UKm1AF0UrCkb6/giphy.gif"
+          alt="gif27"
+        />
+      </div>
+
+      <div id="gif-container9" class="card gif-container" data-item="cartoons">
+        <img
+          class="gif"
+          src="https://media.giphy.com/media/4SjlyrGuMvxxS/giphy.gif"
+          alt="gif28"
+        />
+      </div>
+      <div id="gif-container9" class="card gif-container" data-item="cartoons">
+        <img
+          class="gif"
+          src="https://media.giphy.com/media/lCy03imiDRmzC/giphy.gif"
+          alt="gif29"
+        />
+      </div>
+      <div id="gif-container9" class="card gif-container" data-item="cartoons">
+        <img
+          class="gif"
+          src="https://media.giphy.com/media/cFdHXXm5GhJsc/giphy.gif"
+          alt="gif30"
+        />
+      </div>
+
+      <div id="gif-container9" class="card gif-container" data-item="cartoons">
+        <img
+          class="gif"
+          src="https://media.giphy.com/media/10UeedrT5MIfPG/giphy.gif"
+          alt="gif31"
+        />
+      </div>
+
+      <div id="gif-container9" class="card gif-container" data-item="cartoons">
+        <img
+          class="gif"
+          src="https://media.giphy.com/media/cFSbwZr4i0hVe/giphy.gif"
+          alt="gif32"
         />
       </div>
     </div>
@@ -180,7 +339,6 @@
     referrerpolicy="no-referrer"
   ></script>
 
-  <script src="https://cdn.jsdelivr.net/npm/lax.js"></script>
   <script src="./js/randomColorsOnSVG.js"></script>
   <script>
     var elements = document.querySelectorAll("#svg_anim polygon");
@@ -261,4 +419,5 @@
   </script>
 
   <script src="./js/hamburger.js"></script>
+  <script src="./js//filterGallery.js"></script>
 </html>
