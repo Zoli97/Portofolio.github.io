@@ -1,9 +1,6 @@
 :root {
   --defaultTheme: #001524;
   --darkTheme: #000;
-  --first_color: #dc2f02;
-  --second_color: #8ac926;
-  --third_color: #0e6ba8;
 }
 
 .light-theme {

@@ -28,7 +28,7 @@
               <a class="nav-link nav-link-color" href="myWork.html">My work</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link nav-link-hover" href="mySKills.html"
+              <a class="nav-link nav-link-hover" href="mySkills.html"
                 >My skills</a
               >
             </li>
@@ -179,6 +179,63 @@
         <img src="./images/mee.jpg" alt="" class="img" />
       </article>
     </section>
+    <hr />
+    <section class="accordion">
+      <button class="accordion-item" onclick="handleClick(this, 0)">
+        <img src="./images/pic1.jpg" alt="pic1" />
+        <div class="content">
+          <span class="material-symbols-outlined"></span>
+          <div>
+            <h2>Primul</h2>
+            <p>First Image</p>
+          </div>
+        </div>
+      </button>
+
+      <button class="accordion-item" onclick="handleClick(this, 1)">
+        <img src="./images/pic2.jpg" alt="pic2" />
+        <div class="content">
+          <span class="material-symbols-outlined"></span>
+          <div>
+            <h2>Al Doilea</h2>
+            <p>Second Image</p>
+          </div>
+        </div>
+      </button>
+
+      <button class="accordion-item" onclick="handleClick(this, 2)">
+        <img src="./images//pic3.jpg" alt="pic3" />
+        <div class="content">
+          <span class="material-symbols-outlined"></span>
+          <div>
+            <h2>Al Treilea</h2>
+            <p>Third Image</p>
+          </div>
+        </div>
+      </button>
+
+      <button class="accordion-item" onclick="handleClick(this, 3)">
+        <img src="./images/pic4.jpg" alt="pic4" />
+        <div class="content">
+          <span class="material-symbols-outlined"></span>
+          <div>
+            <h2>Al Patrulea</h2>
+            <p>Fourth Image</p>
+          </div>
+        </div>
+      </button>
+
+      <button class="accordion-item" onclick="handleClick(this, 4)">
+        <img src="./images/pic5.jpg" alt="pic5" />
+        <div class="content">
+          <span class="material-symbols-outlined"></span>
+          <div>
+            <h2>Al Patrulea</h2>
+            <p>Fourth Image</p>
+          </div>
+        </div>
+      </button>
+    </section>
 
     <hr />
 
@@ -193,7 +250,7 @@
     <hr />
 
     <div class="copyright">
-      <p class="copyright_text">&copy; Copyright Tazlo Zoli 2023</p>
+      <p class="copyright_text">&copy; Copyright Tazlo Zoli 2024</p>
     </div>
 
     <script src="./js/hamburger.js"></script>
@@ -253,6 +310,28 @@
         "--scroll-top",
         scrollHeight + "px"
       );
+    </script>
+
+    <script>
+      const items = document.querySelectorAll(".accordion-item");
+
+      const resetItems = () => {
+        items.forEach((item) => item.classList.remove("active"));
+      };
+
+      const handleClick = (element, index) => {
+        resetItems();
+        element.classList.add("active");
+        localStorage.setItem("accordionIndex", index);
+      };
+      resetItems();
+
+      const activeItem = items[localStorage.getItem("accordionIndex")];
+      if (activeItem) {
+        activeItem.classList.add("active");
+      } else {
+        items[0].classList.add("active");
+      }
     </script>
   </body>
 </html>
