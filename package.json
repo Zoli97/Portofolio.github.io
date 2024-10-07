@@ -5,8 +5,9 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "dev": "parcel index.html",
-    "dev2": "parcel countdown.html"
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
   },
   "author": "",
   "license": "ISC",
@@ -22,7 +23,6 @@
     "jquery": "^3.6.1",
     "lax.js": "^2.0.3",
     "parallax-js": "^3.1.0",
-    "parcel": "^2.7.0",
     "rellax": "^1.12.1",
     "sass-cache": "0.0.3",
     "smooth-scrollbar": "^8.8.1",
@@ -34,7 +34,8 @@
     "@babel/preset-env": "^7.19.3",
     "@parcel/transformer-sass": "^2.7.0",
     "@types/animejs": "^3.1.5",
-    "sass-resources-loader": "^2.2.5"
+    "sass-resources-loader": "^2.2.5",
+    "vite": "^5.4.8"
   },
   "repository": {
     "type": "git",
