@@ -598,7 +598,9 @@ header .hide_logo {
   .accordion {
     width: 900px;
     flex-direction: column;
-    height: auto;
+    height: 100vh !important;
+    gap: 1rem !important;
+    padding: 1rem !important;
   }
   .accordion-item {
     width: 50% !important; /* Full width for each accordion item */
