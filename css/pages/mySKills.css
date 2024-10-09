@@ -594,7 +594,6 @@ header .hide_logo {
     margin: 0;
   }
 }
-<<<<<<< HEAD
 @media (max-width: 600px) {
   .accordion {
     width: 900px;
@@ -618,8 +617,6 @@ header .hide_logo {
     left: 10px;
   }
 }
-=======
->>>>>>> refs/remotes/origin/master
 /*scroll out on text*/
 .my-text[data-scroll] {
   transition: transform 2s ease-in-out;
@@ -697,7 +694,6 @@ header .hide_logo {
     left: 100%;
     transform: translateX(100%);
   }
-<<<<<<< HEAD
 }
 .accordion {
   width: 100%;
@@ -794,6 +790,4 @@ header .hide_logo {
   -o-object-fit: cover;
      object-fit: cover;
   filter: grayscale(0.6);
-=======
->>>>>>> refs/remotes/origin/master
 }/*# sourceMappingURL=mySKills.css.map */
