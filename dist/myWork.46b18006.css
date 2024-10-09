@@ -1,0 +1,29 @@
+header {
+  justify-content: space-between;
+  align-items: center;
+  padding: 2em;
+  display: flex;
+}
+
+header nav {
+  float: right;
+}
+
+header nav ul {
+  display: flex;
+}
+
+header nav ul a {
+  padding: 0 2em;
+  display: block;
+}
+
+header img.my_logo {
+  width: 80px;
+}
+
+header .hide_logo {
+  opacity: 0;
+}
+
+/*# sourceMappingURL=myWork.46b18006.css.map */
