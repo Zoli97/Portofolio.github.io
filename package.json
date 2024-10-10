@@ -5,14 +5,9 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-<<<<<<< HEAD
-    "dev": "vite",
+    "dev1": "vite",
     "build": "vite build",
     "serve": "vite preview"
-=======
-    "dev": "parcel index.html",
-    "dev2": "parcel countdown.html"
->>>>>>> refs/remotes/origin/master
   },
   "author": "",
   "license": "ISC",
@@ -27,11 +22,8 @@
     "gsap-trial": "^3.11.3",
     "jquery": "^3.6.1",
     "lax.js": "^2.0.3",
+    "motion": "^10.18.0",
     "parallax-js": "^3.1.0",
-<<<<<<< HEAD
-=======
-    "parcel": "^2.7.0",
->>>>>>> refs/remotes/origin/master
     "rellax": "^1.12.1",
     "sass-cache": "0.0.3",
     "smooth-scrollbar": "^8.8.1",
@@ -43,12 +35,8 @@
     "@babel/preset-env": "^7.19.3",
     "@parcel/transformer-sass": "^2.7.0",
     "@types/animejs": "^3.1.5",
-<<<<<<< HEAD
     "sass-resources-loader": "^2.2.5",
     "vite": "^5.4.8"
-=======
-    "sass-resources-loader": "^2.2.5"
->>>>>>> refs/remotes/origin/master
   },
   "repository": {
     "type": "git",
