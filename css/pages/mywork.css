@@ -486,4 +486,20 @@ img {
   -o-object-fit: cover;
      object-fit: cover;
   cursor: pointer;
+}
+
+.card {
+  opacity: 0;
+  transform: translateX(-100px);
+}
+
+._img_ {
+  opacity: 0;
+  height: 0;
+}
+
+._title_,
+._text_ {
+  opacity: 0;
+  transform: translateY(-30px);
 }/*# sourceMappingURL=mywork.css.map */

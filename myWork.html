@@ -12,6 +12,8 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
     />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
     <title>My Work</title>
   </head>
 
@@ -394,91 +396,6 @@
     <script type="module" src="./js/animation.js"></script>
   </body>
 
-  <script
-    src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"
-    integrity="sha512-z4OUqw38qN,pn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q=="
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"
-  ></script>
-
-  <script>
-    var elements = document.querySelectorAll("#svg_anim polygon");
-    const wrapper = document.getElementById("wrapper");
-
-    const morphing = anime({
-      targets: [elements],
-      points: [
-        {
-          value: [
-            "100 100, 150 300 , 350 350 , 400 100 , 350 0 , 200 50 , 100 100",
-            " 100 100 , 150 300 , 300 200 , 450 300 , 500 100 , 300 150 , 100 100 ",
-          ],
-        },
-      ],
-      easing: "easeOutSine",
-      duration: 2200,
-      loop: true,
-      direction: "alternate",
-    });
-
-    //random cirles
-    for (let i = 0; i < 60; i++) {
-      let div = document.createElement("div");
-      let animateCircle = wrapper.appendChild(div);
-      animateCircle.classList.add("anime_circles");
-    }
-
-    //nodelist
-    const circles = document.querySelectorAll(".anime_circles");
-
-    //animation circles
-    let randomAnimation = anime({
-      targets: circles,
-      background: () => {
-        let hue = anime.random(0, 360);
-        let saturation = 75;
-        let luminosity = 40;
-        let hslValue =
-          "hsl(" + hue + "," + saturation + "%," + luminosity + "%)";
-        return hslValue;
-      },
-      borderRadius: () => {
-        return anime.random(35, 70);
-      },
-      translateX: () => {
-        return anime.random(-80, 80) + "vh";
-      },
-      translateY: () => {
-        return anime.random(-80, 80) + "vh";
-      },
-      scale: () => {
-        return anime.random(0.45, 1.74);
-      },
-      duration: () => {
-        return anime.random(350, 1500);
-      },
-      delay: () => {
-        return anime.random(500, 1000);
-      },
-      loop: true,
-      direction: "alternate",
-      easing: "easeOutSine",
-    });
-  </script>
-
-  <script>
-    window.onload = () => {
-      lax.init();
-
-      //adding the driver that i use to control my animations;
-      lax.addDriver("scrollY", () => {
-        return window.scrollY;
-      });
-
-      //add animation bindings to elements
-    };
-  </script>
-
   <script src="./js/hamburger.js"></script>
-  <script src="./js//filterGallery.js"></script>
+  <script src="./js/filterGallery.js"></script>
 </html>
