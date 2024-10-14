@@ -393,8 +393,106 @@
     <div class="copyright">
       <p class="copyright_text">&copy; Copyright Tazlo Zoli 2024</p>
     </div>
+    <script type="module" src="./js/animation.js"></script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        gsap.registerPlugin(ScrollTrigger);
+
+        // Animate cards on scroll
+        gsap.utils.toArray(".card").forEach((card) => {
+          gsap.fromTo(
+            card,
+            {
+              opacity: 0,
+              x: -50,
+            },
+            {
+              opacity: 1,
+              x: 0,
+              duration: 0.8,
+              ease: "power1.out",
+              scrollTrigger: {
+                trigger: card,
+                start: "top bottom",
+                end: "top center",
+                toggleActions: "play none none reverse",
+              },
+            }
+          );
+        });
+
+        // Scroll-based animation for images
+        gsap.utils.toArray("._img_").forEach((image) => {
+          gsap.fromTo(
+            image,
+            {
+              opacity: 0,
+              height: 0,
+            },
+            {
+              opacity: 1,
+              height: "470px",
+              duration: 1.2,
+              ease: "power1.out",
+              scrollTrigger: {
+                trigger: image,
+                start: "top bottom",
+                end: "top center",
+                toggleActions: "play none none reverse",
+              },
+            }
+          );
+        });
+
+        // Animate title and text when section is in view
+        gsap.utils.toArray(".__section__").forEach((section) => {
+          gsap.fromTo(
+            section.querySelectorAll("._title_"),
+            {
+              opacity: 0,
+              y: -30,
+            },
+            {
+              opacity: 1,
+              y: 0,
+              duration: 1.2,
+              ease: "power1.out",
+              stagger: 0.5,
+              scrollTrigger: {
+                trigger: section,
+                start: "top bottom",
+                end: "top center",
+                toggleActions: "play none none reverse",
+              },
+            }
+          );
+
+          gsap.fromTo(
+            section.querySelectorAll("._text_"),
+            {
+              opacity: 0,
+              y: -50,
+            },
+            {
+              opacity: 1,
+              y: 0,
+              duration: 1.2,
+              ease: "power1.out",
+              stagger: 0.5,
+              scrollTrigger: {
+                trigger: section,
+                start: "top bottom",
+                end: "top center",
+                toggleActions: "play none none reverse",
+              },
+            }
+          );
+        });
+      });
+    </script>
   </body>
-  <script type="module" src="./js/animation.js"></script>
+
   <script
     src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"
     integrity="sha512-z4OUqw38qN,pn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q=="
@@ -431,6 +529,40 @@
 
     //nodelist
     const circles = document.querySelectorAll(".anime_circles");
+
+    //animation circles
+    let randomAnimation = anime({
+      targets: circles,
+      background: () => {
+        let hue = anime.random(0, 360);
+        let saturation = 75;
+        let luminosity = 40;
+        let hslValue =
+          "hsl(" + hue + "," + saturation + "%," + luminosity + "%)";
+        return hslValue;
+      },
+      borderRadius: () => {
+        return anime.random(35, 70);
+      },
+      translateX: () => {
+        return anime.random(-80, 80) + "vh";
+      },
+      translateY: () => {
+        return anime.random(-80, 80) + "vh";
+      },
+      scale: () => {
+        return anime.random(0.45, 1.74);
+      },
+      duration: () => {
+        return anime.random(350, 1500);
+      },
+      delay: () => {
+        return anime.random(500, 1000);
+      },
+      loop: true,
+      direction: "alternate",
+      easing: "easeOutSine",
+    });
   </script>
 
   <script>
@@ -447,5 +579,5 @@
   </script>
 
   <script src="./js/hamburger.js"></script>
-  <script src="./js/filterGallery.js"></script>
+  <script src="./js//filterGallery.js"></script>
 </html>
