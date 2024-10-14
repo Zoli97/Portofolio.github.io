@@ -393,8 +393,58 @@
     <div class="copyright">
       <p class="copyright_text">&copy; Copyright Tazlo Zoli 2024</p>
     </div>
-    <script type="module" src="./js/animation.js"></script>
   </body>
+  <script type="module" src="./js/animation.js"></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"
+    integrity="sha512-z4OUqw38qN,pn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+
+  <script>
+    var elements = document.querySelectorAll("#svg_anim polygon");
+    const wrapper = document.getElementById("wrapper");
+
+    const morphing = anime({
+      targets: [elements],
+      points: [
+        {
+          value: [
+            "100 100, 150 300 , 350 350 , 400 100 , 350 0 , 200 50 , 100 100",
+            " 100 100 , 150 300 , 300 200 , 450 300 , 500 100 , 300 150 , 100 100 ",
+          ],
+        },
+      ],
+      easing: "easeOutSine",
+      duration: 2200,
+      loop: true,
+      direction: "alternate",
+    });
+
+    //random cirles
+    for (let i = 0; i < 60; i++) {
+      let div = document.createElement("div");
+      let animateCircle = wrapper.appendChild(div);
+      animateCircle.classList.add("anime_circles");
+    }
+
+    //nodelist
+    const circles = document.querySelectorAll(".anime_circles");
+  </script>
+
+  <script>
+    window.onload = () => {
+      lax.init();
+
+      //adding the driver that i use to control my animations;
+      lax.addDriver("scrollY", () => {
+        return window.scrollY;
+      });
+
+      //add animation bindings to elements
+    };
+  </script>
 
   <script src="./js/hamburger.js"></script>
   <script src="./js/filterGallery.js"></script>
