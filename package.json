@@ -1,7 +1,7 @@
 {
   "name": "portofolio",
   "version": "1.0.0",
-  "description": "<<<<<<< HEAD # Zoli.github.io This is my portofolio and check this out !",
+  "description": "<<<<<<< HEAD #This is my portofolio and check this out !",
   "type": "module",
   "main": "index.js",
   "scripts": {
@@ -36,7 +36,7 @@
     "@parcel/transformer-sass": "^2.7.0",
     "@types/animejs": "^3.1.5",
     "sass-resources-loader": "^2.2.5",
-    "vite": "^5.4.8"
+    "vite": "^5.4.9"
   },
   "repository": {
     "type": "git",
