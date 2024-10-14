@@ -1,6 +1,6 @@
 <<<<<<< HEAD
 # Portofolio
-This is my landing page check this out !
+This is my Portofolio check this out !
 =======
 <<<<<<< HEAD
 # Zoli.github.io
