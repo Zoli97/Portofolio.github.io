@@ -438,3 +438,90 @@ img {
     padding: 2em 2em 2em 20em;
   }
 }
+
+// @media only screen and (wdith <= 680px) {
+//   .__section__ {
+//     display: grid;
+//     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+//     gap: 2rem;
+//   }
+// }
+
+@media only screen and (max-width: 680px) {
+  .innerContainer {
+    display: grid !important;
+    grid-template-columns: repeat(
+      auto-fit,
+      minmax(350px, 1fr)
+    ) !important; /* Adjust min width */
+    gap: 2rem;
+  }
+}
+
+@media only screen and (max-width: 740px) {
+  .innerContainer {
+    display: grid !important;
+    grid-template-columns: repeat(
+      auto-fit,
+      minmax(350px, 1fr)
+    ) !important; /* Adjust min width */
+    gap: 2rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .__section__ {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  ._img_ {
+    width: 100%;
+  }
+
+  .right,
+  .left {
+    padding: 1.7em;
+  }
+
+  ._title_,
+  ._text_ {
+    margin-left: 0.5em;
+  }
+}
+
+//affect the timing aniamtion (fired to quick)
+.__section__ {
+  // display: grid;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  // place-content: center;
+  margin-bottom: 2em;
+  .innerContainer {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    justify-self: center;
+    gap: 3em;
+    padding: 1em;
+  }
+
+  ._text_ {
+    line-height: 1.3rem;
+    color: #fff;
+  }
+
+  ._title_ {
+    color: #fff;
+  }
+}
+._img_ {
+  width: 100%; /* Adjusts to the container width */
+  max-width: 500px; /* Ensures image doesn’t exceed 400px on larger screens */
+  height: 400px;
+  object-fit: cover;
+  cursor: pointer;
+}
