@@ -1,4 +1,4 @@
-import { animate, stagger, inView, scroll, timeline } from "motion";
+import { animate, stagger, inView, scroll } from "motion";
 
 //2 cards where i have multiple sections when you scrolling down, i want those to come in based on that portion being in the viewport.
 //i view handling the scroll anim
@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
       }),
       {
         target: image, // Target each image individually
-        offset: ["start end", "end start"], // Trigger when image enters the viewport
+        offset: ["0 100%", "0 0%"], // Trigger when image enters the viewport
         easing: "ease-out",
         duration: 1.2, // Control the speed of animation
       }
