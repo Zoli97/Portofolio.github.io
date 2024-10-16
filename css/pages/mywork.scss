@@ -435,7 +435,7 @@ img {
 
 @media only screen and (min-width: 1550px) {
   header {
-    padding: 2em 2em 2em 20em;
+    padding: 2em 2em 5em 20em;
   }
 }
 
@@ -475,6 +475,7 @@ img {
     gap: 2rem;
     padding-left: 1rem;
     padding-right: 1rem;
+    padding-top: 1em !important;
   }
   ._img_ {
     width: 100%;
@@ -489,6 +490,10 @@ img {
   ._text_ {
     margin-left: 0.5em;
   }
+
+  h1 {
+    padding-left: 1em;
+  }
 }
 
 //affect the timing aniamtion (fired to quick)
@@ -498,6 +503,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-top: 4em;
   // place-content: center;
   margin-bottom: 2em;
   .innerContainer {
@@ -538,4 +544,42 @@ img {
 ._text_ {
   opacity: 0;
   transform: translateY(-30px);
+}
+
+//title aniamtion
+
+h1 {
+  width: 0;
+  color: rgba(255, 255, 255, 0.9);
+  white-space: nowrap;
+  overflow: hidden;
+  margin: 0 auto;
+  border-right: 3px solid rgb(238, 255, 4);
+  animation: animated-title 4s steps(29, end) 1s 1 normal both,
+    animated-cursor 600ms steps(29, end) infinite;
+  font-size: clamp(1.4rem, 4vw, 2.5rem);
+}
+
+.text_wrapper {
+  display: flex;
+  justify-content: center;
+}
+//* text animation from 0 to 500px width, revealing the text
+@keyframes animated-title {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: clamp(300px, 50vw, 420px);
+  }
+}
+
+@keyframes animated-cursor {
+  from {
+    border-right-color: rgb(238, 255, 4);
+  }
+  to {
+    border-right-color: transparent;
+  }
 }
