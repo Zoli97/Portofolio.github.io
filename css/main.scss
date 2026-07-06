@@ -117,7 +117,9 @@
   }
 }
 * {
-  transition: background-color 0.8s ease, color 1s ease;
+  transition:
+    background-color 0.8s ease,
+    color 1s ease;
 }
 html,
 body {
@@ -152,7 +154,10 @@ body {
   margin: 0.4em 0;
   font-size: 14px;
   font-weight: 700;
-  transition: background 0.07s, color 0.07s, border-color 0.07s;
+  transition:
+    background 0.07s,
+    color 0.07s,
+    border-color 0.07s;
 }
 
 .cookies-eu-banner .cookies-eu-button:hover {
@@ -744,7 +749,7 @@ Now we will have to add the javascript which will add this active class on the n
     display: none;
   }
   header img.my_logo {
-    width: 80px;
+    width: 60px;
     height: 45px;
     cursor: pointer;
   }

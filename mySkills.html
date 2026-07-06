@@ -10,7 +10,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
     />
     <link rel="icon" href="./public/abstract-shape.png" />
-    <link rel="stylesheet" href="./css/layouts/_header.scss" />
+    <link rel="stylesheet" href="./css/layouts/_header.css" />
     <link rel="stylesheet" href="./css/pages/mySKills.css" />
     <link rel="stylesheet" href="./css/lightgallery.css" />
     <title>My skills</title>
@@ -180,7 +180,7 @@
         </button>
       </article>
       <article class="article4">
-        <img src="./images/mee.jpg" alt="" class="img" />
+        <img src="./images/mee.jpg" alt="" class="img" id="image" />
       </article>
     </section>
     <hr />
@@ -341,11 +341,19 @@
     <script>
       const button_ = document.querySelector("#btn_");
       const arrow_btn = document.querySelector("#arrow-btn");
+      const image_ = document.querySelector("#image");
 
       //buttons selected
       const handleButtonClick = (e) => {
         e.stopPropagation();
         e.currentTarget.classList.toggle("active-btn");
+        image_.classList.add("glitch-active");
+
+        console.log(button_);
+        //remove the glitch when animation end
+        setTimeout(() => {
+          image_.classList.remove("glitch-active");
+        }, 500);
       };
 
       // prevent event bubbling, toggle the button's active state, and smoothly scroll to Section 2
