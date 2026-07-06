@@ -36,7 +36,9 @@
   }
 }
 * {
-  transition: background-color 0.8s ease, color 1s ease;
+  transition:
+    background-color 0.8s ease,
+    color 1s ease;
 }
 body {
   width: 100%;
@@ -52,6 +54,37 @@ body {
 .nav-link-color {
   color: $amber-color-bg !important;
   font-weight: 300;
+}
+.top_bar {
+  height: 50px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+
+  color: #fff;
+  text-align: center;
+  background: #030d16;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.top-bar-text {
+  font-weight: 400;
+  text-align: center;
+}
+#top-bar {
+  transition: transform 0.5s ease-in-out;
+}
+.visible-bar {
+  transform: translateY(0); /*normal position */
+}
+
+.hidden-bar {
+  transform: translateY(
+    -100%
+  ); /*element moved upward, effectively disappearing above the screen, */
 }
 
 .box {
@@ -423,19 +456,19 @@ img {
 
 @media only screen and (min-width: 1050px) {
   header {
-    padding: 2em 2em 2em 4em;
+    padding: 5em 2em 6em 4em;
   }
 }
 
 @media only screen and (min-width: 1250px) {
   header {
-    padding: 2em 2em 2em 10em;
+    padding: 5em 2em 6em 10em;
   }
 }
 
 @media only screen and (min-width: 1550px) {
   header {
-    padding: 2em 2em 5em 20em;
+    padding: 5em 2em 6em 20em;
   }
 }
 
@@ -555,7 +588,8 @@ h1 {
   overflow: hidden;
   margin: 0 auto;
   border-right: 3px solid rgb(238, 255, 4);
-  animation: animated-title 4s steps(29, end) 1s 1 normal both,
+  animation:
+    animated-title 4s steps(29, end) 1s 1 normal both,
     animated-cursor 600ms steps(29, end) infinite;
   font-size: clamp(1.4rem, 4vw, 2.5rem);
 }

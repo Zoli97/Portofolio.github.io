@@ -4,7 +4,9 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  transition: background-color 0.8s ease, color 1s ease;
+  transition:
+    background-color 0.8s ease,
+    color 1s ease;
 }
 :root {
   font-size: 65.2%;
@@ -85,6 +87,7 @@ header nav ul {
     color: $white_color;
   }
 }
+
 @import "../layouts/header";
 .hamburger {
   z-index: 100;
