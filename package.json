@@ -1,11 +1,7 @@
 {
   "name": "portofolio",
   "version": "1.0.0",
-<<<<<<< HEAD
   "description": "This is my portofolio and check this out !",
-=======
-  "description": "<<<<<<< HEAD #This is my portofolio and check this out !",
->>>>>>> 2eb0abea6d4b4833a9a8470e3227c3be7dd3c3a5
   "type": "module",
   "main": "index.js",
   "scripts": {
@@ -29,10 +25,6 @@
     "motion": "^10.18.0",
     "parallax-js": "^3.1.0",
     "rellax": "^1.12.1",
-<<<<<<< HEAD
-=======
-    "sass-cache": "0.0.3",
->>>>>>> 2eb0abea6d4b4833a9a8470e3227c3be7dd3c3a5
     "smooth-scrollbar": "^8.8.1",
     "vanilla-tilt": "^1.7.2"
   },
