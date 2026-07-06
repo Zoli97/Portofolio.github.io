@@ -45,13 +45,9 @@
   }
 }
 * {
-<<<<<<< HEAD
   transition:
     background-color 0.8s ease,
     color 1s ease;
-=======
-  transition: background-color 0.8s ease, color 1s ease;
->>>>>>> 2eb0abea6d4b4833a9a8470e3227c3be7dd3c3a5
 }
 
 html {
@@ -68,7 +64,6 @@ body {
 a {
   text-decoration: none;
 }
-<<<<<<< HEAD
 .top_bar {
   height: 50px;
   position: fixed;
@@ -100,8 +95,6 @@ a {
     -100%
   ); /*element moved upward, effectively disappearing above the screen, */
 }
-=======
->>>>>>> 2eb0abea6d4b4833a9a8470e3227c3be7dd3c3a5
 
 header nav ul {
   list-style: none;
@@ -117,11 +110,7 @@ header nav ul {
 .nav-container {
   background: var(--bg);
   position: sticky;
-<<<<<<< HEAD
   top: 50px;
-=======
-  top: 0;
->>>>>>> 2eb0abea6d4b4833a9a8470e3227c3be7dd3c3a5
   width: 100%;
   z-index: 5;
 }
@@ -136,12 +125,8 @@ header {
   padding: 2em;
 }
 header nav {
-<<<<<<< HEAD
   display: flex;
   align-items: center;
-=======
-  float: right;
->>>>>>> 2eb0abea6d4b4833a9a8470e3227c3be7dd3c3a5
 }
 header nav ul {
   display: flex;
@@ -306,15 +291,9 @@ header .hide_logo {
   width: 100%;
   height: 400px;
   -o-object-fit: cover;
-<<<<<<< HEAD
   object-fit: cover;
   -o-object-position: center;
   object-position: center;
-=======
-     object-fit: cover;
-  -o-object-position: center;
-     object-position: center;
->>>>>>> 2eb0abea6d4b4833a9a8470e3227c3be7dd3c3a5
   cursor: pointer;
 }
 
@@ -475,11 +454,7 @@ header .hide_logo {
     display: grid !important;
     gap: 4em;
   }
-<<<<<<< HEAD
   .img[data-scroll="in"] {
-=======
-  .img[data-scroll=in] {
->>>>>>> 2eb0abea6d4b4833a9a8470e3227c3be7dd3c3a5
     transform: translateX(0px);
   }
   .section3 .article3 .align-text {
@@ -703,20 +678,12 @@ header .hide_logo {
   transition: transform 2s ease-in-out;
 }
 
-<<<<<<< HEAD
 .my-text[data-scroll="in"] {
-=======
-.my-text[data-scroll=in] {
->>>>>>> 2eb0abea6d4b4833a9a8470e3227c3be7dd3c3a5
   opacity: 1;
   transform: translateX(0);
 }
 
-<<<<<<< HEAD
 .my-text[data-scroll="out"] {
-=======
-.my-text[data-scroll=out] {
->>>>>>> 2eb0abea6d4b4833a9a8470e3227c3be7dd3c3a5
   opacity: 0;
   transform: translateX(-300px);
 }
@@ -726,19 +693,11 @@ header .hide_logo {
   transition: transform 2s ease-in-out;
 }
 
-<<<<<<< HEAD
 .img[data-scroll="in"] {
   animation: fadein 3s;
 }
 
 .img[data-scroll="out"] {
-=======
-.img[data-scroll=in] {
-  animation: fadein 3s;
-}
-
-.img[data-scroll=out] {
->>>>>>> 2eb0abea6d4b4833a9a8470e3227c3be7dd3c3a5
   opacity: 0;
 }
 
@@ -746,19 +705,11 @@ header .hide_logo {
   transition: transform 3s ease-in-out;
 }
 
-<<<<<<< HEAD
 .card-img[data-scroll="in"] {
   animation: fadein 2s;
 }
 
 .card-img[data-scroll="out"] {
-=======
-.card-img[data-scroll=in] {
-  animation: fadein 2s;
-}
-
-.card-img[data-scroll=out] {
->>>>>>> 2eb0abea6d4b4833a9a8470e3227c3be7dd3c3a5
   opacity: 0;
 }
 
@@ -766,7 +717,6 @@ header .hide_logo {
   transition: transform 3s ease-in-out;
 }
 
-<<<<<<< HEAD
 .card-img1[data-scroll="in"] {
   animation: fadein 4s;
 }
@@ -780,21 +730,6 @@ header .hide_logo {
 }
 
 .card-img2[data-scroll="out"] {
-=======
-.card-img1[data-scroll=in] {
-  animation: fadein 4s;
-}
-
-.card-img1[data-scroll=out] {
-  opacity: 0;
-}
-
-.card-img2[data-scroll=in] {
-  animation: fadein 6s;
-}
-
-.card-img2[data-scroll=out] {
->>>>>>> 2eb0abea6d4b4833a9a8470e3227c3be7dd3c3a5
   opacity: 0;
 }
 
@@ -891,11 +826,7 @@ header .hide_logo {
   gap: 14px;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.25));
   -webkit-backdrop-filter: blur(10px);
-<<<<<<< HEAD
   backdrop-filter: blur(10px);
-=======
-          backdrop-filter: blur(10px);
->>>>>>> 2eb0abea6d4b4833a9a8470e3227c3be7dd3c3a5
   transition: 0.25s ease-in;
 }
 
@@ -913,12 +844,6 @@ header .hide_logo {
   translate: -50% -50%;
   z-index: 0;
   -o-object-fit: cover;
-<<<<<<< HEAD
   object-fit: cover;
   filter: grayscale(0.6);
 } /*# sourceMappingURL=mySKills.css.map */
-=======
-     object-fit: cover;
-  filter: grayscale(0.6);
-}/*# sourceMappingURL=mySKills.css.map */
->>>>>>> 2eb0abea6d4b4833a9a8470e3227c3be7dd3c3a5
