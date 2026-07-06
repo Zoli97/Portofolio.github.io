@@ -1,0 +1,49 @@
+{
+  "name": "portofolio",
+  "version": "1.0.0",
+  "description": "This is my portofolio and check this out !",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "dev1": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.4.2",
+    "@fortawesome/free-solid-svg-icons": "^6.4.2",
+    "@glidejs/glide": "^3.6.0",
+    "animejs": "^3.2.1",
+    "atropos": "^1.0.2",
+    "compass": "^0.1.1",
+    "gsap": "^3.11.3",
+    "gsap-trial": "^3.11.3",
+    "jquery": "^3.6.1",
+    "lax.js": "^2.0.3",
+    "motion": "^10.18.0",
+    "parallax-js": "^3.1.0",
+    "rellax": "^1.12.1",
+    "smooth-scrollbar": "^8.8.1",
+    "vanilla-tilt": "^1.7.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.19.3",
+    "@babel/core": "^7.19.3",
+    "@babel/preset-env": "^7.19.3",
+    "@parcel/transformer-sass": "^2.7.0",
+    "@types/animejs": "^3.1.5",
+    "sass-resources-loader": "^2.2.5",
+    "vite": "^5.4.9"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Zoli97/Zoli.github.io.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/Zoli97/Zoli.github.io/issues"
+  },
+  "homepage": "https://github.com/Zoli97/Zoli.github.io#readme"
+}

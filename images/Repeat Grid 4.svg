@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1436" height="624" viewBox="0 0 1436 624">
+  <defs>
+    <clipPath id="clip-path">
+      <rect width="1436" height="624" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Repeat_Grid_4" data-name="Repeat Grid 4" clip-path="url(#clip-path)">
+    <g transform="translate(-103 -1905)">
+      <g id="Rectangle_63" data-name="Rectangle 63" transform="translate(103 1905)" fill="#fff" stroke="#707070" stroke-width="1">
+        <rect width="458" height="605" rx="45" stroke="none"/>
+        <rect x="0.5" y="0.5" width="457" height="604" rx="44.5" fill="none"/>
+      </g>
+    </g>
+    <g transform="translate(375 -1905)">
+      <g id="Rectangle_63-2" data-name="Rectangle 63" transform="translate(103 1905)" fill="#fff" stroke="#707070" stroke-width="1">
+        <rect width="458" height="605" rx="45" stroke="none"/>
+        <rect x="0.5" y="0.5" width="457" height="604" rx="44.5" fill="none"/>
+      </g>
+    </g>
+    <g transform="translate(853 -1905)">
+      <g id="Rectangle_63-3" data-name="Rectangle 63" transform="translate(103 1905)" fill="#fff" stroke="#707070" stroke-width="1">
+        <rect width="458" height="605" rx="45" stroke="none"/>
+        <rect x="0.5" y="0.5" width="457" height="604" rx="44.5" fill="none"/>
+      </g>
+    </g>
+    <g transform="translate(1331 -1905)">
+      <g id="Rectangle_63-4" data-name="Rectangle 63" transform="translate(103 1905)" fill="#fff" stroke="#707070" stroke-width="1">
+        <rect width="458" height="605" rx="45" stroke="none"/>
+        <rect x="0.5" y="0.5" width="457" height="604" rx="44.5" fill="none"/>
+      </g>
+    </g>
+  </g>
+</svg>
