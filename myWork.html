@@ -63,7 +63,6 @@
       </header>
     </div>
 
-    <!-- <section id="wrapper" class="wrapper"></section> -->
     <div class="text_wrapper">
       <h1 style="text-align: center">Visual Design Effects</h1>
     </div>
@@ -315,7 +314,11 @@
         />
       </div>
 
-      <div id="gif-container6" class="card gif-container" data-item="trippy">
+      <div
+        id="gif-container6"
+        class="card gif-container lax lax_preset_zoomIn:500:1.5"
+        data-item="trippy"
+      >
         <img
           class="gif"
           src="https://media.giphy.com/media/xTiTnnEDnHkidOckcE/giphy.gif"
@@ -323,7 +326,11 @@
         />
       </div>
 
-      <div id="gif-container6" class="card gif-container" data-item="trippy">
+      <div
+        id="gif-container6"
+        class="card gif-container lax lax_preset_driftLeft:600:200"
+        data-item="trippy"
+      >
         <img
           class="gif"
           src="https://media.giphy.com/media/l4Ki3FQ0l9h4CY1y0/giphy-downsized-large.gif"
@@ -341,7 +348,11 @@
           alt="gif25"
         />
       </div>
-      <div id="gif-container8" class="card gif-container" data-item="cartoons">
+      <div
+        id="gif-container8"
+        class="card gif-container lax lax_preset_hueRotate:1498:360 lax_preset_jiggle:89:20 lax_preset_fadeIn:237:0.2"
+        data-item="cartoons"
+      >
         <img
           class="gif"
           src="https://media.giphy.com/media/11Tf5hgi4fEQ24/giphy.gif"
@@ -349,7 +360,11 @@
         />
       </div>
 
-      <div id="gif-container9" class="card gif-container" data-item="cartoons">
+      <div
+        id="gif-container9"
+        class="card gif-container lax lax_preset_spin:1000:720"
+        data-item="cartoons"
+      >
         <img
           class="gif"
           src="https://media.giphy.com/media/UKm1AF0UrCkb6/giphy.gif"
@@ -357,14 +372,22 @@
         />
       </div>
 
-      <div id="gif-container9" class="card gif-container" data-item="cartoons">
+      <div
+        id="gif-container9"
+        class="card gif-container lax lax_preset_zoomIn:500:1.5"
+        data-item="cartoons"
+      >
         <img
           class="gif"
           src="https://media.giphy.com/media/4SjlyrGuMvxxS/giphy.gif"
           alt="gif28"
         />
       </div>
-      <div id="gif-container9" class="card gif-container" data-item="cartoons">
+      <div
+        id="gif-container9"
+        class="card gif-container lax lax_preset_hueRotate:1200:360"
+        data-item="cartoons"
+      >
         <img
           class="gif"
           src="https://media.giphy.com/media/lCy03imiDRmzC/giphy.gif"
@@ -397,207 +420,13 @@
     </div>
     <hr />
     <div class="copyright">
-      <p class="copyright_text">&copy; Copyright Tazlo Zoli 2024</p>
+      <p class="copyright_text">&copy; Copyright Tazlo Zoli 2026</p>
     </div>
 
-    <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        gsap.registerPlugin(ScrollTrigger);
-
-        // Animate cards on scroll
-        gsap.utils.toArray(".card").forEach((card) => {
-          gsap.fromTo(
-            card,
-            {
-              opacity: 0,
-              x: -50,
-            },
-            {
-              opacity: 1,
-              x: 0,
-              duration: 0.8,
-              ease: "power1.out",
-              scrollTrigger: {
-                trigger: card,
-                start: "top bottom",
-                end: "top center",
-                toggleActions: "play none none reverse",
-              },
-            },
-          );
-        });
-
-        // Scroll-based animation for images
-        gsap.utils.toArray("._img_").forEach((image) => {
-          gsap.fromTo(
-            image,
-            {
-              opacity: 0,
-              height: 0,
-            },
-            {
-              opacity: 1,
-              height: "470px",
-              duration: 1.2,
-              ease: "power1.out",
-              scrollTrigger: {
-                trigger: image,
-                start: "top bottom",
-                end: "top center",
-                toggleActions: "play none none reverse",
-              },
-            },
-          );
-        });
-
-        // Animate title and text when section is in view
-        gsap.utils.toArray(".__section__").forEach((section) => {
-          gsap.fromTo(
-            section.querySelectorAll("._title_"),
-            {
-              opacity: 0,
-              y: -30,
-            },
-            {
-              opacity: 1,
-              y: 0,
-              duration: 1.2,
-              ease: "power1.out",
-              stagger: 0.5,
-              scrollTrigger: {
-                trigger: section,
-                start: "top bottom",
-                end: "top center",
-                toggleActions: "play none none reverse",
-              },
-            },
-          );
-
-          gsap.fromTo(
-            section.querySelectorAll("._text_"),
-            {
-              opacity: 0,
-              y: -50,
-            },
-            {
-              opacity: 1,
-              y: 0,
-              duration: 1.2,
-              ease: "power1.out",
-              stagger: 0.5,
-              scrollTrigger: {
-                trigger: section,
-                start: "top bottom",
-                end: "top center",
-                toggleActions: "play none none reverse",
-              },
-            },
-          );
-        });
-      });
-    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lax.js/lib/lax.min.js"></script>
+    <script src="./js/hamburger.js"></script>
+    <script src="./js//filterGallery.js"></script>
+    <script src="./js/myWork.js"></script>
   </body>
-
-  <script
-    src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"
-    integrity="sha512-z4OUqw38qN,pn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q=="
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"
-  ></script>
-
-  <script>
-    var elements = document.querySelectorAll("#svg_anim polygon");
-    const wrapper = document.getElementById("wrapper");
-
-    const morphing = anime({
-      targets: [elements],
-      points: [
-        {
-          value: [
-            "100 100, 150 300 , 350 350 , 400 100 , 350 0 , 200 50 , 100 100",
-            " 100 100 , 150 300 , 300 200 , 450 300 , 500 100 , 300 150 , 100 100 ",
-          ],
-        },
-      ],
-      easing: "easeOutSine",
-      duration: 2200,
-      loop: true,
-      direction: "alternate",
-    });
-
-    //random cirles
-    for (let i = 0; i < 60; i++) {
-      let div = document.createElement("div");
-      let animateCircle = wrapper.appendChild(div);
-      animateCircle.classList.add("anime_circles");
-    }
-
-    //nodelist
-    const circles = document.querySelectorAll(".anime_circles");
-
-    //animation circles
-    let randomAnimation = anime({
-      targets: circles,
-      background: () => {
-        let hue = anime.random(0, 360);
-        let saturation = 75;
-        let luminosity = 40;
-        let hslValue =
-          "hsl(" + hue + "," + saturation + "%," + luminosity + "%)";
-        return hslValue;
-      },
-      borderRadius: () => {
-        return anime.random(35, 70);
-      },
-      translateX: () => {
-        return anime.random(-80, 80) + "vh";
-      },
-      translateY: () => {
-        return anime.random(-80, 80) + "vh";
-      },
-      scale: () => {
-        return anime.random(0.45, 1.74);
-      },
-      duration: () => {
-        return anime.random(350, 1500);
-      },
-      delay: () => {
-        return anime.random(500, 1000);
-      },
-      loop: true,
-      direction: "alternate",
-      easing: "easeOutSine",
-    });
-  </script>
-
-  <script>
-    window.onload = () => {
-      lax.init();
-
-      //adding the driver that i use to control my animations;
-      lax.addDriver("scrollY", () => {
-        return window.scrollY;
-      });
-
-      //add animation bindings to elements
-    };
-  </script>
-
-  <script>
-    //handle top bar on scroll
-    const handleScroll = () => {
-      const topbar = document.querySelector("#top-bar");
-
-      const atTop = window.scrollY === 0; //want this to be true if i scrolled to the top
-      topbar.classList.toggle("visible-bar", atTop); //if i m top applied
-      topbar.classList.toggle("hidden-bar", !atTop);
-    };
-
-    window.addEventListener("scroll", () =>
-      requestAnimationFrame(handleScroll),
-    );
-  </script>
-
-  <script src="./js/hamburger.js"></script>
-  <script src="./js//filterGallery.js"></script>
 </html>
