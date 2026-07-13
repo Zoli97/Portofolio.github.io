@@ -9,8 +9,8 @@
   --navbarDefault: #001524;
   --headerDefault: #001524;
   --heroDefault: $ming;
-  --about_section: #ffefd6;
-  --mainBgDefault: #fff7eb;
+  --about_section: #ffaa5b;
+  --mainBgDefault: #e4c5c1;
   --featured2BgDefault: #fff7eb;
   --contentDefault: #15616d;
   --heroDefault: #fff7eb;
@@ -304,6 +304,7 @@ header .hide_logo {
 }
 
 .about {
+  padding-top: 2em;
   background: var(--about);
 }
 .about p {
