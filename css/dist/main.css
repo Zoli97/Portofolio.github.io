@@ -1,7 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap");
-@import "./abstracts/variables";
-@import "./abstracts/mixins.scss";
-
 :root {
   --dark: #000000;
   --blackFont: $black_color;
@@ -34,7 +31,6 @@
     hsl(37deg 100% 92%) 83%,
     hsl(37deg 100% 92%) 100%
   );
-
   --bg_animation_on_dark_mode: linear-gradient(
     45deg,
     hsla(0, 0%, 0%, 1) 0%,
@@ -49,8 +45,8 @@
     hsla(0, 0%, 16%, 1) 100%
   );
 }
-/*represent colors for diff elements dark theme and light theme */
 
+/*represent colors for diff elements dark theme and light theme */
 .light-theme {
   --heroTheme: var(--heroDefault);
   --nabvar: var(--navbarDefault);
@@ -95,6 +91,7 @@
 ::-webkit-scrollbar {
   width: 1.5em;
 }
+
 /**its the entire scrollbar itself*/
 ::-webkit-scrollbar-track {
   background: #15616d;
@@ -117,10 +114,9 @@
   }
 }
 * {
-  transition:
-    background-color 0.8s ease,
-    color 1s ease;
+  transition: background-color 0.8s ease, color 1s ease;
 }
+
 html,
 body {
   height: 100vh;
@@ -154,10 +150,7 @@ body {
   margin: 0.4em 0;
   font-size: 14px;
   font-weight: 700;
-  transition:
-    background 0.07s,
-    color 0.07s,
-    border-color 0.07s;
+  transition: background 0.07s, color 0.07s, border-color 0.07s;
 }
 
 .cookies-eu-banner .cookies-eu-button:hover {
@@ -182,12 +175,14 @@ ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  color: $white_color;
+  color: #fff;
 }
+
 .nav-link-color {
   font-weight: 300;
   color: #ff7d00 !important;
 }
+
 .nav-link-hover {
   position: relative;
   display: inline-block;
@@ -203,6 +198,7 @@ ul {
   background-color: #ff7d00;
   transition: width 0.3s ease;
 }
+
 .nav-link-hover:hover::after {
   width: 100%;
 }
@@ -214,6 +210,7 @@ a {
 img {
   width: 100%;
 }
+
 .icon {
   cursor: pointer;
 }
@@ -225,9 +222,9 @@ img {
   top: 0;
   width: 100%;
   z-index: 5;
-  a {
-    color: $white_color;
-  }
+}
+.nav-container a {
+  color: #fff;
 }
 
 .html5_img,
@@ -238,47 +235,69 @@ img {
   height: 45px;
 }
 
-@import "./layouts/header";
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2em;
+}
+header nav {
+  float: right;
+}
+header nav ul {
+  display: flex;
+}
+header nav ul a {
+  display: block;
+  padding: 0 2em;
+}
+header img.my_logo {
+  width: 60px;
+}
+header .hide_logo {
+  opacity: 0;
+}
+
 .hamburger {
-  @include displayNone();
-  .bar {
-    @include displayBlock();
-    width: 25px;
-    height: 3px;
-    margin: 5px auto;
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-    background-color: $white_color;
-  }
+  display: none;
+}
+.hamburger .bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #fff;
 }
 
 .social-header,
 .hero-design {
-  @include displayNone();
+  display: none;
 }
 
 .hero {
-  color: $white_color;
-  @include grid();
+  color: #fff;
+  display: grid;
   text-align: center;
   padding: 4em;
 }
 
 .meet {
-  @include displayFlex(flex);
+  display: flex;
+  justify-content: space-between;
   margin: 0 auto;
   width: 205px;
   font-weight: bold;
-  span {
-    margin-top: 0em;
-    margin-right: 0.5em;
-    color: $cyan;
-  }
+}
+.meet span {
+  margin-top: 0em;
+  margin-right: 0.5em;
+  color: #6fffe9;
 }
 
 .meet > p {
-  //color: $yellow_color_;
-  color: $amber-color-tint;
+  color: #ffaa5b;
 }
 
 .scroll {
@@ -288,13 +307,12 @@ img {
 
 .about {
   background: var(--about);
-  p {
-    color: var(--paragraph) !important;
-  }
-
-  h1 {
-    color: var(--title) !important;
-  }
+}
+.about p {
+  color: var(--paragraph) !important;
+}
+.about h1 {
+  color: var(--title) !important;
 }
 
 ._span_ {
@@ -327,28 +345,28 @@ section {
   border: none;
   position: relative;
   z-index: 1;
-  &:hover {
-    color: white;
-    cursor: pointer;
-  }
-  &::before {
-    content: "";
-    transition: 0.5s all ease;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 50%;
-    right: 50%;
-    opacity: 0;
-    background-color: $violet_color_;
-  }
-  &:hover::before {
-    transition: 0.5s all ease;
-    left: 0;
-    right: 0;
-    opacity: 1;
-    z-index: -1;
-  }
+}
+.my_button:hover {
+  color: white;
+  cursor: pointer;
+}
+.my_button::before {
+  content: "";
+  transition: 0.5s all ease;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  right: 50%;
+  opacity: 0;
+  background-color: #4b3f72;
+}
+.my_button:hover::before {
+  transition: 0.5s all ease;
+  left: 0;
+  right: 0;
+  opacity: 1;
+  z-index: -1;
 }
 
 .text {
@@ -363,7 +381,6 @@ section {
   position: absolute;
   top: 25%;
   left: 25%;
-  // left: 690px;
   pointer-events: none;
 }
 
@@ -384,7 +401,6 @@ section {
   top: 0;
   left: 0;
   z-index: 3;
-  //opacity: 0.4;
 }
 
 .right {
@@ -401,11 +417,11 @@ section {
 }
 
 .featured-title {
-  color: $black_color;
+  color: #000;
   font-weight: bold;
   font-size: 1.3em;
   margin-top: -0.4em;
-  @include displayBlock();
+  display: block;
 }
 
 .featured-desc {
@@ -416,22 +432,89 @@ section {
   font-weight: 500;
 }
 
-@import "./layouts/skill_container";
+:root {
+  --whiteFont: #fff;
+  --grayFont: #252525;
+  --darkFont: $black_color_;
+  --skills_container_light: #96b0a9;
+  --skills_container_dark: #000000;
+  --skill_container_light: #fff7eb;
+  --skill_container_dark: #2a2a2a;
+  --whiteIcon: #fff;
+}
+
+.light-theme {
+  --skills-container: var(--skills_container_light);
+  --skill-title: var(--darkFont);
+  --skill-box: var(--skill_container_light);
+}
+
+.dark-theme {
+  --skills-container: var(--skills_container_dark);
+  --skill-title: var(--whiteFont);
+  --skill-box: var(--skill_container_dark);
+}
+
+.my-skills {
+  background: var(--skills-container);
+}
+.my-skills h1 {
+  margin-top: 0;
+  margin-bottom: 1em;
+  /* tune this to taste */
+}
+
+h1 {
+  color: var(--skill-title);
+}
+
+.skills-container ul li {
+  background: var(--skill-box);
+  padding: 2em;
+  border-radius: 1em;
+  margin-bottom: 1em;
+}
+.skills-container ul li .icon-container {
+  height: 100px;
+  display: grid;
+  place-content: center;
+  margin: 0 auto;
+}
+.skills-container ul li .icon-container.one {
+  width: 50px;
+}
+.skills-container ul li .icon-container.two {
+  width: 50px;
+}
+.skills-container ul li .icon-container.three {
+  width: 50px;
+}
+.skills-container ul li .skills-title {
+  font-weight: bold;
+  color: var(--skills-title);
+}
+.skills-container ul li .skills-desc {
+  margin-bottom: 2em;
+}
+
+.colorcont {
+  transform: translateZ(40px);
+}
+
 section > .little-text {
-  background: $dark_white;
+  background: #f7f7ff;
 }
 
 /*scroll out on iamge*/
-
 .tilt[data-scroll] {
   transition: transform 6s ease-in-out;
 }
 
-.tilt[data-scroll="in"] {
+.tilt[data-scroll=in] {
   animation: fadein 2s;
 }
 
-.tilt[data-scroll="out"] {
+.tilt[data-scroll=out] {
   opacity: 1;
 }
 
@@ -439,11 +522,11 @@ section > .little-text {
   transition: transform 6s ease-in-out;
 }
 
-.tilt2[data-scroll="in"] {
+.tilt2[data-scroll=in] {
   animation: fadein 4s;
 }
 
-.tilt2[data-scroll="out"] {
+.tilt2[data-scroll=out] {
   opacity: 1;
 }
 
@@ -451,11 +534,11 @@ section > .little-text {
   transition: transform 6s ease-in-out;
 }
 
-.tilt3[data-scroll="in"] {
+.tilt3[data-scroll=in] {
   animation: fadein 6s;
 }
 
-.tilt3[data-scroll="out"] {
+.tilt3[data-scroll=out] {
   opacity: 1;
 }
 
@@ -467,21 +550,17 @@ section > .little-text {
     opacity: 1;
   }
 }
-
 @media screen and (max-width: 768px) {
   /*What this media query does is, hides our nav-menu by setting position: fixed; left: -100%; on it.
-Also, we set our hamburger to display: block; so it's visible now.
+  Also, we set our hamburger to display: block; so it's visible now.
 
-We have also added an extra class that is .nav-menu.active which sets left: 0; on the nav-menu. 
-Now we will have to add the javascript which will add this active class on the nav-menu when we click our hamburger.
-*/
-  // body {
-  //     overflow-x: hidden;
-  // }
-
+  We have also added an extra class that is .nav-menu.active which sets left: 0; on the nav-menu. 
+  Now we will have to add the javascript which will add this active class on the nav-menu when we click our hamburger.
+  */
   header {
     background: var(--header);
   }
+
   .nav-menu {
     position: fixed;
     right: 0;
@@ -491,15 +570,15 @@ Now we will have to add the javascript which will add this active class on the n
     height: 425px;
     border-radius: 10px;
     text-align: center;
-    box-shadow: 0 10px 27px $box_shadow_color;
+    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
     -webkit-clip-path: circle(100px at 90% -25%);
     clip-path: circle(100px at 90% -25%);
     transition: all 1.3s ease-out;
     pointer-events: none;
     z-index: 1;
-
     background: var(--header);
   }
+
   .nav-menu.active {
     left: 0;
     -webkit-clip-path: circle(1000px at 90% -10%);
@@ -507,9 +586,11 @@ Now we will have to add the javascript which will add this active class on the n
     pointer-events: all;
     cursor: pointer;
   }
+
   .nav-item {
     margin: 2rem 0;
   }
+
   ul.nav-menu.active {
     display: flex;
     justify-content: center;
@@ -519,77 +600,56 @@ Now we will have to add the javascript which will add this active class on the n
     height: 425px;
     position: absolute;
   }
+
   .hamburger {
     display: block;
     cursor: pointer;
   }
+
   .hamburger.active .bar:nth-child(2) {
     opacity: 0;
   }
-  .hamburger.active {
-    span {
-      &:nth-child(1) {
-        transform: translateY(8px) rotate(45deg);
-      }
-    }
+
+  .hamburger.active span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
   }
-  .hamburger.active {
-    span {
-      &:nth-child(2) {
-        transform: translateY(8px) rotate(45deg);
-      }
-    }
+
+  .hamburger.active span:nth-child(2) {
+    transform: translateY(8px) rotate(45deg);
   }
-  .hamburger.active {
-    span {
-      &:nth-child(3) {
-        transform: translateY(-8px) rotate(-45deg);
-      }
-    }
+
+  .hamburger.active span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
   }
-  .nav-menu {
-    li {
-      opacity: 0;
-    }
+
+  .nav-menu li {
+    opacity: 0;
   }
-  ul {
-    li {
-      a {
-        font-size: 1.3em;
-      }
-    }
+
+  ul li a {
+    font-size: 1.3em;
   }
-  ul {
-    li {
-      &:nth-child(1) {
-        transition: all 0.5s ease 0.2s;
-      }
-    }
+
+  ul li:nth-child(1) {
+    transition: all 0.5s ease 0.2s;
   }
-  ul {
-    li {
-      &:nth-child(2) {
-        transition: all 0.5s ease 0.4s;
-      }
-    }
+
+  ul li:nth-child(2) {
+    transition: all 0.5s ease 0.4s;
   }
-  ul {
-    li {
-      &:nth-child(3) {
-        transition: all 0.5s ease 0.6s;
-      }
-    }
+
+  ul li:nth-child(3) {
+    transition: all 0.5s ease 0.6s;
   }
-  ul {
-    li {
-      &:nth-child(4) {
-        transition: all 0.5s ease 0.8s;
-      }
-    }
+
+  ul li:nth-child(4) {
+    transition: all 0.5s ease 0.8s;
   }
+
   li.fade {
     opacity: 1;
   }
+
   .above-footer {
     height: 150vh;
     display: flex;
@@ -598,102 +658,103 @@ Now we will have to add the javascript which will add this active class on the n
     justify-content: space-around;
     background-size: 400%;
     background-image: var(--bg_animation);
-
     animation: gradientAnimation 8s ease-in-out infinite;
   }
+
   div.container1 {
     position: relative;
-    background: $dark_cyan;
+    background: #119da4;
     width: 360px;
     height: 360px;
     z-index: 1;
-    border: 1px solid $dark_cyan;
-    .cont {
-      width: 360px;
-      height: 360px;
-      transform: rotate(-4deg);
-      text-transform: uppercase;
-    }
-    img {
-      width: 250px;
-      height: 250px;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      opacity: 0.6;
-      z-index: -1;
-    }
-    p {
-      color: $white_color;
-      font-weight: bold;
-      font-size: 4em;
-      word-break: normal;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-35%, -77%);
-    }
+    border: 1px solid #119da4;
   }
+  div.container1 .cont {
+    width: 360px;
+    height: 360px;
+    transform: rotate(-4deg);
+    text-transform: uppercase;
+  }
+  div.container1 img {
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.6;
+    z-index: -1;
+  }
+  div.container1 p {
+    color: #fff;
+    font-weight: bold;
+    font-size: 4em;
+    word-break: normal;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-35%, -77%);
+  }
+
   div.container2 {
     width: 360px;
     height: 360px;
     position: relative;
     z-index: 1;
-    //border: 1px solid $white_color;
-    // background: #ffffff;
     background: transparent;
-    .cont {
-      width: 360px;
-      height: 360px;
-      transform: rotate(-4deg);
-      text-transform: uppercase;
-    }
-    img {
-      width: 250px;
-      height: 250px;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      z-index: -1;
-    }
   }
+  div.container2 .cont {
+    width: 360px;
+    height: 360px;
+    transform: rotate(-4deg);
+    text-transform: uppercase;
+  }
+  div.container2 img {
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+  }
+
   div.container3 {
     width: 360px;
     height: 360px;
     position: relative;
-    background: $dark_cyan;
+    background: #119da4;
     z-index: 1;
-    border: 1px solid $dark_cyan;
-    .cont {
-      width: 360px;
-      height: 360px;
-      transform: rotate(-4deg);
-      text-transform: uppercase;
-    }
-    img {
-      width: 250px;
-      height: 250px;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      opacity: 0.6;
-      z-index: -1;
-    }
-    p {
-      width: 40%;
-      color: $white_color;
-      font-weight: bold;
-      font-size: 4em;
-      word-break: normal;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-35%, -77%);
-    }
+    border: 1px solid #119da4;
   }
+  div.container3 .cont {
+    width: 360px;
+    height: 360px;
+    transform: rotate(-4deg);
+    text-transform: uppercase;
+  }
+  div.container3 img {
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.6;
+    z-index: -1;
+  }
+  div.container3 p {
+    width: 40%;
+    color: #fff;
+    font-weight: bold;
+    font-size: 4em;
+    word-break: normal;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-35%, -77%);
+  }
+
   footer {
     width: 100%;
     height: 150vh;
@@ -702,36 +763,38 @@ Now we will have to add the javascript which will add this active class on the n
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    .container_one {
-      width: 300px;
-      height: 300px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      color: white;
-      text-align: center;
-    }
-    .container_two {
-      width: 300px;
-      height: 300px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    .container_three {
-      width: 300px;
-      height: 300px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      color: white;
-      text-align: center;
-    }
   }
+  footer .container_one {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+  }
+  footer .container_two {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  footer .container_three {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+  }
+
   .first_container ul img {
     width: 33px;
     height: 33px;
   }
+
   .list_icons {
     padding: 2em;
     display: flex;
@@ -741,16 +804,16 @@ Now we will have to add the javascript which will add this active class on the n
   .content {
     background: var(--content);
   }
+
   .hero {
     background: var(--content);
   }
 
   .featured,
-  .featured2 {
+.featured2 {
     background: var(--featured2);
   }
 }
-
 .list_menu {
   display: flex;
   justify-content: space-around;
@@ -759,21 +822,25 @@ Now we will have to add the javascript which will add this active class on the n
 
 @media only screen and (max-width: 629px) {
   .featured,
-  .featured2 {
+.featured2 {
     background: var(--featured2);
   }
+
   .featured::before,
-  .featured2::before {
+.featured2::before {
     display: none;
   }
+
   header img.my_logo {
     width: 60px;
     height: 45px;
     cursor: pointer;
   }
+
   ul.list_menu {
     flex-direction: column;
   }
+
   footer {
     width: 100%;
     height: 100vh;
@@ -782,42 +849,45 @@ Now we will have to add the javascript which will add this active class on the n
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    .container_one {
-      width: 300px;
-      height: 300px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      color: white;
-      text-align: center;
-    }
-    .container_two {
-      width: 300px;
-      height: 300px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    .container_three {
-      width: 300px;
-      height: 300px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      color: white;
-      text-align: center;
-    }
   }
+  footer .container_one {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+  }
+  footer .container_two {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  footer .container_three {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+  }
+
   .first_container ul img {
     margin: 1.5em;
     width: 33px;
     height: 33px;
   }
+
   .list_icons {
     padding: 2em;
     display: flex;
     justify-content: space-between;
   }
+
   .copyright {
     width: 100%;
     height: 40px;
@@ -832,114 +902,115 @@ Now we will have to add the javascript which will add this active class on the n
   .content {
     background: var(--content);
   }
+
   .hero {
     background: var(--content);
   }
 }
-
 @media only screen and (max-width: 799px) {
   header {
     background: var(--header);
   }
 
   .featured::before,
-  .featured2::before {
+.featured2::before {
     display: none;
   }
+
   div.container1 {
     position: relative;
-    background: $dark_cyan;
+    background: #119da4;
     width: 360px;
     height: 360px;
     z-index: 1;
-    border: 1px solid $dark_cyan;
-    .cont {
-      width: 360px;
-      height: 360px;
-      transform: rotate(-4deg);
-      text-transform: uppercase;
-    }
-    img {
-      width: 250px;
-      height: 250px;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      opacity: 0.6;
-      z-index: -1;
-    }
-    p {
-      color: $white_color;
-      font-weight: bold;
-      font-size: 4em;
-      word-break: normal;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-35%, -77%);
-    }
+    border: 1px solid #119da4;
   }
+  div.container1 .cont {
+    width: 360px;
+    height: 360px;
+    transform: rotate(-4deg);
+    text-transform: uppercase;
+  }
+  div.container1 img {
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.6;
+    z-index: -1;
+  }
+  div.container1 p {
+    color: #fff;
+    font-weight: bold;
+    font-size: 4em;
+    word-break: normal;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-35%, -77%);
+  }
+
   div.container2 {
     width: 360px;
     height: 360px;
     position: relative;
     z-index: 1;
-    //border: 1px solid $white_color;
-    // background: #faf9f9;
-    // background: $balanced-almond-shade;
     background: transparent;
-    .cont {
-      width: 360px;
-      height: 360px;
-      transform: rotate(-4deg);
-      text-transform: uppercase;
-    }
-    img {
-      width: 250px;
-      height: 250px;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      z-index: -1;
-    }
   }
+  div.container2 .cont {
+    width: 360px;
+    height: 360px;
+    transform: rotate(-4deg);
+    text-transform: uppercase;
+  }
+  div.container2 img {
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+  }
+
   div.container3 {
     width: 360px;
     height: 360px;
     position: relative;
-    background: $dark_cyan;
+    background: #119da4;
     z-index: 1;
-    border: 1px solid $dark_cyan;
-    .cont {
-      width: 360px;
-      height: 360px;
-      transform: rotate(-4deg);
-      text-transform: uppercase;
-    }
-    img {
-      width: 250px;
-      height: 250px;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      opacity: 0.6;
-      z-index: -1;
-    }
-    p {
-      width: 40%;
-      color: $white_color;
-      font-weight: bold;
-      font-size: 4em;
-      word-break: normal;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-35%, -77%);
-    }
+    border: 1px solid #119da4;
   }
+  div.container3 .cont {
+    width: 360px;
+    height: 360px;
+    transform: rotate(-4deg);
+    text-transform: uppercase;
+  }
+  div.container3 img {
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.6;
+    z-index: -1;
+  }
+  div.container3 p {
+    width: 40%;
+    color: #fff;
+    font-weight: bold;
+    font-size: 4em;
+    word-break: normal;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-35%, -77%);
+  }
+
   main + .above-footer {
     height: 70vh;
     display: flex;
@@ -947,16 +1018,19 @@ Now we will have to add the javascript which will add this active class on the n
     align-items: center;
     padding: 1.5em;
   }
+
   .first_container ul img {
     margin: 1.5em;
     width: 33px;
     height: 33px;
   }
+
   .list_icons {
     padding: 2em;
     display: flex;
     justify-content: space-between;
   }
+
   .copyright {
     width: 100%;
     height: 40px;
@@ -971,46 +1045,54 @@ Now we will have to add the javascript which will add this active class on the n
   .content {
     background: var(--content);
   }
+
   .hero {
     background: var(--content);
   }
 }
-
-//at what point should things start to change about this design
-//rules in here will only apply to > 800
 @media only screen and (min-width: 800px) {
   header {
     background: var(--header);
   }
 
   .featured,
-  .featured2 {
+.featured2 {
     text-align: left;
-    @include displayGrid(grid, 60% auto);
+    display: grid;
+    grid-template-columns: 60% auto;
+    grid-gap: 1em;
     background: var(--featured2);
   }
+
   .left {
-    @include grid();
+    display: grid;
     place-content: center;
   }
+
   .right {
     margin-left: 3em;
     margin-top: 1em;
   }
+
   .my-skills {
     padding-top: 3em;
     padding-bottom: 3em;
-    h1 {
-      margin-top: 0;
-      margin-bottom: 0.5em;
-    }
   }
+  .my-skills h1 {
+    margin-top: 0;
+    margin-bottom: 0.5em;
+  }
+
   .skills-container ul.skillz {
-    @include displayGrid(grid, repeat(3, auto));
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-gap: 1em;
   }
+
   section > .little-text {
     padding-top: 7em;
   }
+
   .above-footer {
     height: 70vh;
     display: flex;
@@ -1021,78 +1103,81 @@ Now we will have to add the javascript which will add this active class on the n
     background-image: var(--bg_animation);
     animation: gradientAnimation 8s ease-in-out infinite;
   }
+
   div.container1 {
     position: relative;
-    background: $dark_cyan;
+    background: #119da4;
     width: 360px;
     height: 360px;
     z-index: 1;
-    border: 1px solid $dark_cyan;
+    border: 1px solid #119da4;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
     transition: clip-path 1s;
-    &:hover {
-      clip-path: polygon(13% 5%, 100% 0, 98% 98%, 12% 85%);
-    }
-    .cont {
-      width: 360px;
-      height: 360px;
-      transform: rotate(-4deg);
-      text-transform: uppercase;
-    }
-    img {
-      width: 250px;
-      height: 250px;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      opacity: 0.6;
-      z-index: -1;
-    }
-    p {
-      color: $white_color;
-      font-weight: bold;
-      font-size: 4em;
-      word-break: normal;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-35%, -77%);
-    }
   }
+  div.container1:hover {
+    clip-path: polygon(13% 5%, 100% 0, 98% 98%, 12% 85%);
+  }
+  div.container1 .cont {
+    width: 360px;
+    height: 360px;
+    transform: rotate(-4deg);
+    text-transform: uppercase;
+  }
+  div.container1 img {
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.6;
+    z-index: -1;
+  }
+  div.container1 p {
+    color: #fff;
+    font-weight: bold;
+    font-size: 4em;
+    word-break: normal;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-35%, -77%);
+  }
+
   div.container2 {
     width: 360px;
     height: 360px;
     position: relative;
     z-index: 1;
-    //border: 1px solid $white_color;
-    // background: $balanced-almond-shade;
     background: transparent;
-    .cont {
-      width: 360px;
-      height: 360px;
-      transform: rotate(-4deg);
-      text-transform: uppercase;
-    }
-    img {
-      width: 250px;
-      height: 250px;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      z-index: -1;
-    }
   }
+  div.container2 .cont {
+    width: 360px;
+    height: 360px;
+    transform: rotate(-4deg);
+    text-transform: uppercase;
+  }
+  div.container2 img {
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+  }
+
   .first_container ul img {
     width: 33px;
     height: 33px;
   }
+
   .list_icons {
     padding: 2em;
     display: flex;
     justify-content: space-between;
   }
+
   .copyright {
     width: 100%;
     height: 40px;
@@ -1102,19 +1187,19 @@ Now we will have to add the javascript which will add this active class on the n
     display: flex;
     align-items: center;
     justify-content: center;
-    .copyright_text {
-      margin: 0;
-    }
+  }
+  .copyright .copyright_text {
+    margin: 0;
   }
 
   .content {
     background: var(--content);
   }
+
   .hero {
     background: var(--content);
   }
 }
-
 @media only screen and (min-width: 1050px) {
   .above-footer {
     width: 100%;
@@ -1124,68 +1209,93 @@ Now we will have to add the javascript which will add this active class on the n
     justify-content: space-around;
     background-size: 400%;
     background-image: var(--bg_animation);
-
     animation: gradientAnimation 8s ease-in-out infinite;
   }
+
   .hero {
     height: 110vh;
   }
+
   .nav-container {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 66% auto;
     grid-template-columns: 66% auto;
-    background: $balanced-almond-shade;
+    background: #fff7eb;
   }
+
   header {
     background: var(--header);
   }
+
   header {
     padding: 2em 2em 2em 4em;
   }
+
   .social-header {
     padding: 2em 2em 4em 2em 0;
     background: var(--navbar);
   }
+
   section {
     padding: 4em;
   }
-  @import "./layouts/social_header";
-  .hero {
-    @include displayGrid(grid, 66% auto);
-    background: var(--hero);
 
-    padding: 0;
-    .content {
-      // background: $violet_color_;
-      background: var(--content);
-      padding: 6em 8em 6em 4em;
-      text-align: left;
-      h1 {
-        font-size: 3em;
-        line-height: 1.2em;
-      }
-    }
+  .social-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
+  .social-header ul {
+    display: flex;
+    justify-content: space-between;
+    width: 10em;
+    float: right;
+  }
+  .social-header ul img {
+    width: 33px;
+    height: 33px;
+  }
+
+  .hero {
+    display: grid;
+    grid-template-columns: 66% auto;
+    grid-gap: 1em;
+    background: var(--hero);
+    padding: 0;
+  }
+  .hero .content {
+    background: var(--content);
+    padding: 6em 8em 6em 4em;
+    text-align: left;
+  }
+  .hero .content h1 {
+    font-size: 3em;
+    line-height: 1.2em;
+  }
+
   .meet {
     margin: unset;
   }
-  //this is hero design
+
   .hero-design {
-    @include displayUnset();
+    display: unset;
     margin-left: -55%;
     margin-top: 15%;
     width: 100%;
   }
+
   .first_container ul img {
     width: 33px;
     height: 33px;
   }
+
   .list_icons {
     padding: 2em;
     display: flex;
     justify-content: space-between;
   }
+
   .copyright {
     width: 100%;
     height: 40px;
@@ -1202,7 +1312,6 @@ Now we will have to add the javascript which will add this active class on the n
     padding-bottom: 4em;
   }
 }
-
 @media only screen and (min-width: 1250px) {
   .above-footer {
     width: 100%;
@@ -1211,33 +1320,39 @@ Now we will have to add the javascript which will add this active class on the n
     flex-direction: row;
     justify-content: space-around;
   }
-  //mai in dreapta
+
   header {
     padding: 2em 2em 2em 10em;
   }
-  //from in stanga
+
   .social-header {
     padding: 2em 10em 2em 0;
   }
+
   section {
     padding: 10em 10em 4em 10em;
   }
+
   .hero .content {
     padding: 6em 8em 6em 10em;
     background: var(--content);
   }
+
   .hero-design {
     margin-left: -54%;
   }
+
   .first_container ul img {
     width: 33px;
     height: 33px;
   }
+
   .list_icons {
     padding: 2em;
     display: flex;
     justify-content: space-between;
   }
+
   .copyright {
     width: 100%;
     height: 40px;
@@ -1249,32 +1364,38 @@ Now we will have to add the javascript which will add this active class on the n
     justify-content: center;
   }
 }
-
 @media only screen and (min-width: 1550px) {
   header {
     padding: 2em 2em 2em 20em;
   }
+
   .social-header {
     padding: 2em 20em 2em 0;
   }
+
   section {
     padding: 6em 20em 4em 20em;
   }
+
   .hero .content {
     padding: 9em 20em 6em 20em;
   }
+
   .hero-design {
     margin-left: -53%;
   }
+
   .first_container ul img {
     width: 33px;
     height: 33px;
   }
+
   .list_icons {
     padding: 1em;
     display: flex;
     justify-content: space-between;
   }
+
   .copyright {
     width: 100%;
     height: 40px;
@@ -1286,11 +1407,6 @@ Now we will have to add the javascript which will add this active class on the n
     justify-content: center;
   }
 }
-
-// .hide {
-//   transition: opacity 500 ease-in-out;
-// }
-
 #circle1 {
   animation: changeColor1 1.5s infinite alternate;
 }
@@ -1303,7 +1419,6 @@ Now we will have to add the javascript which will add this active class on the n
     fill: #ff8700;
   }
 }
-
 #circle2 {
   animation: changeColor2 1.5s infinite alternate;
 }
@@ -1316,7 +1431,6 @@ Now we will have to add the javascript which will add this active class on the n
     fill: #0aefff;
   }
 }
-
 #circle3 {
   animation: changeColor3 1.5s infinite alternate;
 }
@@ -1329,7 +1443,6 @@ Now we will have to add the javascript which will add this active class on the n
     fill: #a1ff0a;
   }
 }
-
 #circle4 {
   animation: changeColor4 1.5s infinite alternate;
 }
@@ -1342,7 +1455,6 @@ Now we will have to add the javascript which will add this active class on the n
     fill: #580aff;
   }
 }
-
 #circle5 {
   animation: changeColor5 1.5s infinite alternate;
 }
@@ -1355,7 +1467,6 @@ Now we will have to add the javascript which will add this active class on the n
     fill: #0aff99;
   }
 }
-
 #bounceUp {
   animation: slowly_Bounce_Up_And_Down 2s ease-in-out infinite alternate;
   transform-origin: bottom;
@@ -1370,19 +1481,19 @@ Now we will have to add the javascript which will add this active class on the n
     transform: rotateX(20deg);
   }
 }
-
 ._section_ {
   width: 100%;
   height: 50vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: $balanced-almond-shade;
+  background: #fff7eb;
 }
 
 .glider_contain {
   width: 85% !important;
 }
+
 ._wrapper_ {
   width: 100%;
   margin: 1em;
@@ -1431,5 +1542,17 @@ Now we will have to add the javascript which will add this active class on the n
     background-position: 0 50%;
   }
 }
+.circle {
+  animation: circleAnim 1s infinite alternate-reverse;
+}
 
-@import "./components/circle_animation";
+@keyframes circleAnim {
+  from {
+    transform: translate(314px, 640px);
+    z-index: 5;
+  }
+  to {
+    transform: translate(314px, 677px);
+    z-index: 5;
+  }
+}

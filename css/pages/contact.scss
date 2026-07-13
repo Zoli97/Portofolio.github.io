@@ -76,6 +76,25 @@ header nav ul {
   font-weight: 300;
 }
 
+.nav-link-hover {
+  position: relative;
+  display: inline-block;
+}
+
+.nav-link-hover::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  background-color: #ff7d00;
+  transition: width 0.3s ease;
+}
+.nav-link-hover:hover::after {
+  width: 100%;
+}
+
 .nav-container {
   background: var(--navbar);
   position: -webkit-sticky;

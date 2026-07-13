@@ -1,4 +1,3 @@
-@import "../abstracts/variables";
 :root {
   --whiteFont: #fff;
   --grayFont: #252525;
@@ -21,13 +20,14 @@
   --skill-title: var(--whiteFont);
   --skill-box: var(--skill_container_dark);
 }
+
 .my-skills {
   background: var(--skills-container);
-
-  h1 {
-    margin-top: 0;
-    margin-bottom: 1em; /* tune this to taste */
-  }
+}
+.my-skills h1 {
+  margin-top: 0;
+  margin-bottom: 1em;
+  /* tune this to taste */
 }
 
 h1 {
@@ -39,30 +39,28 @@ h1 {
   padding: 2em;
   border-radius: 1em;
   margin-bottom: 1em;
-
-  .icon-container {
-    height: 100px;
-
-    display: grid;
-    place-content: center;
-    margin: 0 auto;
-    &.one {
-      width: 50px;
-    }
-    &.two {
-      width: 50px;
-    }
-    &.three {
-      width: 50px;
-    }
-  }
-  .skills-title {
-    font-weight: bold;
-    color: var(--skills-title);
-  }
-  .skills-desc {
-    margin-bottom: 2em;
-  }
+}
+.skills-container ul li .icon-container {
+  height: 100px;
+  display: grid;
+  place-content: center;
+  margin: 0 auto;
+}
+.skills-container ul li .icon-container.one {
+  width: 50px;
+}
+.skills-container ul li .icon-container.two {
+  width: 50px;
+}
+.skills-container ul li .icon-container.three {
+  width: 50px;
+}
+.skills-container ul li .skills-title {
+  font-weight: bold;
+  color: var(--skills-title);
+}
+.skills-container ul li .skills-desc {
+  margin-bottom: 2em;
 }
 
 .colorcont {

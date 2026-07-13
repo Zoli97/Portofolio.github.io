@@ -95,6 +95,7 @@ header nav ul {
 
 .nav-container {
   background: var(--navbar);
+  position: -webkit-sticky;
   position: sticky;
   top: 0;
   width: 100%;
@@ -136,6 +137,7 @@ header .hide_logo {
   width: 25px;
   height: 3px;
   margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   background-color: #fff;
 }
@@ -184,58 +186,75 @@ header .hide_logo {
     border-radius: 10px;
     text-align: center;
     box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+    -webkit-clip-path: circle(100px at 90% -25%);
     clip-path: circle(100px at 90% -25%);
     transition: all 1.3s ease-out;
     pointer-events: none;
     background: var(--navbar);
   }
+
   .nav-menu.active {
     left: 0;
+    -webkit-clip-path: circle(1000px at 90% -10%);
     clip-path: circle(1000px at 90% -10%);
     pointer-events: all;
     cursor: pointer;
   }
+
   .nav-item {
     margin: 2rem 0;
   }
+
   ul.nav-menu.active {
     height: 425px;
     position: absolute;
   }
+
   .hamburger {
     display: block;
     cursor: pointer;
   }
+
   .hamburger.active .bar:nth-child(2) {
     opacity: 0;
   }
+
   .hamburger.active span:nth-child(1) {
     transform: translateY(8px) rotate(45deg);
   }
+
   .hamburger.active span:nth-child(2) {
     transform: translateY(8px) rotate(45deg);
   }
+
   .hamburger.active span:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
   }
+
   .nav-menu li {
     opacity: 0;
   }
+
   ul li a {
     font-size: 1.3em;
   }
+
   ul li:nth-child(1) {
     transition: all 0.5s ease 0.2s;
   }
+
   ul li:nth-child(2) {
     transition: all 0.5s ease 0.4s;
   }
+
   ul li:nth-child(3) {
     transition: all 0.5s ease 0.6s;
   }
+
   ul li:nth-child(4) {
     transition: all 0.5s ease 0.8s;
   }
+
   li.fade {
     opacity: 1;
   }
@@ -322,12 +341,14 @@ header .hide_logo {
     padding-right: 1em;
     color: var(--title);
   }
+
   ._section_ > p {
     font-size: 1.5rem;
     padding-left: 1em;
     padding-right: 1em;
     color: var(--paragraph);
   }
+
   .menu li {
     list-style: none;
     font-size: 0.9em;
@@ -339,10 +360,12 @@ header .hide_logo {
     font-size: 2.5rem;
     color: var(--title);
   }
+
   ._section_ > p {
     font-size: 2rem;
     color: var(--paragraph);
   }
+
   .menu li {
     list-style: none;
     font-size: 1em;
@@ -354,6 +377,7 @@ header .hide_logo {
     font-size: 3.5rem;
     color: var(--title);
   }
+
   .menu li {
     list-style: none;
     font-size: 1em;
@@ -373,4 +397,4 @@ header .hide_logo {
     font-size: 4rem;
     color: var(--title);
   }
-}/*# sourceMappingURL=contact.css.map */
+}

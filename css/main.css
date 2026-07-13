@@ -183,6 +183,26 @@ ul {
   color: #ff7d00 !important;
 }
 
+.nav-link-hover {
+  position: relative;
+  display: inline-block;
+}
+
+.nav-link-hover::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  background-color: #ff7d00;
+  transition: width 0.3s ease;
+}
+
+.nav-link-hover:hover::after {
+  width: 100%;
+}
+
 a {
   text-decoration: none;
 }
@@ -435,6 +455,10 @@ section {
 
 .my-skills {
   background: var(--skills-container);
+}
+.my-skills h1 {
+  margin-top: 0;
+  margin-bottom: 1em; /* tune this to taste */
 }
 
 h1 {
@@ -997,7 +1021,12 @@ section > .little-text {
     margin-top: 1em;
   }
   .my-skills {
-    padding-top: 7em;
+    padding-top: 3em;
+    padding-bottom: 3em;
+  }
+  .my-skills h1 {
+    margin-top: 0;
+    margin-bottom: 0.5em;
   }
   .skills-container ul.skillz {
     display: grid;
@@ -1197,6 +1226,10 @@ section > .little-text {
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+  .my-skills {
+    padding-top: 2em;
+    padding-bottom: 4em;
   }
 }
 @media only screen and (min-width: 1250px) {
