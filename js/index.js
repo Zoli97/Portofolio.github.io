@@ -223,3 +223,79 @@ window.onload = (e) => {
 
   randomValues();
 };
+
+//create a function to add a new list item skill to the skills list
+
+function createNewItem(item) {
+  const li = document.createElement("li");
+  const tilt_class = item.tiltClass || "tilt"; //default tilt class if its not provided
+  const title = createParagraph("skills-title", item.title);
+  const description = createParagraph("featured-desc skill-desc", item.desc);
+  const divContainer = createContainer(
+    "icon-container one",
+    item.imgSrc,
+    item.imgClass,
+  ); // 1. Create and append the icon container with the image
+
+  li.className = `transition2 ${tilt_class}`;
+  li.setAttribute("data-scroll", "in");
+  li.appendChild(divContainer);
+  li.appendChild(title);
+  li.appendChild(description);
+
+  //append to the dom
+  document.querySelector(".skillz").appendChild(li);
+}
+
+function createContainer(classes, imgSrc, imgClass) {
+  const div_icon_container_ = document.createElement("div");
+  const image = createImage(imgClass, imgSrc);
+  div_icon_container_.className = classes;
+  div_icon_container_.appendChild(image);
+
+  return div_icon_container_;
+}
+
+function createImage(classes, src) {
+  const image = document.createElement("img");
+  image.src = src;
+  image.className = classes;
+  return image;
+}
+
+//create and append the title and desc paragraph (reusable helper)
+function createParagraph(classes, text) {
+  const title = document.createElement("p");
+  const my_text = document.createTextNode(text);
+  title.className = classes;
+  title.appendChild(my_text);
+  return title;
+}
+
+//create an array of object and went thorugh each one
+
+const skillz = [
+  {
+    imgSrc: "./images/html.png",
+    tiltClass: "tilt",
+    imgClass: "html5_img",
+    title: "HTML 5",
+    desc: " It's need to know HTML on frontend because it's necessarily toknow this markup language to create the structure of the page.",
+  },
+  {
+    imgSrc: "./images/css.png",
+    tiltClass: "tilt2",
+    imgClass: "css3_img",
+    title: "CSS 3",
+    desc: "For the frontend another tool is CSS it's necessarily to create the design or how to look the elements on the web page.",
+  },
+  {
+    imgSrc: "./images/js.png",
+    tiltClass: "tilt3",
+    imgClass: "js_img",
+    title: "Javascript",
+    desc: " To create a dynamically and cool animations for the web page it's need to know the JavaScript language based on the prototype concept..",
+  },
+];
+
+skillz.forEach(createNewItem);

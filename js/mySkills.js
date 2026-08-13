@@ -3,6 +3,51 @@ const button_ = document.querySelector("#btn_");
 const arrow_btn = document.querySelector("#arrow-btn");
 const image_ = document.querySelector("#image");
 
+//create a function to add a new section item to my sections list.
+//array of object as param.
+
+function createNewSectionItem(images) {
+  const section = document.createElement("section");
+  section.className = "section4";
+  const article = createArticle("article4", "lightgallery", images);
+  section.appendChild(article);
+  return section;
+}
+
+function createImage(classes, src, alt) {
+  const image = document.createElement("img");
+  image.src = src;
+  image.className = classes;
+  image.alt = alt;
+
+  return image;
+}
+
+//Function that creates the article element and appends the images to it.
+function createArticle(classes, id, images) {
+  const article = document.createElement("article");
+  article.setAttribute("id", id);
+  article.className = classes;
+
+  //Iterates through each object in the 'images' array using property destructuring ({ classes, src, alt })
+  //foreach -because sarticle contains 3 different images.
+  images.forEach(({ classes, src, alt }) => {
+    const image = createImage(classes, src, alt);
+    article.appendChild(image);
+  });
+  return article;
+}
+
+//an array of objects with the props like class, src, alt, each object is an img item containing the next props.
+const images = [
+  { classes: "card-img", src: "./images/me3.jpg", alt: "pic" },
+  { classes: "card-img1", src: "./images/me4.jpg", alt: "pic" },
+  { classes: "card-img2", src: "./images/me5.jpg", alt: "pic" },
+];
+
+const newSection = createNewSectionItem(images);
+document.querySelector("main").appendChild(newSection);
+
 const rellax = new Rellax(".rellax", {
   center: true,
   breakpoints: [576, 768, 1150, 1201, 1250, 1550],
@@ -11,6 +56,7 @@ const rellax = new Rellax(".rellax", {
 ScrollOut({
   threshold: 0.5,
   targets: ".img, .my-text, .card-img, .card-img1, .card-img2",
+  observeChanges: true,
 });
 const light_gallery = document.getElementById("lightgallery");
 lightGallery(light_gallery, {

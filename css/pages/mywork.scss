@@ -310,11 +310,11 @@ div.__grid__ .card.active {
 
 @keyframes animate {
   0% {
-    scale: (0);
+    scale: 0;
   }
 
   100% {
-    scale: (1);
+    scale: 1;
   }
 }
 
