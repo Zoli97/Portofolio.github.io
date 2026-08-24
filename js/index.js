@@ -1,3 +1,4 @@
+gsap.registerPlugin(ScrollTrigger);
 //play the lottie when the span is clicked
 const play_button = document.querySelector("button");
 const svg_container = document.getElementById("svg");
@@ -161,16 +162,16 @@ timeline.from(
   "-=2",
 );
 
-timeline.from(
-  ".about",
-  {
-    opacity: 1,
-    y: 100,
-    ease: Power2.ease,
-    duration: 1,
-  },
-  "-=1.5",
-);
+// timeline.from(
+//   ".about",
+//   {
+//     opacity: 1,
+//     y: 100,
+//     ease: Power2.ease,
+//     duration: 1,
+//   },
+//   "-=1.5",
+// );
 
 //or 10% of the current value
 gsap.from(".square-anim", {
@@ -229,8 +230,8 @@ window.onload = (e) => {
 function createNewItem(item) {
   const li = document.createElement("li");
   const tilt_class = item.tiltClass || "tilt"; //default tilt class if its not provided
-  const title = createParagraph("skills-title", item.title);
-  const description = createParagraph("featured-desc skill-desc", item.desc);
+  const title = createParagraph("skills-title title_skills", item.title);
+  const description = createParagraph("featured-desc skill-desc ", item.desc);
   const divContainer = createContainer(
     "icon-container one",
     item.imgSrc,
@@ -299,3 +300,75 @@ const skillz = [
 ];
 
 skillz.forEach(createNewItem);
+
+//"https://www.facebook.com/zoli.tazlo https://github.com/Zoli97 https://www.linkedin.com/in/tazlo-zoli-7021b1195/",
+//  "_blank",
+//create a funcion to add a new list item icon to the list
+function createListIconItem() {
+  //socials array of objects
+  const socials = [
+    {
+      href: "https://www.facebook.com/zoli.tazlo",
+      iconClass: "fab fa-square-facebook",
+      style: "color: #3b5998; font-size: 40px;",
+    },
+    {
+      href: "https://github.com/Zoli97",
+      iconClass: "fab fa-square-github",
+      style: "color: #3e75c3; font-size: 40px;",
+    },
+    {
+      href: "https://www.linkedin.com/in/tazlo-zoli-7021b1195/",
+      iconClass: "fab fa-linkedin",
+      style: "color: #007bb5; font-size: 40px;",
+    },
+  ];
+
+  //went through each individual obj
+
+  socials.forEach(({ href, iconClass, style }) => {
+    const li = document.createElement("li");
+
+    const link = createAlink(href, "_blank", iconClass, style);
+    li.appendChild(link);
+    document.querySelector(".items").appendChild(li);
+  });
+}
+
+//create a link elem function
+
+function createAlink(href, target, iconClass, style) {
+  const a_link = document.createElement("a");
+  const icon = createIcon(iconClass, style);
+  a_link.appendChild(icon);
+  a_link.href = href;
+  a_link.target = target;
+  return a_link;
+}
+// "fab fa-square-facebook fab fa-square-github fab fa-linkedin",
+// "color: #3b5998; font-size: 40px color: #3e75c3; font-size: 40px color: #007bb5; font-size: 40px",
+
+//create icon elem function
+function createIcon(classes, styles) {
+  const icon = document.createElement("i");
+  icon.className = classes;
+  icon.style = styles;
+  return icon;
+}
+
+createListIconItem();
+
+//animate the about section
+//replay every time i enters the viewport or to pause when it leaves the viewport at the top
+gsap.to(".animation-container", {
+  scrollTrigger: {
+    trigger: ".animation-container", //when trigger is activate or deactivate
+    start: "top center",
+    end: "bottom 100px",
+    scrub: 1,
+
+    toggleActions: "restart pause reverse pause",
+  },
+  x: 400,
+  duration: 3,
+});

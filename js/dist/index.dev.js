@@ -1,6 +1,7 @@
 "use strict";
 
-//play the lottie when the span is clicked
+gsap.registerPlugin(ScrollTrigger); //play the lottie when the span is clicked
+
 var play_button = document.querySelector("button");
 var svg_container = document.getElementById("svg");
 var switch_theme = document.getElementById("checkbox");
@@ -128,13 +129,17 @@ timeline.from(".hero-design", {
   y: 50,
   ease: Power3.easeOut,
   duration: 1
-}, "-=2");
-timeline.from(".about", {
-  opacity: 1,
-  y: 100,
-  ease: Power2.ease,
-  duration: 1
-}, "-=1.5"); //or 10% of the current value
+}, "-=2"); // timeline.from(
+//   ".about",
+//   {
+//     opacity: 1,
+//     y: 100,
+//     ease: Power2.ease,
+//     duration: 1,
+//   },
+//   "-=1.5",
+// );
+//or 10% of the current value
 
 gsap.from(".square-anim", {
   stagger: 0.2,
@@ -187,8 +192,8 @@ function createNewItem(item) {
   var li = document.createElement("li");
   var tilt_class = item.tiltClass || "tilt"; //default tilt class if its not provided
 
-  var title = createParagraph("skills-title", item.title);
-  var description = createParagraph("featured-desc skill-desc", item.desc);
+  var title = createParagraph("skills-title title_skills", item.title);
+  var description = createParagraph("featured-desc skill-desc ", item.desc);
   var divContainer = createContainer("icon-container one", item.imgSrc, item.imgClass); // 1. Create and append the icon container with the image
 
   li.className = "transition2 ".concat(tilt_class);
@@ -244,4 +249,69 @@ var skillz = [{
   title: "Javascript",
   desc: " To create a dynamically and cool animations for the web page it's need to know the JavaScript language based on the prototype concept.."
 }];
-skillz.forEach(createNewItem);
+skillz.forEach(createNewItem); //"https://www.facebook.com/zoli.tazlo https://github.com/Zoli97 https://www.linkedin.com/in/tazlo-zoli-7021b1195/",
+//  "_blank",
+//create a funcion to add a new list item icon to the list
+
+function createListIconItem() {
+  //socials array of objects
+  var socials = [{
+    href: "https://www.facebook.com/zoli.tazlo",
+    iconClass: "fab fa-square-facebook",
+    style: "color: #3b5998; font-size: 40px;"
+  }, {
+    href: "https://github.com/Zoli97",
+    iconClass: "fab fa-square-github",
+    style: "color: #3e75c3; font-size: 40px;"
+  }, {
+    href: "https://www.linkedin.com/in/tazlo-zoli-7021b1195/",
+    iconClass: "fab fa-linkedin",
+    style: "color: #007bb5; font-size: 40px;"
+  }]; //went through each individual obj
+
+  socials.forEach(function (_ref) {
+    var href = _ref.href,
+        iconClass = _ref.iconClass,
+        style = _ref.style;
+    var li = document.createElement("li");
+    var link = createAlink(href, "_blank", iconClass, style);
+    li.appendChild(link);
+    document.querySelector(".items").appendChild(li);
+  });
+} //create a link elem function
+
+
+function createAlink(href, target, iconClass, style) {
+  var a_link = document.createElement("a");
+  var icon = createIcon(iconClass, style);
+  a_link.appendChild(icon);
+  a_link.href = href;
+  a_link.target = target;
+  return a_link;
+} // "fab fa-square-facebook fab fa-square-github fab fa-linkedin",
+// "color: #3b5998; font-size: 40px color: #3e75c3; font-size: 40px color: #007bb5; font-size: 40px",
+//create icon elem function
+
+
+function createIcon(classes, styles) {
+  var icon = document.createElement("i");
+  icon.className = classes;
+  icon.style = styles;
+  return icon;
+}
+
+createListIconItem(); //animate the about section
+//replay every time i enters the viewport or to pause when it leaves the viewport at the top
+
+gsap.to(".animation-container", {
+  scrollTrigger: {
+    trigger: ".animation-container",
+    //when trigger is activate or deactivate
+    start: "top center",
+    end: "bottom 100px",
+    scrub: 1,
+    toggleActions: "restart pause reverse pause"
+  },
+  x: 400,
+  duration: 3
+});

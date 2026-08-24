@@ -38,7 +38,9 @@
   }
 }
 * {
-  transition: background-color 0.8s ease, color 1s ease;
+  transition:
+    background-color 0.8s ease,
+    color 1s ease;
 }
 
 body {
@@ -354,6 +356,25 @@ div.__grid__ .card.active {
     transform: scale(1);
   }
 }
+
+.__section__ ._title_ {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #ffaa5b;
+  letter-spacing: 0.3px;
+  margin-bottom: 0.5em;
+}
+
+.__section__ ._text_ {
+  max-width: 480px;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.75);
+  letter-spacing: 0.2px;
+}
 @media screen and (max-width: 768px) {
   .nav-menu {
     position: fixed;
@@ -524,12 +545,12 @@ img {
   }
 
   .right,
-.left {
+  .left {
     padding: 1.7em;
   }
 
   ._title_,
-._text_ {
+  ._text_ {
     margin-left: 0.5em;
   }
 
@@ -551,13 +572,6 @@ img {
   justify-self: center;
   gap: 3em;
   padding: 1em;
-}
-.__section__ ._text_ {
-  line-height: 1.3rem;
-  color: #fff;
-}
-.__section__ ._title_ {
-  color: #fff;
 }
 
 ._img_ {
@@ -593,7 +607,9 @@ h1 {
   overflow: hidden;
   margin: 0 auto;
   border-right: 3px solid #eeff04;
-  animation: animated-title 4s steps(29, end) 1s 1 normal both, animated-cursor 600ms steps(29, end) infinite;
+  animation:
+    animated-title 4s steps(29, end) 1s 1 normal both,
+    animated-cursor 600ms steps(29, end) infinite;
   font-size: clamp(1.4rem, 4vw, 2.5rem);
 }
 

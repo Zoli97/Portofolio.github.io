@@ -3,6 +3,8 @@
 @import "./abstracts/mixins.scss";
 
 :root {
+  --p_about: #1a1a2e;
+  --p-skills: #1a1a2e;
   --dark: #000000;
   --blackFont: $black_color;
   --grayFont: $gray_color_;
@@ -14,7 +16,7 @@
   --heroDefault: $ming;
   --about_section: #ffaa5b;
   --mainBgDefault: #e4c5c1;
-  --featured2BgDefault: #fff7eb;
+  --featured2BgDefault: #e8f2f1;
   --contentDefault: #15616d;
   --heroDefault: #fff7eb;
   --navbarbg: #252525;
@@ -56,9 +58,9 @@
   --nabvar: var(--navbarDefault);
   --header: var(--headerDefault);
   --about: var(--about_section);
-  --paragraph: var(--grayFont);
-  --title: var(--blackFont);
-  --skills-title: var(--grayFont);
+  --paragraph: var(--p_about);
+  --p1: var(--) --title: var(--blackFont);
+  --skills-title: var(--p-skills);
   --main: var(--mainBgDefault);
   --featured2: var(--featured2BgDefault);
   --text: var(--dark);
@@ -290,7 +292,15 @@ img {
   padding-top: 2em;
   background: var(--about);
   p {
+    max-width: 700px;
     color: var(--paragraph) !important;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.15rem;
+    font-weight: 400;
+    line-height: 1.7;
+    letter-spacing: 0.2px;
+    margin: 0 auto; /* centrează blocul de text */
+    text-align: center;
   }
 
   h1 {
@@ -358,6 +368,10 @@ section {
   color: var(--text);
 }
 
+.title_skills {
+  font-size: 1.3rem;
+}
+
 .svg {
   width: 300px;
   height: 300px;
@@ -410,11 +424,14 @@ section {
 }
 
 .featured-desc {
+  font-family: "Poppins", sans-serif;
   color: var(--skills-title);
   margin-bottom: 3em;
-  font-size: 0.9em;
+  font-size: 1rem;
   line-height: 1.8em;
-  font-weight: 500;
+  font-weight: 400;
+
+  letter-spacing: 0.2px;
 }
 
 @import "./layouts/skill_container";
@@ -422,6 +439,14 @@ section > .little-text {
   background: $dark_white;
 }
 
+.skillz li {
+  border: 2px solid transparent; // rezervă spațiul dinainte, ca să nu "sară" layout-ul
+  transition: border-color 0.3s ease;
+}
+
+.skillz li:hover {
+  border-color: #15616d;
+}
 /*scroll out on iamge*/
 
 .tilt[data-scroll] {

@@ -34,11 +34,12 @@ document.addEventListener("DOMContentLoaded", () => {
         x: 0,
         duration: 0.8,
         ease: "power1.out",
+        overwrite: true,
         scrollTrigger: {
           trigger: card,
           start: "top bottom",
           end: "top center",
-          toggleActions: "play none none reverse",
+          toggleActions: "restart none restart none",
         },
       },
     );
@@ -57,11 +58,14 @@ document.addEventListener("DOMContentLoaded", () => {
         height: "470px",
         duration: 1.2,
         ease: "power1.out",
+        overwrite: true,
         scrollTrigger: {
           trigger: image,
           start: "top bottom",
           end: "top center",
-          toggleActions: "play none none reverse",
+          toggleActions: "restart none restart none",
+
+          preventOverlaps: true,
         },
       },
     );
@@ -177,4 +181,7 @@ filterBtns.forEach((btn) => {
       }
     });
   });
+});
+window.addEventListener("load", () => {
+  ScrollTrigger.refresh();
 });

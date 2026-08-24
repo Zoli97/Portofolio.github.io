@@ -34,11 +34,12 @@ document.addEventListener("DOMContentLoaded", function () {
       x: 0,
       duration: 0.8,
       ease: "power1.out",
+      overwrite: true,
       scrollTrigger: {
         trigger: card,
         start: "top bottom",
         end: "top center",
-        toggleActions: "play none none reverse"
+        toggleActions: "restart none restart none"
       }
     });
   }); // Scroll-based animation for images
@@ -52,11 +53,13 @@ document.addEventListener("DOMContentLoaded", function () {
       height: "470px",
       duration: 1.2,
       ease: "power1.out",
+      overwrite: true,
       scrollTrigger: {
         trigger: image,
         start: "top bottom",
         end: "top center",
-        toggleActions: "play none none reverse"
+        toggleActions: "restart none restart none",
+        preventOverlaps: true
       }
     });
   }); // Animate title and text when section is in view
@@ -165,4 +168,7 @@ filterBtns.forEach(function (btn) {
       }
     });
   });
+});
+window.addEventListener("load", function () {
+  ScrollTrigger.refresh();
 });
