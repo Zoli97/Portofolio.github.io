@@ -120,9 +120,7 @@
   transition: background-color 0.8s ease, color 1s ease;
 }
 
-html,
 body {
-  height: 100vh;
   margin: 0;
   padding: 0;
   font-family: "Poppins", arial;
@@ -228,6 +226,7 @@ img {
 }
 .nav-container a {
   color: #fff;
+  font-weight: 600;
 }
 
 .html5_img,
@@ -236,6 +235,29 @@ img {
   cursor: pointer;
   width: 50px;
   height: 45px;
+}
+
+.about {
+  padding-top: 2.5em;
+  background: var(--about);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.profile > img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 10px 25px rgba(120, 50, 0, 0.35);
+  animation: floatImgProfile 4s ease-in-out infinite;
+  transition: 0.4s ease;
+}
+
+.profile img:hover {
+  box-shadow: 0 0 25px rgba(120, 50, 0, 0.35), 0 0 35px rgba(120, 50, 0, 0.35), 0 0 45px rgba(120, 50, 0, 0.35);
 }
 
 header {
@@ -339,7 +361,7 @@ section {
 }
 
 .main {
-  padding: 3em;
+  padding: 2em;
   text-align: center;
   position: relative;
   background: var(--main);
@@ -678,18 +700,7 @@ section > .little-text {
     opacity: 1;
   }
 
-  .above-footer {
-    height: 150vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    background-size: 400%;
-    background-image: var(--bg_animation);
-    animation: gradientAnimation 8s ease-in-out infinite;
-  }
-
-  div.container1 {
+  ss div.container1 {
     position: relative;
     background: #119da4;
     width: 360px;
@@ -697,13 +708,13 @@ section > .little-text {
     z-index: 1;
     border: 1px solid #119da4;
   }
-  div.container1 .cont {
+  ss div.container1 .cont {
     width: 360px;
     height: 360px;
     transform: rotate(-4deg);
     text-transform: uppercase;
   }
-  div.container1 img {
+  ss div.container1 img {
     width: 250px;
     height: 250px;
     position: absolute;
@@ -713,7 +724,7 @@ section > .little-text {
     opacity: 0.6;
     z-index: -1;
   }
-  div.container1 p {
+  ss div.container1 p {
     color: #fff;
     font-weight: bold;
     font-size: 4em;
@@ -783,41 +794,6 @@ section > .little-text {
     transform: translate(-35%, -77%);
   }
 
-  footer {
-    width: 100%;
-    height: 150vh;
-    background: #4b3f72;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-  }
-  footer .container_one {
-    width: 300px;
-    height: 300px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    text-align: center;
-  }
-  footer .container_two {
-    width: 300px;
-    height: 300px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  footer .container_three {
-    width: 300px;
-    height: 300px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    text-align: center;
-  }
-
   .first_container ul img {
     width: 33px;
     height: 33px;
@@ -867,41 +843,6 @@ section > .little-text {
 
   ul.list_menu {
     flex-direction: column;
-  }
-
-  footer {
-    width: 100%;
-    height: 100vh;
-    background: #4b3f72;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-  }
-  footer .container_one {
-    width: 300px;
-    height: 300px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    text-align: center;
-  }
-  footer .container_two {
-    width: 300px;
-    height: 300px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  footer .container_three {
-    width: 300px;
-    height: 300px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    text-align: center;
   }
 
   .first_container ul img {
@@ -1039,14 +980,6 @@ section > .little-text {
     transform: translate(-35%, -77%);
   }
 
-  main + .above-footer {
-    height: 70vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 1.5em;
-  }
-
   .first_container ul img {
     margin: 1.5em;
     width: 33px;
@@ -1119,17 +1052,6 @@ section > .little-text {
 
   section > .little-text {
     padding-top: 7em;
-  }
-
-  .above-footer {
-    height: 70vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    background-size: 400%;
-    background-image: var(--bg_animation);
-    animation: gradientAnimation 8s ease-in-out infinite;
   }
 
   div.container1 {
@@ -1229,17 +1151,6 @@ section > .little-text {
   }
 }
 @media only screen and (min-width: 1050px) {
-  .above-footer {
-    width: 100%;
-    height: 55vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    background-size: 400%;
-    background-image: var(--bg_animation);
-    animation: gradientAnimation 8s ease-in-out infinite;
-  }
-
   .hero {
     height: 110vh;
   }
@@ -1341,14 +1252,6 @@ section > .little-text {
   }
 }
 @media only screen and (min-width: 1250px) {
-  .above-footer {
-    width: 100%;
-    height: 50vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-  }
-
   header {
     padding: 2em 2em 2em 10em;
   }
@@ -1568,6 +1471,17 @@ section > .little-text {
   }
   100% {
     background-position: 0 50%;
+  }
+}
+@keyframes floatImgProfile {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-1.5rem);
+  }
+  100% {
+    transform: translateY(0);
   }
 }
 .circle {

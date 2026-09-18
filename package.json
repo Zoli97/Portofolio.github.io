@@ -7,7 +7,8 @@
   "scripts": {
     "dev1": "vite",
     "build": "vite build",
-    "serve": "vite preview"
+    "serve": "vite preview",
+    "watch:css": "sass --watch css/main.scss:css/main.css css/pages/mySKills.scss:css/mySkills.css css/pages/mywork.scss:css/mywork.css css/pages/contact.scss:css/contact.css"
   },
   "author": "",
   "license": "ISC",
@@ -33,7 +34,7 @@
     "@babel/preset-env": "^7.19.3",
     "@parcel/transformer-sass": "^2.7.0",
     "@types/animejs": "^3.1.5",
-    "sass": "^1.101.0",
+    "sass": "^1.104.1",
     "sass-resources-loader": "^2.2.5",
     "vite": "^5.4.9"
   },
