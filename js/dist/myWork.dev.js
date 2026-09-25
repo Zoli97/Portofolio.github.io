@@ -104,17 +104,11 @@ var filterData = [{
   text: "All",
   category: "all"
 }, {
-  text: "Retro",
-  category: "retro"
+  text: "Portraits",
+  category: "portraits"
 }, {
-  text: "Trippy",
-  category: "trippy"
-}, {
-  text: "Art",
-  category: "art"
-}, {
-  text: "Cartoons",
-  category: "cartoons"
+  text: "Typography",
+  category: "typography"
 }]; //create a function to add a new list item button to the list
 //isActive default to false
 
@@ -127,44 +121,44 @@ function createNewListItem(text) {
   li.className = "btn";
   li.setAttribute("data-filter", filterCategory); //set the data-filter attr dynamically
 
-  li.textContent = text; //add active only if isActive true
+  li.textContent = text; //add active class only if isActive true
 
   if (isActive) {
     li.classList.add("active");
   }
 
   ulContainer.appendChild(li); // append the newly created <li> directly into the <ul> element
-} //iterate through each filter item(every obj in the [])
+} //iterate through each filter item (every obj in the [])
 
 
 filterData.forEach(function (_ref, idx) {
   var text = _ref.text,
       category = _ref.category;
-  createNewListItem(text, category, idx === 0); //Parcurgem datele: evaluate to true only for the first item (doar la indexul 0 ("All") isActive devine true)
-}); //Toggle the 'active' class to the clicked button
+  createNewListItem(text, category, idx === 0); // evaluate to true only for the first item (doar la indexul 0 ("All") isActive devine true)
+}); //Toggle the 'active' class to the clicked button from the list
 
 var filterBtns = document.querySelectorAll(".btns .btn"); // select all the buttons that was created.
 //iterate through the btns list and attach a click event to each button
 
 filterBtns.forEach(function (btn) {
   btn.addEventListener("click", function () {
-    //delete the active class from the prev btn active
-    document.querySelector(".btns .btn.active").classList.remove("active"); // Adăugăm clasa 'active' pe butonul apăsat
+    document.querySelector(".btns .btn.active").classList.remove("active"); //delete the active class from the prev btn
 
-    btn.classList.add("active"); //get the selected category with getattribute
+    btn.classList.add("active"); //add the class active on the pressed btn
 
-    var selectedCategory = btn.getAttribute("data-filter"); //select all the cards
+    var selectedCategory = btn.getAttribute("data-filter"); //get the selected category with getattribute fun of the clicked button
+    //select all the cards
 
-    var cards = document.querySelectorAll(".card"); //iteate through each gif card in the gallery
+    var cards = document.querySelectorAll(".card"); //iteate through each image card in the gallery
 
     cards.forEach(function (card) {
       //read the data-item attribute of the current card
-      var cardItemTYpe = card.getAttribute("data-item"); // Check if "all" is selected (shows everything) or if this specific card matches the clicked category
+      var cardItemType = card.getAttribute("data-item"); // Check if "all" item is selected (shows everything) or if this specific card matches the clicked category
 
-      if (selectedCategory === "all" || cardItemTYpe === selectedCategory) {
-        card.style.display = ""; // Afișăm cardul (revine la stilul din CSS / flex / grid)
+      if (selectedCategory === "all" || cardItemType === selectedCategory) {
+        card.style.display = ""; // render the card (revine la stilul din CSS / flex / grid)
       } else {
-        card.style.display = "none"; // Ascundem cardul
+        card.style.display = "none"; // hide the card
       }
     });
   });
