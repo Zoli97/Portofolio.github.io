@@ -5,6 +5,11 @@ var button_ = document.querySelector("#btn_");
 var arrow_btn = document.querySelector("#arrow-btn");
 var image_ = document.querySelector("#image");
 var hr = document.querySelector(".hr");
+var changeBorderColorBtn = document.getElementById("btn");
+var img = document.querySelector(".image");
+var currentColorEl = document.getElementById("current-color");
+var hexValues = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "A", "B", "C", "D", "E", "F"]; //generate the hex code (convert num into hex)
+
 var links = [{
   text: "All",
   filter_category: "all"
@@ -251,4 +256,30 @@ document.addEventListener("click", function (e) {
   if (!arrow_btn.contains(e.target)) {
     arrow_btn.classList.remove("arrow-btn-active");
   }
+}); //helper function to grab random hex values from [].
+
+function getRandomHexValue() {
+  //get the index of an item from []
+  var randomIndex = Math.floor(Math.random() * hexValues.length); //generate a num 0 - 1 * 16 the length (random index 0 - 15)
+
+  var randomHex = hexValues[randomIndex]; //access the item
+
+  return randomHex;
+} //use the function 6 times and return a string, generate 6 digit random hex string
+
+
+function getRandomHexString(stringLen) {
+  var hexstring = "";
+
+  for (var i = 0; i < stringLen; i++) {
+    hexstring += getRandomHexValue(); // add 1 random char each time
+  }
+
+  return hexstring;
+}
+
+changeBorderColorBtn.addEventListener("click", function () {
+  var randomHex = "#" + getRandomHexString(6);
+  img.style.setProperty("border", "3px solid ".concat(randomHex));
+  currentColorEl.textContent = randomHex;
 });

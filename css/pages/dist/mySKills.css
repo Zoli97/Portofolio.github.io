@@ -477,6 +477,23 @@ header .hide_logo {
   transition: background-color 0.3s ease;
 }
 
+#btn {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#btn:hover {
+  background-color: #ff7d00;
+}
+
+.image {
+  transition: border 0.4s ease;
+}
+
+.my_title {
+  color: white;
+}
+
 .arrow-btn-active {
   background-color: #ff7d00;
 }
