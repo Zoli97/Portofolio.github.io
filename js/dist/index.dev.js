@@ -5,7 +5,25 @@ gsap.registerPlugin(ScrollTrigger); //play the lottie when the span is clicked
 var play_button = document.querySelector("button");
 var svg_container = document.getElementById("svg");
 var switch_theme = document.getElementById("checkbox");
+var containerEL = document.getElementById("faq-list");
 switch_theme.checked = false;
+var dataFaqs = [{
+  title: "What do you specialize in?",
+  detail: "I build full-stack web projects and UI/UX design: responsive web apps with next technologies HTML, CSS, JavaScript, React as a framework and on backend with Node.js, Express and MongoDB. In Figma I design: layouts, mockups, typography and responsive UI."
+}, {
+  title: "Are you open to work right now?",
+  detail: "Yes, I'm looking for junior fullstack, frontend roles or UI/UX design, remote, hybrid or on-site. I'm eager to learn new things and grow with a team."
+}, {
+  title: "What kind of projects do you take on?",
+  detail: "I take projects like landing pages, portofolios, small-medium web apps. If your idea is somewhere in between send it over and I'll tell you honestly if I'm a good fit. "
+}, {
+  title: "Can I see your code?",
+  detail: "Yes, my projects are on <a href=\"https://github.com/Zoli97\" target=\"_blank\" rel=\"noopener noreferrer\">GitHub</a> like the URL shortener or the QR code generator and many more."
+}, {
+  title: "How can I contact you?",
+  detail: "Email me directly right down below. I usually reply as soon as I can."
+}]; //an array of objects
+
 window.onload = checkTheme();
 
 function changeTheme() {
@@ -314,4 +332,13 @@ gsap.to(".animation-container", {
   },
   x: 400,
   duration: 3
-});
+}); //function that take one of the items and generate html markup.
+
+var makeHTMLFaqs = function makeHTMLFaqs(dataItem) {
+  return "\n  <details>\n  <summary>".concat(dataItem.title, "</summary> <p>").concat(dataItem.detail, "</p></details>");
+}; //take the array of data and turns each item into html string
+
+
+containerEL.innerHTML = dataFaqs.map(function (dataItem) {
+  return makeHTMLFaqs(dataItem);
+}).join("");

@@ -1373,6 +1373,42 @@ section > .little-text {
   transform: translateX(24px);
 }
 
+#faq-container {
+  max-width: 1265px;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+#faq-list a {
+  color: #2f7f86;
+  font-weight: 600;
+  text-underline-offset: 3px;
+}
+#faq-list a:hover {
+  text-decoration-thickness: 2px;
+}
+
+details {
+  cursor: pointer;
+  padding: 1rem;
+  margin: 1rem 0;
+  background-color: #e8f2f1;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+details p {
+  font-size: 1rem;
+  margin: 0;
+  padding: 0.25rem 2.5rem 1.25rem 0;
+  line-height: 1.7;
+  color: #3d4652;
+}
+
+summary {
+  font-weight: 700;
+}
+
 @keyframes gradientAnimation {
   0% {
     background-position: 0 50%;
