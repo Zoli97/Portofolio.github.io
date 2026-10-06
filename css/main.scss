@@ -420,7 +420,7 @@ section {
   position: absolute;
   width: 200px;
   height: 200px;
-  background-image: url("../images//my_blob.gif");
+  background-image: url("../images/projects-gif/my_blob.gif");
   background-size: cover;
   top: 0;
   left: 0;
@@ -456,7 +456,7 @@ section {
   font-size: 1rem;
   line-height: 1.8em;
   font-weight: 400;
-
+  text-align: justify;
   letter-spacing: 0.2px;
 }
 
@@ -975,7 +975,7 @@ Now we will have to add the javascript which will add this active class on the n
     }
   }
   .skills-container ul.skillz {
-    @include displayGrid(grid, repeat(3, auto));
+    @include displayGrid(grid, repeat(auto-fit, minmax(300px, 1fr)));
   }
   section > .little-text {
     padding-top: 7em;
@@ -1199,9 +1199,9 @@ Now we will have to add the javascript which will add this active class on the n
   .social-header {
     padding: 2em 20em 2em 0;
   }
-  section {
-    padding: 6em 20em 4em 20em;
-  }
+  // section {
+  //   padding: 6em 20em 4em 20em;
+  // }
   .hero .content {
     padding: 9em 20em 6em 20em;
   }

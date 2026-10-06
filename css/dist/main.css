@@ -435,7 +435,7 @@ section {
   position: absolute;
   width: 200px;
   height: 200px;
-  background-image: url("../images//my_blob.gif");
+  background-image: url("../images/projects-gif/my_blob.gif");
   background-size: cover;
   top: 0;
   left: 0;
@@ -470,6 +470,7 @@ section {
   font-size: 1rem;
   line-height: 1.8em;
   font-weight: 400;
+  text-align: justify;
   letter-spacing: 0.2px;
 }
 
@@ -1046,7 +1047,7 @@ section > .little-text {
 
   .skills-container ul.skillz {
     display: grid;
-    grid-template-columns: repeat(3, auto);
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-gap: 1em;
   }
 
@@ -1302,10 +1303,6 @@ section > .little-text {
 
   .social-header {
     padding: 2em 20em 2em 0;
-  }
-
-  section {
-    padding: 6em 20em 4em 20em;
   }
 
   .hero .content {

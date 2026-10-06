@@ -147,17 +147,7 @@ timeline.from(".hero-design", {
   y: 50,
   ease: Power3.easeOut,
   duration: 1
-}, "-=2"); // timeline.from(
-//   ".about",
-//   {
-//     opacity: 1,
-//     y: 100,
-//     ease: Power2.ease,
-//     duration: 1,
-//   },
-//   "-=1.5",
-// );
-//or 10% of the current value
+}, "-=2"); //or 10% of the current value
 
 gsap.from(".square-anim", {
   stagger: 0.2,
@@ -249,23 +239,29 @@ function createParagraph(classes, text) {
 
 
 var skillz = [{
-  imgSrc: "./images/html.png",
+  imgSrc: "./images/skills-icons/html.png",
   tiltClass: "tilt",
   imgClass: "html5_img",
   title: "HTML 5",
-  desc: " It's need to know HTML on frontend because it's necessarily toknow this markup language to create the structure of the page."
+  desc: " It's need to know HTML on frontend because it's necessarily to know this markup language to create the structure of the page."
 }, {
-  imgSrc: "./images/css.png",
+  imgSrc: "./images/skills-icons/css.png",
   tiltClass: "tilt2",
   imgClass: "css3_img",
   title: "CSS 3",
   desc: "For the frontend another tool is CSS it's necessarily to create the design or how to look the elements on the web page."
 }, {
-  imgSrc: "./images/js.png",
+  imgSrc: "./images/skills-icons/js.png",
   tiltClass: "tilt3",
   imgClass: "js_img",
   title: "Javascript",
   desc: " To create a dynamically and cool animations for the web page it's need to know the JavaScript language based on the prototype concept.."
+}, {
+  imgSrc: "./images/skills-icons/tailwind.png",
+  tiltClass: "tilt3",
+  imgClass: "tailwind_img",
+  title: "Tailwind",
+  desc: "Another frontend tool, this is a utility-first CSS framework to make your work easier, instead of writing css classes in a stylesheet, you style the elements by single-purpose classes directly into the HTML elements."
 }];
 skillz.forEach(createNewItem); //"https://www.facebook.com/zoli.tazlo https://github.com/Zoli97 https://www.linkedin.com/in/tazlo-zoli-7021b1195/",
 //  "_blank",
